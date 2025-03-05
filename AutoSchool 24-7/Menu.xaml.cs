@@ -1,5 +1,7 @@
 using AutoSchool_24_7.Page;
+using AutoSchool_24_7.Page.AboutPage;
 using AutoSchool_24_7.Page.FaultsListPages;
+using AutoSchool_24_7.Page.HelpPage;
 using AutoSchool_24_7.Page.RoadMarkingsPages;
 
 namespace AutoSchool_24_7;
@@ -26,16 +28,16 @@ public partial class Menu : ContentPage
 
     private async void OnTestClicked(object sender, EventArgs e)
     {
-       // await Navigation.PushAsync(new TestPage());
+       await Navigation.PushAsync(new TestPage());
     }
 
     private async void OnHelpClicked(object sender, EventArgs e)
     {
-       // await Navigation.PushAsync(new HelpPage());
+       await Navigation.PushAsync(new HelpPage());
     }
 
     private async void OnAboutClicked(object sender, EventArgs e)
     {
-       // await Navigation.PushAsync(new AboutPage());
+       await Navigation.PushAsync(new AboutPage());
     }
 }
