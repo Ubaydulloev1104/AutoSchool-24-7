@@ -4,9 +4,26 @@
              x:Class="AutoSchool_24_7.Page.SignsIngoPage.WarningSignsPage"
              Title="WarningSignsPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Grid>
+            <ScrollView>
+                <StackLayout Padding="20" Spacing="15">
+                    <Label Text="⚠ Предупреждающие знаки" 
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center"/>
+
+                    <!-- Здесь будут знаки -->
+                    <StackLayout>
+                        <Image Source="warning_sign_1.png" HeightRequest="100"/>
+                        <Label Text="Опасный поворот" FontSize="18"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Image Source="warning_sign_2.png" HeightRequest="100"/>
+                        <Label Text="Железнодорожный переезд без шлагбаума" FontSize="18"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

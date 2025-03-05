@@ -3,6 +3,7 @@ using AutoSchool_24_7.Page.AboutPage;
 using AutoSchool_24_7.Page.FaultsListPages;
 using AutoSchool_24_7.Page.HelpPage;
 using AutoSchool_24_7.Page.RoadMarkingsPages;
+using AutoSchool_24_7.Page.TestPages;
 
 namespace AutoSchool_24_7;
 
