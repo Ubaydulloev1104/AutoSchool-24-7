@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoSchool_24_7.Menu"
+             Title="Menu">
+    <VerticalStackLayout>
+        <Grid>
+            <!-- Фон -->
+            <Image Source="background.jpg" Aspect="AspectFill" />
+
+            <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center" Spacing="15">
+                <Button Text="🚦 Информация о знаках" Clicked="OnSignsInfoClicked" Style="{StaticResource MenuButtonStyle}" />
+                <Button Text="📝 Тестирование" Clicked="OnTestClicked" Style="{StaticResource MenuButtonStyle}" />
+                <Button Text="📖 Справка" Clicked="OnHelpClicked" Style="{StaticResource MenuButtonStyle}" />
+                <Button Text="ℹ О нас" Clicked="OnAboutClicked" Style="{StaticResource MenuButtonStyle}" />
+            </StackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

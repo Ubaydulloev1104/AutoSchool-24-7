@@ -19,7 +19,12 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+        } 
+        private async void menuClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Menu());
         }
+
     }
 
 }

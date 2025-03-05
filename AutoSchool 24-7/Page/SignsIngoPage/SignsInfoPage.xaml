@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoSchool_24_7.Page.SignsInfoPage"
+             Title="SignsInfoPage">
+    <VerticalStackLayout>
+        <Grid>
+            <ScrollView>
+                <StackLayout Padding="20" Spacing="15">
+                    <Label Text="🚦 Категории дорожных знаков" 
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center"/>
+
+                    <Button Text="Предупреждающие знаки" Clicked="OnWarningSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Знаки приоритета" Clicked="OnPrioritySignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Запрещающие знаки" Clicked="OnProhibitorySignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Предписывающие знаки" Clicked="OnMandatorySignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Знаки особых предписаний" Clicked="OnSpecialRegulationSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Информационные знаки" Clicked="OnInformationalSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Знаки сервиса" Clicked="OnServiceSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Знаки дополнительной информации (таблички)" Clicked="OnAdditionalInfoSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Дорожная разметка" Clicked="OnRoadMarkingsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Перечень неисправностей" Clicked="OnFaultsListClicked" Style="{StaticResource MenuButtonStyle}"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
