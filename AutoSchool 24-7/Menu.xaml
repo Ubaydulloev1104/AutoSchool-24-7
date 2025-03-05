@@ -10,6 +10,8 @@
 
             <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center" Spacing="15">
                 <Button Text="🚦 Информация о знаках" Clicked="OnSignsInfoClicked" Style="{StaticResource MenuButtonStyle}" />
+                <Button Text="🛣️ Дорожная разметка" Clicked="OnRoadMarkingsClicked" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Text="🛠️ Перечень неисправностей" Clicked="OnFaultsListClicked" Style="{StaticResource MenuButtonStyle}"/>
                 <Button Text="📝 Тестирование" Clicked="OnTestClicked" Style="{StaticResource MenuButtonStyle}" />
                 <Button Text="📖 Справка" Clicked="OnHelpClicked" Style="{StaticResource MenuButtonStyle}" />
                 <Button Text="ℹ О нас" Clicked="OnAboutClicked" Style="{StaticResource MenuButtonStyle}" />

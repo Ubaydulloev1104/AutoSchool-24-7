@@ -1,4 +1,6 @@
 using AutoSchool_24_7.Page;
+using AutoSchool_24_7.Page.FaultsListPages;
+using AutoSchool_24_7.Page.RoadMarkingsPages;
 
 namespace AutoSchool_24_7;
 
@@ -11,6 +13,15 @@ public partial class Menu : ContentPage
     private async void OnSignsInfoClicked(object sender, EventArgs e)
     {
        await Navigation.PushAsync(new SignsInfoPage());
+    }
+    private async void OnRoadMarkingsClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RoadMarkingsPage());
+    }
+
+    private async void OnFaultsListClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FaultsListPage());
     }
 
     private async void OnTestClicked(object sender, EventArgs e)

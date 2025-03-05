@@ -66,16 +66,37 @@
 	  <MauiXaml Update="Menu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Page\SignsIngoPage\PrioritySignsPage.xaml">
+	  <MauiXaml Update="Page\FaultsListPages\FaultsListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Page\SignsIngoPage\ProhibitorySignsPage.xaml">
+	  <MauiXaml Update="Page\RoadMarkingsPages\RoadMarkingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Page\SignsIngoPage\SignsInfoPage.xaml">
+	  <MauiXaml Update="Page\SignsIngoPages\AdditionalInfoSignsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Page\SignsIngoPage\WarningSignsPage.xaml">
+	  <MauiXaml Update="Page\SignsIngoPages\InformationalSignsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\SignsIngoPages\MandatorySignsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\SignsIngoPages\PrioritySignsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\SignsIngoPages\ProhibitorySignsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\SignsIngoPages\ServiceSignsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\SignsIngoPages\SignsInfoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\SignsIngoPages\SpecialRegulationSignsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\SignsIngoPages\WarningSignsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
