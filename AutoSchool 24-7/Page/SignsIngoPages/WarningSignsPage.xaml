@@ -14,7 +14,7 @@
 
                     <!-- Здесь будут знаки -->
                     <StackLayout>
-                        <Image Source="warning_sign_1.png" HeightRequest="100"/>
+                        <Image Source="sing_1_1.png" HeightRequest="100"/>
                         <Label Text="Опасный поворот" FontSize="18"/>
                     </StackLayout>
 
