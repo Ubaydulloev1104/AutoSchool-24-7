@@ -110,4 +110,8 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Resources\Images\markings\" />
+	</ItemGroup>
+
 </Project>
