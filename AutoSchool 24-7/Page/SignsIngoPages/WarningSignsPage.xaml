@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.SignsIngoPage.WarningSignsPage"
              Title="WarningSignsPage">
-    <VerticalStackLayout>
+    <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="20" Spacing="15">
                 <Label Text="⚠️ Предупреждающие знаки" 
@@ -61,5 +61,5 @@
 
             </StackLayout>
         </ScrollView>
-    </VerticalStackLayout>
+    </ContentPage.Content>
 </ContentPage>
