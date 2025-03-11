@@ -114,4 +114,42 @@
 	  <Folder Include="Resources\Images\markings\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\sing\sing_1_1.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_10.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_11_1.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_11_2.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_12_1.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_12_2.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_13.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_14.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_15.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_16.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_17.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_18.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_19.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_2.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_20_1.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_20_2.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_20_3.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_21.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_22.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_23.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_24.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_25.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_26.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_27.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_28.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_29.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_30.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_31.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_32.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_33.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_34.1.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_34.2.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_34_3.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_3_1.png" />
+	  <MauiImage Include="Resources\Images\sing\sing_1_3_2.png" />
+	</ItemGroup>
+
 </Project>
