@@ -57,6 +57,66 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\markings\marker_1_1.png" />
+	  <None Remove="Resources\Images\markings\marker_1_10.png" />
+	  <None Remove="Resources\Images\markings\marker_1_11.png" />
+	  <None Remove="Resources\Images\markings\marker_1_12.png" />
+	  <None Remove="Resources\Images\markings\marker_1_13.png" />
+	  <None Remove="Resources\Images\markings\marker_1_14.png" />
+	  <None Remove="Resources\Images\markings\marker_1_14_3.png" />
+	  <None Remove="Resources\Images\markings\marker_1_15.png" />
+	  <None Remove="Resources\Images\markings\marker_1_16_1.png" />
+	  <None Remove="Resources\Images\markings\marker_1_16_2.png" />
+	  <None Remove="Resources\Images\markings\marker_1_16_3.png" />
+	  <None Remove="Resources\Images\markings\marker_1_17_1.png" />
+	  <None Remove="Resources\Images\markings\marker_1_17_2.png" />
+	  <None Remove="Resources\Images\markings\marker_1_18.png" />
+	  <None Remove="Resources\Images\markings\marker_1_19.png" />
+	  <None Remove="Resources\Images\markings\marker_1_20.png" />
+	  <None Remove="Resources\Images\markings\marker_1_21.png" />
+	  <None Remove="Resources\Images\markings\marker_1_22.png" />
+	  <None Remove="Resources\Images\markings\marker_1_23_1.png" />
+	  <None Remove="Resources\Images\markings\marker_1_23_2.png" />
+	  <None Remove="Resources\Images\markings\marker_1_23_3.png" />
+	  <None Remove="Resources\Images\markings\marker_1_24_1.png" />
+	  <None Remove="Resources\Images\markings\marker_1_24_4.png" />
+	  <None Remove="Resources\Images\markings\marker_1_24_5.png" />
+	  <None Remove="Resources\Images\markings\marker_1_24_6.png" />
+	  <None Remove="Resources\Images\markings\marker_1_24_7.png" />
+	  <None Remove="Resources\Images\markings\marker_1_25.png" />
+	  <None Remove="Resources\Images\markings\marker_1_26.png" />
+	  <None Remove="Resources\Images\markings\marker_1_3.png" />
+	  <None Remove="Resources\Images\markings\marker_1_4.png" />
+	  <None Remove="Resources\Images\markings\marker_1_5.png" />
+	  <None Remove="Resources\Images\markings\marker_1_6.png" />
+	  <None Remove="Resources\Images\markings\marker_1_7.png" />
+	  <None Remove="Resources\Images\markings\marker_1_8.png" />
+	  <None Remove="Resources\Images\markings\marker_1_9.png" />
+	  <None Remove="Resources\Images\markings\marker_2_1.png" />
+	  <None Remove="Resources\Images\markings\marker_2_2.png" />
+	  <None Remove="Resources\Images\markings\marker_2_3.png" />
+	  <None Remove="Resources\Images\markings\marker_2_4.png" />
+	  <None Remove="Resources\Images\markings\marker_2_5.png" />
+	  <None Remove="Resources\Images\markings\marker_2_6.png" />
+	  <None Remove="Resources\Images\markings\marker_2_7.png" />
+	  <None Remove="Resources\Images\markings\marking_1_2.png" />
+	  <None Remove="Resources\Images\sings\sing_1_1.png" />
+	  <None Remove="Resources\Images\sings\sing_1_10.png" />
+	  <None Remove="Resources\Images\sings\sing_1_11_1.png" />
+	  <None Remove="Resources\Images\sings\sing_1_11_2.png" />
+	  <None Remove="Resources\Images\sings\sing_1_12_1.png" />
+	  <None Remove="Resources\Images\sings\sing_1_12_2.png" />
+	  <None Remove="Resources\Images\sings\sing_1_13.png" />
+	  <None Remove="Resources\Images\sings\sing_1_14.png" />
+	  <None Remove="Resources\Images\sings\sing_1_15.png" />
+	  <None Remove="Resources\Images\sings\sing_1_16.png" />
+	  <None Remove="Resources\Images\sings\sing_1_17.png" />
+	  <None Remove="Resources\Images\sings\sing_1_18.png" />
+	  <None Remove="Resources\Images\sings\sing_1_19.png" />
+	  <None Remove="Resources\Images\sings\sing_1_2.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
@@ -111,10 +171,63 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Resources\Images\markings\" />
-	</ItemGroup>
-
-	<ItemGroup>
+	  <MauiImage Include="Resources\Images\markings\marker_1_1.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_10.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_11.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_12.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_13.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_14.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_14_3.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_15.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_16_1.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_16_2.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_16_3.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_17_1.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_17_2.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_18.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_19.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_20.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_21.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_22.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_23_1.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_23_2.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_23_3.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_24_1.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_24_4.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_24_5.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_24_6.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_24_7.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_25.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_26.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_3.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_4.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_5.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_6.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_7.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_8.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_1_9.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_2_1.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_2_2.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_2_3.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_2_4.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_2_5.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_2_6.png" />
+	  <MauiImage Include="Resources\Images\markings\marker_2_7.png" />
+	  <MauiImage Include="Resources\Images\markings\marking_1_2.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_1.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_10.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_11_1.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_11_2.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_12_1.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_12_2.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_13.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_14.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_15.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_16.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_17.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_18.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_19.png" />
+	  <MauiImage Include="Resources\Images\sings\sing_1_2.png" />
 	  <MauiImage Include="Resources\Images\sings\sing_1_20_1.png" />
 	  <MauiImage Include="Resources\Images\sings\sing_1_20_2.png" />
 	  <MauiImage Include="Resources\Images\sings\sing_1_20_3.png" />
