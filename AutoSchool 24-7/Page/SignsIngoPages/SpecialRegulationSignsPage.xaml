@@ -3,10 +3,689 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.SignsIngoPage.SpecialRegulationSignsPage"
              Title="SpecialRegulationSignsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Знаки особых предписаний" 
+           FontSize="24" 
+           FontAttributes="Bold" 
+           HorizontalOptions="Center"/>
+            <!-- Знак 5.1. Автомагистраль -->
+            <StackLayout>
+                <Image Source="sign_5_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.1. Автомагистраль" FontSize="18"/>
+                <Label Text="Дорога, на которой действуют требования Правил дорожного движения Российской Федерации." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Данная дорога является наиболее скоростной." FontSize="14" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.1 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Запрещается движение пешеходов, великов, мопедов и т.д., со скоростью менее 40 км/ч." FontSize="14"/>
+                <Label Text="- Запрещается движение грузовых автомобилей с массой более 3,5 т далее второй полосы." FontSize="14"/>
+                <Label Text="- Запрещается остановка вне специальных площадок." FontSize="14"/>
+                <Label Text="- Запрещается разворот и движение задним ходом." FontSize="14"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 г.)" FontSize="14" FontAttributes="Italic"/>
+            </StackLayout>
+
+            <!-- Знак 5.2. Конец автомагистрали -->
+            <StackLayout>
+                <Image Source="sign_5_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.2. Конец автомагистрали" FontSize="18"/>
+                <Label Text="Указывает конец автомагистрали, обозначенной знаком 5.1." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.3. Дорога для автомобилей -->
+            <StackLayout>
+                <Image Source="sign_5_3.png" HeightRequest="100"/>
+                <Label Text="Знак 5.3. Дорога для автомобилей" FontSize="18"/>
+                <Label Text="Дорога, предназначенная для движения только автомобилей, автобусов и мотоциклов."
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.3 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- На данную дорогу распространяются все требования ПДД." FontSize="14"/>
+                <Label Text="- Перед боковыми въездами устанавливается знак направление действия." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.4. Конец дороги для автомобилей -->
+            <StackLayout>
+                <Image Source="sign_5_4.png" HeightRequest="100"/>
+                <Label Text="Знак 5.4. Конец дороги для автомобилей" FontSize="18"/>
+                <Label Text="Указывает конец дороги, обозначенной знаком 5.3." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.5. Дорога с односторонним движением -->
+            <StackLayout>
+                <Image Source="sign_5_5.png" HeightRequest="100"/>
+                <Label Text="Знак 5.5. Дорога с односторонним движением" FontSize="18"/>
+                <Label Text="Дорога или проезжая часть, по которой движение осуществляется в одном направлении."
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.5 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Зона действия до знака 5.6 «Конец дороги с односторонним движением»." FontSize="14"/>
+                <Label Text="- Разрешенные направления: прямо, налево, направо." FontSize="14"/>
+                <Label Text="- Остановка и стоянка разрешены как с правой, так и с левой стороны." FontSize="14"/>
+                <Label Text="- Грузовикам разрешается остановка только для погрузки и выгрузки груза." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.6. Конец дороги с односторонним движением -->
+            <StackLayout>
+                <Image Source="sign_5_6.png" HeightRequest="100"/>
+                <Label Text="Знак 5.6. Конец дороги с односторонним движением" FontSize="18"/>
+                <Label Text="Указывает конец дороги, обозначенной знаком 5.5." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.7.1. Выезд на дорогу с односторонним движением -->
+            <StackLayout>
+                <Image Source="sign_5_7_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.7.1. Выезд на дорогу с односторонним движением" FontSize="18"/>
+                <Label Text="Выезд на дорогу или проезжую часть с односторонним движением." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.7.1 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Стрелка указывает направление движения на дороге с односторонним движением." FontSize="14"/>
+                <Label Text="- Пересечение дороги с односторонним движением не запрещено." FontSize="14"/>
+                <Label Text="- Запрещается поворот налево." FontSize="14"/>
+                <Label Text="- Разворот не запрещается." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.7.2. Выезд на дорогу с односторонним движением -->
+            <StackLayout>
+                <Image Source="sign_5_7_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.7.2. Выезд на дорогу с односторонним движением" FontSize="18"/>
+                <Label Text="Выезд на дорогу или проезжую часть с односторонним движением." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.7.2 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Стрелка указывает направление движения на дороге с односторонним движением." FontSize="14"/>
+                <Label Text="- Запрещается поворот направо." FontSize="14"/>
+                <Label Text="- Разворот не запрещается." FontSize="14"/>
+            </StackLayout>
+            <!-- Знак 5.8. Реверсивное движение -->
+            <StackLayout>
+                <Image Source="sign_5_8.png" HeightRequest="100"/>
+                <Label Text="Знак 5.8. Реверсивное движение" FontSize="18"/>
+                <Label Text="Начало участка дороги, на котором направление движения может изменяться."
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.8 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Направление движения может изменяться с помощью реверсивных светофоров." FontSize="14"/>
+                <Label Text="- Зона действия: до знака 5.9 «Конец реверсивного движения»." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.9. Конец реверсивного движения -->
+            <StackLayout>
+                <Image Source="sign_5_9.png" HeightRequest="100"/>
+                <Label Text="Знак 5.9. Конец реверсивного движения" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.8 «Реверсивное движение»." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.10. Выезд на дорогу с реверсивным движением -->
+            <StackLayout>
+                <Image Source="sign_5_10.png" HeightRequest="100"/>
+                <Label Text="Знак 5.10. Выезд на дорогу с реверсивным движением" FontSize="18"/>
+                <Label Text="Обозначает выезд на дорогу с реверсивным движением." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.10 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Водители должны двигаться по крайней правой полосе." FontSize="14"/>
+                <Label Text="- Перестраиваться разрешается только после проверки разрешения движения." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.11.1. Дорога с полосой для маршрутных транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_11_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.11.1. Дорога с полосой для маршрутных транспортных средств" FontSize="18"/>
+                <Label Text="Дорога, где транспортные средства движутся по выделенной полосе." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.11.1 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Запрещается движение других транспортных средств на этой полосе." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.11.2. Дорога с полосой для велосипедистов -->
+            <StackLayout>
+                <Image Source="sign_5_11_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.11.2. Дорога с полосой для велосипедистов" FontSize="18"/>
+                <Label Text="Дорога, где движение велосипедистов осуществляется по выделенной полосе." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года)" FontSize="14" FontAttributes="Italic"/>
+            </StackLayout>
+
+            <!-- Знак 5.12.1. Конец дороги с полосой для маршрутных транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_12_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.12.1. Конец дороги с полосой для маршрутных транспортных средств" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.11.1." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.12.2. Конец дороги с полосой для велосипедистов -->
+            <StackLayout>
+                <Image Source="sign_5_12_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.12.2. Конец дороги с полосой для велосипедистов" FontSize="18"/>
+                <Label Text="Дорожный знак представляет собой знак 5.11.2, перечеркнутый диагональным красным." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.13.1. Выезд на дорогу с полосой для маршрутных транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_13_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.13.1. Выезд на дорогу с полосой для маршрутных транспортных средств" FontSize="18"/>
+                <Label Text="Обозначает выезд на дорогу с полосой для маршрутных транспортных средств." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.13.1 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Запрещается поворот налево на перекрестке, где установлен данный знак." FontSize="14"/>
+                <Label Text="- Разворот не запрещается." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.13.2. Выезд на дорогу с полосой для маршрутных транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_13_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.13.2. Выезд на дорогу с полосой для маршрутных транспортных средств" FontSize="18"/>
+                <Label Text="Обозначает выезд на дорогу с полосой для маршрутных транспортных средств." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.13.2 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Запрещается поворот направо на перекрестке, где установлен данный знак." FontSize="14"/>
+                <Label Text="- Разворот не запрещается." FontSize="14"/>
+            </StackLayout>
+            <!-- Знак 5.13.3. Выезд на дорогу с полосой для велосипедистов -->
+            <StackLayout>
+                <Image Source="sign_5_13_3.png" HeightRequest="100"/>
+                <Label Text="Знак 5.13.3. Выезд на дорогу с полосой для велосипедистов" FontSize="18"/>
+                <Label Text="Обозначает выезд на дорогу с полосой для велосипедистов." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.13.4. Выезд на дорогу с полосой для велосипедистов -->
+            <StackLayout>
+                <Image Source="sign_5_13_4.png" HeightRequest="100"/>
+                <Label Text="Знак 5.13.4. Выезд на дорогу с полосой для велосипедистов" FontSize="18"/>
+                <Label Text="Обозначает выезд на дорогу с полосой для велосипедистов." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.14.1. Полоса для маршрутных транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_14_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.14.1. Полоса для маршрутных транспортных средств" FontSize="18"/>
+                <Label Text="Специально выделенная полоса для маршрутных транспортных средств." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.14.1 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Действие знака распространяется на полосу, над которой он расположен." FontSize="14"/>
+                <Label Text="- Знаки, установленные справа от дороги, распространяются на правую полосу." FontSize="14"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" FontAttributes="Italic"/>
+            </StackLayout>
+
+            <!-- Знак 5.14.2. Полоса для велосипедистов -->
+            <StackLayout>
+                <Image Source="sign_5_14_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.14.2. Полоса для велосипедистов" FontSize="18"/>
+                <Label Text="Специально выделенная полоса для велосипедистов." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.14.2 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Действие знака распространяется на полосу, над которой он расположен." FontSize="14"/>
+                <Label Text="- Знаки, установленные справа от дороги, распространяются на правую полосу." FontSize="14"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" FontAttributes="Italic"/>
+            </StackLayout>
+
+            <!-- Знак 5.14.3. Конец полосы для маршрутных транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_14_3.png" HeightRequest="100"/>
+                <Label Text="Знак 5.14.3. Конец полосы для маршрутных транспортных средств" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.14.1." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.14.4. Конец полосы для велосипедистов -->
+            <StackLayout>
+                <Image Source="sign_5_14_4.png" HeightRequest="100"/>
+                <Label Text="Знак 5.14.4. Конец полосы для велосипедистов" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.14.2." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.15.1. Направления движения по полосам -->
+            <StackLayout>
+                <Image Source="sign_5_15_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.1. Направления движения по полосам" FontSize="18"/>
+                <Label Text="Число полос и разрешенные направления движения по каждой из них." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.15.1 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Позволяет поворот налево из крайней левой полосы и разворот." FontSize="14"/>
+                <Label Text="- Действие не распространяется на маршрутные транспортные средства." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.15.2. Направления движения по полосам -->
+            <StackLayout>
+                <Image Source="sign_5_15_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.2. Направления движения по полосам" FontSize="18"/>
+                <Label Text="Разрешенные направления движения по полосе." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.15.2 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Позволяет поворот налево из крайней левой полосы и разворот." FontSize="14"/>
+                <Label Text="- Действие не распространяется на маршрутные транспортные средства." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.15.3. Начало полосы -->
+            <StackLayout>
+                <Image Source="sign_5_15_3.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.3. Начало полосы" FontSize="18"/>
+                <Label Text="Начало дополнительной полосы на подъеме или полосы торможения." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.15.3 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Зона действия: до знака 5.15.5 «Конец полосы»." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.15.4. Начало полосы -->
+            <StackLayout>
+                <Image Source="sign_5_15_4.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.4. Начало полосы" FontSize="18"/>
+                <Label Text="Начало участка средней полосы на трехполосной дороге." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.15.4 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Зона действия: до знака 5.15.6 «Конец полосы»." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.15.5. Конец полосы -->
+            <StackLayout>
+                <Image Source="sign_5_15_5.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.5. Конец полосы" FontSize="18"/>
+                <Label Text="Конец дополнительной полосы на подъеме или полосы разгона." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.15.6. Конец полосы -->
+            <StackLayout>
+                <Image Source="sign_5_15_6.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.6. Конец полосы" FontSize="18"/>
+                <Label Text="Конец участка средней полосы на трехполосной дороге." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+            <!-- Знак 5.15.7. Направление движения по полосам -->
+            <StackLayout>
+                <Image Source="sign_5_15_7.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.7. Направление движения по полосам" FontSize="18"/>
+                <Label Text="Разрешенное направление движения по полосам." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.15.7 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Запрещает движение транспортных средств по соответствующей полосе." FontSize="14"/>
+                <Label Text="- Знак может применяться на дорогах с четырьмя и более полосами." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.15.8. Число полос -->
+            <StackLayout>
+                <Image Source="sign_5_15_8.png" HeightRequest="100"/>
+                <Label Text="Знак 5.15.8. Число полос" FontSize="18"/>
+                <Label Text="Указывает число полос движения и режимы движения по полосам." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.16. Место остановки автобуса и (или) троллейбуса -->
+            <StackLayout>
+                <Image Source="sign_5_16.png" HeightRequest="100"/>
+                <Label Text="Знак 5.16. Место остановки автобуса и (или) троллейбуса" FontSize="18"/>
+                <Label Text="Обозначает место остановки маршрутных транспортных средств." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.16 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Остановка и стоянка запрещаются ближе 15 м от места остановки." FontSize="14"/>
+                <Label Text="- При отсутствии разметки запрещается остановка ближе 15 м от указателя." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.17. Место остановки трамвая -->
+            <StackLayout>
+                <Image Source="sign_5_17.png" HeightRequest="100"/>
+                <Label Text="Знак 5.17. Место остановки трамвая" FontSize="18"/>
+                <Label Text="Обозначает место остановки трамваев на маршруте." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.18. Место стоянки легковых такси -->
+            <StackLayout>
+                <Image Source="sign_5_18.png" HeightRequest="100"/>
+                <Label Text="Знак 5.18. Место стоянки легковых такси" FontSize="18"/>
+                <Label Text="Обозначает место, где разрешена стоянка легковых такси." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+            <!-- Знак 5.19.1. Пешеходный переход (права сторона) -->
+            <StackLayout>
+                <Image Source="sign_5_19_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.19.1. Пешеходный переход (правая сторона)" FontSize="18"/>
+                <Label Text="Устанавливается справа от дороги на ближней границе перехода." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.19.2. Пешеходный переход (левая сторона) -->
+            <StackLayout>
+                <Image Source="sign_5_19_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.19.2. Пешеходный переход (левая сторона)" FontSize="18"/>
+                <Label Text="Устанавливается слева от дороги на дальней границе перехода." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знаков 5.19.1 и 5.19.2 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Размер пешеходного перехода ограничивается от знака 5.19.2 до знака 5.19.1." FontSize="14"/>
+                <Label Text="- При отсутствии знаков размер определяется шириной линий разметки." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.20. Искусственная неровность -->
+            <StackLayout>
+                <Image Source="sign_5_20.png" HeightRequest="100"/>
+                <Label Text="Знак 5.20. Искусственная неровность" FontSize="18"/>
+                <Label Text="Обозначает границы искусственной неровности." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.20 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Устанавливается на ближайшей границе искусственной неровности." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.21. Жилая зона -->
+            <StackLayout>
+                <Image Source="sign_5_21.png" HeightRequest="100"/>
+                <Label Text="Знак 5.21. Жилая зона" FontSize="18"/>
+                <Label Text="Территория, на которой действуют требования ПДД." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.21 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- В жилой зоне преимущество имеют пешеходы." FontSize="14"/>
+                <Label Text="- Запрещается сквозное движение механических ТС." FontSize="14"/>
+                <Label Text="- Запрещается стоянка с работающим двигателем." FontSize="14"/>
+                <Label Text="- Участники должны уступать дорогу при выезде из жилой зоны." FontSize="14"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 г.)" FontSize="14" FontAttributes="Italic"/>
+            </StackLayout>
+
+            <!-- Знак 5.22. Конец жилой зоны -->
+            <StackLayout>
+                <Image Source="sign_5_22.png" HeightRequest="100"/>
+                <Label Text="Знак 5.22. Конец жилой зоны" FontSize="18"/>
+                <Label Text="Указывает конец жилой зоны." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+            <!-- Знак 5.23.1. Начало населенного пункта -->
+            <StackLayout>
+                <Image Source="sign_5_23_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.23.1. Начало населенного пункта" FontSize="18"/>
+                <Label Text="Указывает начало населенного пункта." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.23.1 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- В населенных пунктах ограничение скорости до 60 км/ч." FontSize="14"/>
+                <Label Text="- Запрещено подавать звуковые сигналы кроме экстренных случаев." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.23.2. Начало населенного пункта -->
+            <StackLayout>
+                <Image Source="sign_5_23_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.23.2. Начало населенного пункта" FontSize="18"/>
+                <Label Text="Указывает начало населенного пункта." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.24.1. Конец населенного пункта -->
+            <StackLayout>
+                <Image Source="sign_5_24_1.png" HeightRequest="100"/>
+                <Label Text="Знак 5.24.1. Конец населенного пункта" FontSize="18"/>
+                <Label Text="Место, где утрачивают силу требования правил в населенных пунктах." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.24.2. Конец населенного пункта -->
+            <StackLayout>
+                <Image Source="sign_5_24_2.png" HeightRequest="100"/>
+                <Label Text="Знак 5.24.2. Конец населенного пункта" FontSize="18"/>
+                <Label Text="Место, где утрачивают силу требования правил в населенных пунктах." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+            <!-- Знак 5.25. Начало населенного пункта -->
+            <StackLayout>
+                <Image Source="sign_5_25.png" HeightRequest="100"/>
+                <Label Text="Знак 5.25. Начало населенного пункта" FontSize="18"/>
+                <Label Text="Начало населенного пункта, в котором на данной дороге не действуют требования Правил дорожного движения Российской Федерации, устанавливающие порядок движения в населенных пунктах." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.25 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Не действуют пункты Правил, устанавливающие порядок движения в населенных пунктах, только на участке дороги, обозначенном данным знаком." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.26. Конец населенного пункта -->
+            <StackLayout>
+                <Image Source="sign_5_26.png" HeightRequest="100"/>
+                <Label Text="Знак 5.26. Конец населенного пункта" FontSize="18"/>
+                <Label Text="Конец населенного пункта, обозначенного знаком 5.25." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.27. Зона с ограничением стоянки -->
+            <StackLayout>
+                <Image Source="sign_5_27.png" HeightRequest="100"/>
+                <Label Text="Знак 5.27. Зона с ограничением стоянки" FontSize="18"/>
+                <Label Text="Место, с которого начинается территория, где стоянка запрещена." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.27 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Зона действия обязательно до знака 5.28 «Конец зоны с ограничением стоянки»." FontSize="14"/>
+                <Label Text="- Зона действия не прерывается на перекрестках." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.28. Конец зоны с ограничением стоянки -->
+            <StackLayout>
+                <Image Source="sign_5_28.png" HeightRequest="100"/>
+                <Label Text="Знак 5.28. Конец зоны с ограничением стоянки" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.27 «Зона с ограничением стоянки»." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.29. Зона регулируемой стоянки -->
+            <StackLayout>
+                <Image Source="sign_5_29.png" HeightRequest="100"/>
+                <Label Text="Знак 5.29. Зона регулируемой стоянки" FontSize="18"/>
+                <Label Text="Место, с которого начинается территория, где стоянка разрешена и регулируется." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.29 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Зона действия обязательно до знака 5.30 «Конец зоны регулируемой стоянки»." FontSize="14"/>
+                <Label Text="- Зона действия не прерывается на перекрестках." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.30. Конец зоны регулируемой стоянки -->
+            <StackLayout>
+                <Image Source="sign_5_30.png" HeightRequest="100"/>
+                <Label Text="Знак 5.30. Конец зоны регулируемой стоянки" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.29 «Зона регулируемой стоянки»." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.31. Зона с ограничением максимальной скорости -->
+            <StackLayout>
+                <Image Source="sign_5_31.png" HeightRequest="100"/>
+                <Label Text="Знак 5.31. Зона с ограничением максимальной скорости" FontSize="18"/>
+                <Label Text="Место, с которого начинается территория, где ограничена максимальная скорость движения." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.31 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Зона действия обязательно до знака 5.32 «Конец зоны с ограничением максимальной скорости»." FontSize="14"/>
+                <Label Text="- Зона действия не прерывается на перекрестках." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.32. Конец зоны с ограничением максимальной скорости -->
+            <StackLayout>
+                <Image Source="sign_5_32.png" HeightRequest="100"/>
+                <Label Text="Знак 5.32. Конец зоны с ограничением максимальной скорости" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.31 «Зона с ограничением максимальной скорости»." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.33. Пешеходная зона -->
+            <StackLayout>
+                <Image Source="sign_5_33.png" HeightRequest="100"/>
+                <Label Text="Знак 5.33. Пешеходная зона" FontSize="18"/>
+                <Label Text="Место, с которого начинается территория, на которой разрешено движение пешеходов и велосипедистов." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.33 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Зона действия обязательно до знака 5.34 «Конец пешеходной зоны»." FontSize="14"/>
+                <Label Text="- Зона действия не прерывается на перекрестках." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.34. Конец пешеходной зоны -->
+            <StackLayout>
+                <Image Source="sign_5_34.png" HeightRequest="100"/>
+                <Label Text="Знак 5.34. Конец пешеходной зоны" FontSize="18"/>
+                <Label Text="Отменяет действие знака 5.33 «Пешеходная зона»." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.35. Зона с ограничением экологического класса механических транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_35.png" HeightRequest="100"/>
+                <Label Text="Знак 5.35. Зона с ограничением экологического класса механических транспортных средств" FontSize="18"/>
+                <Label Text="Место, с которого начинается территория, где запрещено движение механических транспортных средств с низким экологическим классом." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.35 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Действие не распространяется на определенные категории транспортных средствДействие знака не распространяется на механические транспортные средства Вооруженных Сил Российской Федерации, полиции, аварийно-спасательных служб и формирований, пожарной охраны, скорой медицинской помощи, аварийной службы газовой сети и механические транспортные средства организаций федеральной почтовой связи, имеющие на боковой поверхности белую диагональную полосу на синем фоне, эмблему организаций федеральной почтовой связи, надпись , электромобили, транспортные средства, на которых установлен опознавательный знак , а также на транспортные средства, которые принадлежат гражданам, проживающим в обозначенной зоне." FontSize="14"/>
+            </StackLayout>
+            <!-- Знак 5.36. Конец зоны с ограничением экологического класса механических транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_36.png" HeightRequest="100"/>
+                <Label Text="Знак 5.36. Конец зоны с ограничением экологического класса механических транспортных средств" FontSize="18"/>
+                <Label Text="Показывает место, где заканчивают действовать ограничения, которые введены знаками 5.35." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.37. Зона с ограничением экологического класса по видам транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_37.png" HeightRequest="100"/>
+                <Label Text="Знак 5.37. Зона с ограничением экологического класса по видам транспортных средств" FontSize="18"/>
+                <Label Text="Место, с которого начинается территория, где запрещено движение указанных на знаке видов транспортных средств." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Особенности знака 5.37 -->
+            <StackLayout>
+                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Label Text="- Действие не распространяется на определенные категории транспортных средств." FontSize="14"/>
+            </StackLayout>
+
+            <!-- Знак 5.38. Конец зоны с ограничением экологического класса по видам транспортных средств -->
+            <StackLayout>
+                <Image Source="sign_5_38.png" HeightRequest="100"/>
+                <Label Text="Знак 5.38. Конец зоны с ограничением экологического класса по видам транспортных средств" FontSize="18"/>
+                <Label Text="Показывает место, где заканчивают действовать ограничения, которые введены знаками 5.37." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.39. Велосипедная зона -->
+            <StackLayout>
+                <Image Source="sign_5_39.png" HeightRequest="100"/>
+                <Label Text="Знак 5.39. Велосипедная зона" FontSize="18"/>
+                <Label Text="Место, с которого начинается велосипедная зона." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 5.40. Конец велосипедной зоны -->
+            <StackLayout>
+                <Image Source="sign_5_40.png" HeightRequest="100"/>
+                <Label Text="Знак 5.40. Конец велосипедной зоны" FontSize="18"/>
+                <Label Text="Указывает на конец велосипедной зоны." 
+                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
