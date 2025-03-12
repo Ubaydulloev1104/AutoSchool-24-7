@@ -10,7 +10,503 @@
            FontAttributes="Bold" 
            HorizontalOptions="Center"/>
 
-            
+            <!-- Знак 8.1.1. Расстояние до объекта -->
+            <StackLayout>
+                <Image Source="sign_8_1_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.1.1. Расстояние до объекта" FontSize="18"/>
+                <Label Text="Указывает расстояние от знака до начала опасного участка, места введения соответствующего ограничения или определенного объекта." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.1.2. Расстояние до объекта -->
+            <StackLayout>
+                <Image Source="sign_8_1_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.1.2. Расстояние до объекта" FontSize="18"/>
+                <Label Text="Указывает расстояние от знака 2.4 до перекрестка в случае, если непосредственно перед перекрестком установлен знак 2.5." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знаки 8.1.3., 8.1.4. Расстояние до объекта -->
+            <StackLayout>
+                <Image Source="sign_8_1_3.png" HeightRequest="100"/>
+                <Label Text="Знаки 8.1.3., 8.1.4. Расстояние до объекта" FontSize="18"/>
+                <Label Text="Указывают расстояние до объекта, находящегося в стороне от дороги." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знаки 8.2.1. Зона действия -->
+            <StackLayout>
+                <Image Source="sign_8_2_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.2.1. Зона действия" FontSize="18"/>
+                <Label Text="Указывает протяженность опасного участка дороги, обозначенного предупреждающими знаками." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.2.2. Зона действия -->
+            <StackLayout>
+                <Image Source="sign_8_2_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.2.2. Зона действия" FontSize="18"/>
+                <Label Text="Указывает зону действия запрещающих знаков 3.27, 3.28, 3.29 и 3.30." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.2.3. Конец зоны действия -->
+            <StackLayout>
+                <Image Source="sign_8_2_3.png" HeightRequest="100"/>
+                <Label Text="Знак 8.2.3. Конец зоны действия" FontSize="18"/>
+                <Label Text="Указывает конец зоны действия знаков 3.27, 3.28, 3.29 и 3.30." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.2.4. Зона действия -->
+            <StackLayout>
+                <Image Source="sign_8_2_4.png" HeightRequest="100"/>
+                <Label Text="Знак 8.2.4. Зона действия" FontSize="18"/>
+                <Label Text="Информирует водителей о нахождении их в зоне действия знаков 3.27, 3.28, 3.29 и 3.30." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.2.5. Направление и зона действия -->
+            <StackLayout>
+                <Image Source="sign_8_2_5.png" HeightRequest="100"/>
+                <Label Text="Знак 8.2.5. Направление и зона действия" FontSize="18"/>
+                <Label Text="Указывает направление и зону действия знаков 3.27, 3.28, 3.29 и 3.30." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.2.6. Направление и зона действия -->
+            <StackLayout>
+                <Image Source="sign_8_2_6.png" HeightRequest="100"/>
+                <Label Text="Знак 8.2.6. Направление и зона действия" FontSize="18"/>
+                <Label Text="Указывает направление и зону действия знаков 3.27, 3.28, 3.29 и 3.30." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знаки 8.3.1. Направление действия -->
+            <StackLayout>
+                <Image Source="sign_8_3_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.3.1. Направление действия" FontSize="18"/>
+                <Label Text="Указывает направления действия знаков, установленных перед перекрестком." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знаки 8.4.1. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.1. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на грузовые автомобили с разрешенной максимальной массой более 3,5 т." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.2. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.2. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на грузовые автомобили с прицепом и полуприцепом; тракторы с прицепом и полуприцепом." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.3. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_3.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.3. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на легковые автомобили; грузовые автомобили с разрешенной максимальной массой до 3,5 т." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.3.1. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_3_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.3.1. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на электромобили и гибридные автомобили, имеющие возможность зарядки от внешнего источника." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.4. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_4.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.4. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на маршрутные транспортные средства." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.5. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_5.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.5. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на тракторы и самоходные машины." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.6. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_6.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.6. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на мотоциклы и мотоколяски." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.7. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_7.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.7. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Распространяется на велосипеды; электровелосипеды и велогибриды." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.7.2. Вид транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_7_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.7.2. Вид транспортного средства" FontSize="18"/>
+                <Label Text="Подробное описание знака не представлено." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+            <!-- Знак 8.4.9. Ограничение вида транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_9.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.9. Ограничение вида транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.10. Ограничение вида транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_10.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.10. Ограничение вида транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.11. Ограничение вида транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_11.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.11. Ограничение вида транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.12. Ограничение вида транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_12.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.12. Ограничение вида транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.13. Ограничение вида транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_4_13.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.13. Ограничение вида транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.14. Ограничение для легкового такси -->
+            <StackLayout>
+                <Image Source="sign_8_4_14.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.14. Ограничение для легкового такси" FontSize="18"/>
+                <Label Text="Не распространяет действие знака на транспортные средства, используемые в качестве легкового такси." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.4.16. Ограничение для средств индивидуальной мобильности -->
+            <StackLayout>
+                <Image Source="sign_8_4_16.png" HeightRequest="100"/>
+                <Label Text="Знак 8.4.16. Ограничение для средств индивидуальной мобильности" FontSize="18"/>
+                <Label Text="Не распространяет действие знака на лиц, использующих для передвижения средства индивидуальной мобильности."
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.5.1. Субботние, воскресные и праздничные дни -->
+            <StackLayout>
+                <Image Source="sign_8_5_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.5.1. Субботние, воскресные и праздничные дни" FontSize="18"/>
+                <Label Text="Указывает, что знак действует только в субботу, воскресенье и праздничные дни." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.5.2. Рабочие дни -->
+            <StackLayout>
+                <Image Source="sign_8_5_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.5.2. Рабочие дни" FontSize="18"/>
+                <Label Text="Указывает, что знак действует только в рабочие дни." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.5.3. Дни недели -->
+            <StackLayout>
+                <Image Source="sign_8_5_3.png" HeightRequest="100"/>
+                <Label Text="Знак 8.5.3. Дни недели" FontSize="18"/>
+                <Label Text="Указывает, что знак действует только в конкретно указанные дни недели." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.5.4. Время действия -->
+            <StackLayout>
+                <Image Source="sign_8_5_4.png" HeightRequest="100"/>
+                <Label Text="Знак 8.5.4. Время действия" FontSize="18"/>
+                <Label Text="Указывает время суток, в течение которого действует знак." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знаки 8.5.5., 8.5.6., 8.5.7. Время действия -->
+            <StackLayout>
+                <Image Source="sign_8_5_5.png" HeightRequest="100"/>
+                <Label Text="Знак 8.5.5. Время действия" FontSize="18"/>
+                <Label Text="Указывает дни недели и время суток, в течение которых действует знак." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_5_6.png" HeightRequest="100"/>
+                <Label Text="Знак 8.5.6. Время действия" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_5_7.png" HeightRequest="100"/>
+                <Label Text="Знак 8.5.7. Время действия" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знаки 8.6.1. - 8.6.9. Способ постановки транспортного средства на стоянку -->
+            <StackLayout>
+                <Image Source="sign_8_6_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.1. Способ постановки на стоянку" FontSize="18"/>
+                <Label Text="Указывает, что все транспортные средства должны быть поставлены на стоянку на проезжей части вдоль тротуара." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.2. Способ постановки на стоянку" FontSize="18"/>
+                <Label Text="Указывает способ постановки легковых автомобилей и мотоциклов на околотротуарной стоянке." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_3.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.3. Способ постановки на стоянку" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_4.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.4. Способ постановки на стоянку" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_5.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.5. Способ постановки на стоянку" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_6.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.6. Способ постановки на стоянку" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_7.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.7. Способ постановки на стоянку" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_8.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.8. Способ постановки на стоянку" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_6_9.png" HeightRequest="100"/>
+                <Label Text="Знак 8.6.9. Способ постановки на стоянку" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знак 8.7. Стоянка с неработающим двигателем -->
+            <StackLayout>
+                <Image Source="sign_8_7.png" HeightRequest="100"/>
+                <Label Text="Знак 8.7. Стоянка с неработающим двигателем" FontSize="18"/>
+                <Label Text="Указывает, что на стоянке, обозначенной знаком 6.4, разрешается стоянка транспортных средств только с неработающим двигателем." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.8. Платные услуги -->
+            <StackLayout>
+                <Image Source="sign_8_8.png" HeightRequest="100"/>
+                <Label Text="Знак 8.8. Платные услуги" FontSize="18"/>
+                <Label Text="Указывает, что услуги предоставляются только за плату." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.9.1. Ограничение продолжительности стоянки -->
+            <StackLayout>
+                <Image Source="sign_8_9_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.9.1 Ограничение продолжительности стоянки" FontSize="18"/>
+                <Label Text="Указывает максимальную продолжительность пребывания транспортного средства на стоянке, обозначенной знаком 6.4." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.9.2. Стоянка только для владельцев парковочных разрешений -->
+            <StackLayout>
+                <Image Source="sign_8_9_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.9.2 Стоянка только для владельцев парковочных разрешений" FontSize="18"/>
+                <Label Text="Указывает, что на парковке, обозначенной знаком 6.4, могут размещаться только транспортные средства, владельцы которых имеют разрешение на парковку." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.9.3. Стоянка только для транспортных средств дипломатического корпуса -->
+            <StackLayout>
+                <Image Source="sign_8_9_3.png" HeightRequest="100"/>
+                <Label Text="Знак 8.9.3 Стоянка только для транспортных средств дипломатического корпуса" FontSize="18"/>
+                <Label Text="Указывает, что на парковке, обозначенной знаком 6.4, могут размещаться только транспортные средства аккредитованных дипломатических представительств." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.10. Место для осмотра автомобилей -->
+            <StackLayout>
+                <Image Source="sign_8_10.png" HeightRequest="100"/>
+                <Label Text="Знак 8.10. Место для осмотра автомобилей" FontSize="18"/>
+                <Label Text="Указывает, что на площадке, обозначенной знаком 6.4 или 7.11, имеется эстакада или смотровая канава." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.11. Ограничение разрешенной максимальной массы -->
+            <StackLayout>
+                <Image Source="sign_8_11.png" HeightRequest="100"/>
+                <Label Text="Знак 8.11. Ограничение разрешенной максимальной массы" FontSize="18"/>
+                <Label Text="Указывает, что действие знака распространяется только на транспортные средства с разрешенной максимальной массой, превышающей максимальную массу, указанную на табличке." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.12. Опасная обочина -->
+            <StackLayout>
+                <Image Source="sign_8_12.png" HeightRequest="100"/>
+                <Label Text="Знак 8.12. Опасная обочина" FontSize="18"/>
+                <Label Text="Предупреждает, что съезд на обочину опасен в связи с проведением на ней ремонтных работ."
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.13. Направление главной дороги -->
+            <StackLayout>
+                <Image Source="sign_8_13.png" HeightRequest="100"/>
+                <Label Text="Знак 8.13. Направление главной дороги" FontSize="18"/>
+                <Label Text="Указывает направление главной дороги на перекрестке." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+            <!-- Знак 8.14. Полоса движения -->
+            <StackLayout>
+                <Image Source="sign_8_14.png" HeightRequest="100"/>
+                <Label Text="Знак 8.14. Полоса движения" FontSize="18"/>
+                <Label Text="Указывает полосу движения или полосу для велосипедистов, на которую распространяется действие знака или светофора." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.15. Слепые пешеходы -->
+            <StackLayout>
+                <Image Source="sign_8_15.png" HeightRequest="100"/>
+                <Label Text="Знак 8.15. Слепые пешеходы" FontSize="18"/>
+                <Label Text="Указывает, что пешеходным переходом пользуются слепые." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Все слепые и слабовидящие пешеходы передвигаются с помощью белой трости, покрытой светоотражающей пленкой." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Водители обязаны считать данный сигнал красным сигналом светофора и остановиться." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.16. Влажное покрытие -->
+            <StackLayout>
+                <Image Source="sign_8_16.png" HeightRequest="100"/>
+                <Label Text="Знак 8.16. Влажное покрытие" FontSize="18"/>
+                <Label Text="Указывает, что действие знака распространяется на период времени, когда покрытие проезжей части влажное." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Влажное покрытие снижает управляемость автомобиля, увеличивается тормозной путь." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.17. Инвалиды -->
+            <StackLayout>
+                <Image Source="sign_8_17.png" HeightRequest="100"/>
+                <Label Text="Знак 8.17. Инвалиды" FontSize="18"/>
+                <Label Text="Указывает, что действие знака 6.4 распространяется только на мотоколяски и автомобили, на которых установлен опознавательный знак «Инвалид»." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.18. Кроме инвалидов -->
+            <StackLayout>
+                <Image Source="sign_8_18.png" HeightRequest="100"/>
+                <Label Text="Знак 8.18. Кроме инвалидов" FontSize="18"/>
+                <Label Text="Указывает, что действие знака не распространяется на мотоколяски и автомобили, на которых установлен опознавательный знак «Инвалид»." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.19. Класс опасного груза -->
+            <StackLayout>
+                <Image Source="sign_8_19.png" HeightRequest="100"/>
+                <Label Text="Знак 8.19. Класс опасного груза" FontSize="18"/>
+                <Label Text="Указывает номер класса (классов) опасных грузов по ГОСТу 19433-88." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знаки 8.20.1., 8.20.2. Тип тележки транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_20_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.20.1. Тип тележки транспортного средства" FontSize="18"/>
+                <Label Text="Применяется со знаком 3.12. Указывает число сближенных осей транспортного средства, для каждой из которых указанная на знаке масса является предельно допустимой." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_20_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.20.2. Тип тележки транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знаки 8.21.1., 8.21.2., 8.21.3. Вид маршрутного транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_21_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.21.1. Вид маршрутного транспортного средства" FontSize="18"/>
+                <Label Text="Применяется со знаком 6.4. Обозначает место стоянки транспортных средств у станций метро." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_21_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.21.2. Вид маршрутного транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_21_3.png" HeightRequest="100"/>
+                <Label Text="Знак 8.21.3. Вид маршрутного транспортного средства" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знаки 8.22.1., 8.22.2., 8.22.3. Препятствие -->
+            <StackLayout>
+                <Image Source="sign_8_22_1.png" HeightRequest="100"/>
+                <Label Text="Знак 8.22.1. Препятствие" FontSize="18"/>
+                <Label Text="Обозначает препятствие и направление его объезда." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_22_2.png" HeightRequest="100"/>
+                <Label Text="Знак 8.22.2. Препятствие" FontSize="18"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="sign_8_22_3.png" HeightRequest="100"/>
+                <Label Text="Знак 8.22.3. Препятствие" FontSize="18"/>
+            </StackLayout>
+
+            <!-- Знак 8.24. Работает эвакуатор -->
+            <StackLayout>
+                <Image Source="sign_8_24.png" HeightRequest="100"/>
+                <Label Text="Знак 8.24. Работает эвакуатор" FontSize="18"/>
+                <Label Text="Указывает, что в зоне действия дорожных знаков 3.27, 3.28, 3.29 и 3.30 осуществляется задержание транспортного средства." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.25. Экологический класс транспортного средства -->
+            <StackLayout>
+                <Image Source="sign_8_25.png" HeightRequest="100"/>
+                <Label Text="Знак 8.25. Экологический класс транспортного средства" FontSize="18"/>
+                <Label Text="Указывает, что действие знаков 3.3 - 3.5, 3.18.1, 3.18.2 и 4.1.1 - 4.1.6 распространяется на механические транспортные средства." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <!-- Знак 8.26. Зарядка электромобилей -->
+            <StackLayout>
+                <Image Source="sign_8_26.png" HeightRequest="100"/>
+                <Label Text="Знак 8.26. Зарядка электромобилей" FontSize="18"/>
+                <Label Text="Указывает на место зарядки электромобилей." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+            </StackLayout>
+
 
         </VerticalStackLayout>
     </ScrollView>
