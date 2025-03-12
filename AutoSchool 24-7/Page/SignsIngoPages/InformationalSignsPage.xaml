@@ -15,7 +15,9 @@
                 <Image Source="sign_6_1.png" HeightRequest="100"/>
                 <Label Text="Знак 6.1. Общие ограничения максимальной скорости" FontSize="18"/>
                 <Label Text="Общие ограничения скорости, установленные Правилами дорожного движения Российской Федерации." 
-                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="В населенных пунктах — до 60 км/ч, вне населенных пунктов — до 90 км/ч, на автомагистралях — до 110 км/ч." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
             </StackLayout>
 
             <!-- Особенности знака 6.1 -->
@@ -34,11 +36,14 @@
                        FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
             </StackLayout>
 
-            <!-- Зона действия знака 6.2 -->
+            <!-- Знак 6.2. Рекомендуемая скорость -->
             <StackLayout>
-                <Label Text="Зона действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- От места установки знака до ближайшего перекрестка." FontSize="14"/>
-                <Label Text="- При применении знака 6.2 совместно с предупреждающим знаком определяется протяженностью опасного участка." FontSize="14"/>
+                <Image Source="sign_6_2.png" HeightRequest="100"/>
+                <Label Text="Знак 6.2. Рекомендуемая скорость" FontSize="18"/>
+                <Label Text="Скорость, с которой рекомендуется движение на данном участке дороги." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Зона действия: от места установки знака до ближайшего перекрестка." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
             </StackLayout>
 
             <!-- Знак 6.3.1. Место для разворота -->
@@ -46,29 +51,20 @@
                 <Image Source="sign_6_3_1.png" HeightRequest="100"/>
                 <Label Text="Знак 6.3.1. Место для разворота" FontSize="18"/>
                 <Label Text="Знак применяется для обозначения места, предназначенного только для разворота." 
-                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-            </StackLayout>
-
-            <!-- Особенности знака 6.3.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Поворот налево запрещается для всех видов транспортных средств." FontSize="14"/>
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Поворот налево запрещается для всех видов транспортных средств." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
             </StackLayout>
 
             <!-- Знак 6.3.2. Зона для разворота -->
             <StackLayout>
                 <Image Source="sign_6_3_2.png" HeightRequest="100"/>
                 <Label Text="Знак 6.3.2. Зона для разворота" FontSize="18"/>
-                <Label Text="Знак применяется для обозначения зоны, предназначенной только для разворота." 
-                       FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Знак применяется для обозначения места и зоны, предназначенных только для разворота." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Поворот налево запрещается для всех видов транспортных средств." 
+           FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
             </StackLayout>
-
-            <!-- Особенности знака 6.3.2 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Поворот налево запрещается для всех видов транспортных средств." FontSize="14"/>
-            </StackLayout>
-
             <!-- Знак 6.4. Парковка (парковочное место) -->
             <StackLayout>
                 <Image Source="sign_6_4.png" HeightRequest="100"/>
