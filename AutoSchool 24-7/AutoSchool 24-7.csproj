@@ -468,4 +468,8 @@
 	  <MauiImage Include="Resources\Images\sings\sing_8_9_3.png" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Resources\Images\test\" />
+	</ItemGroup>
+
 </Project>
