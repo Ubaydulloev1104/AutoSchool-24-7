@@ -3,10 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.AboutPage.AboutPage"
              Title="AboutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Label Text="О нас"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,10"/>
+
+            <Label Text="Добро пожаловать в 'Авто школа 24-7' – удобное приложение для изучения правил дорожного движения! Наш проект создан для того, чтобы помочь водителям и учащимся автошкол освоить ПДД, узнать о дорожных знаках, разметке, неисправностях автомобиля и подготовиться к экзаменам с помощью тестов."
+                   FontSize="16"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Text="Разработчики:"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="Приложение разработано с целью сделать процесс обучения ПДД более доступным и удобным."
+                   FontSize="16"
+                   TextColor="Black"/>
+
+            <Label Text="Источники информации:"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="В проекте использованы официальные правила дорожного движения, а также актуальные материалы по безопасности на дорогах."
+                   FontSize="16"
+                   TextColor="Black"/>
+
+            <Label Text="Контакты:"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="Если у вас есть предложения или вопросы, свяжитесь с нами через приложение."
+                   FontSize="16"
+                   TextColor="Black"/>
+
+            <Button Text="Назад в меню"
+                    FontSize="16"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    Clicked="OnBackButtonClicked"
+                    HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
 </ContentPage>
