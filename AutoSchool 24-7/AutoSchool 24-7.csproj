@@ -162,7 +162,7 @@
 	  <MauiXaml Update="Page\SignsIngoPages\SpecialRegulationSignsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Page\SignsIngoPages\WarningSingsPage.xaml">
+	  <MauiXaml Update="Page\SignsIngoPages\WarningSignsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Page\TestPages\TestPage.xaml">
@@ -476,8 +476,8 @@
 	  <Compile Update="Page\SignsIngoPages\SignsInfoPage.xaml.cs">
 	    <DependentUpon>SignsInfoPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Page\SignsIngoPages\WarningSingsPage.xaml.cs">
-	    <DependentUpon>WarningSingsPage.xaml</DependentUpon>
+	  <Compile Update="Page\SignsIngoPages\WarningSignsPage.xaml.cs">
+	    <DependentUpon>WarningSignsPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
