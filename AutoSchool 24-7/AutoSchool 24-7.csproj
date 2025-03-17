@@ -473,6 +473,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Page\SignsIngoPages\SignsInfoPage.xaml.cs">
+	    <DependentUpon>SignsInfoPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Page\SignsIngoPages\WarningSingsPage.xaml.cs">
 	    <DependentUpon>WarningSingsPage.xaml</DependentUpon>
 	  </Compile>
