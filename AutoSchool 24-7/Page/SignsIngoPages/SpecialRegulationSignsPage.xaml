@@ -87,7 +87,7 @@
 
             <!-- Знак 5.7.1. Выезд на дорогу с односторонним движением -->
             <StackLayout>
-                <Image Source="sign_5_7_1.png" HeightRequest="100"/>
+                <Image Source="sign_5_7.png" HeightRequest="100"/>
                 <Label Text="Знак 5.7.1. Выезд на дорогу с односторонним движением" FontSize="18"/>
                 <Label Text="Выезд на дорогу или проезжую часть с односторонним движением. Устанавливаются перед всеми боковыми выездами на дорогу с односторонним движением." 
                        FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
@@ -181,7 +181,7 @@
 
             <!-- Знак 5.13.1. Выезд на дорогу с полосой для маршрутных транспортных средств -->
             <StackLayout>
-                <Image Source="sign_5_13_1.png" HeightRequest="100"/>
+                <Image Source="sign_5_13.png" HeightRequest="100"/>
                 <Label Text="Знак 5.13.1. Знак 5.13.2 Выезд на дорогу с полосой для маршрутных транспортных средств" FontSize="18"/>
                 <Label Text="Обозначает выезд на дорогу с полосой для маршрутных транспортных средств." 
                        FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
@@ -393,23 +393,21 @@
             </StackLayout>
             <!-- Знак 5.19.1. Пешеходный переход -->
             <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_5_19_1.png" HeightRequest="100"/>
+                <Image Source="sign_5_19.png" HeightRequest="100"/>
                 <Label Text="Знак 5.19.1. Пешеходный переход" FontSize="18"/>
                 <Label Text="При отсутствии на переходе разметки 1.14.1 или 1.14.2 знак 5.19.1 устанавливается справа от дороги на ближней границе перехода." 
+                       
         FontSize="14" 
         HorizontalOptions="Center" 
         Margin="0,5,0,0"/>
-            </StackLayout>
-
-            <!-- Знак 5.19.2. Пешеходный переход -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_5_19_2.png" HeightRequest="100"/>
                 <Label Text="Знак 5.19.2. Пешеходный переход" FontSize="18"/>
                 <Label Text="Знак 5.19.2 устанавливается слева от дороги на дальней границе перехода." 
-        FontSize="14" 
-        HorizontalOptions="Center" 
-        Margin="0,5,0,0"/>
+FontSize="14" 
+HorizontalOptions="Center" 
+Margin="0,5,0,0"/>
             </StackLayout>
+
+           
 
             <!-- Особенности для знаков 5.19.1 и 5.19.2 -->
             <StackLayout>
@@ -457,7 +455,7 @@
                 <Label Text="Знак 5.22. Конец жилой зоны" FontSize="18"/>
                 <Label Text="Указывает конец жилой зоны." 
         FontSize="14" 
-        HorizontalOptions="Center" 
+      
         Margin="0,5,0,0"/>
             </StackLayout>
 
@@ -467,7 +465,7 @@
                 <Label Text="Знаки 5.23.1, 5.23.2. Начало населенного пункта" FontSize="18"/>
                 <Label Text="Обозначает начало населенного пункта." 
         FontSize="14" 
-        HorizontalOptions="Center" 
+        
         Margin="0,5,0,0"/>
             </StackLayout>
 
@@ -484,7 +482,7 @@
                 <Label Text="Знаки 5.24.1, 5.24.2. Конец населенного пункта" FontSize="18"/>
                 <Label Text="Указывает конец населенного пункта." 
         FontSize="14" 
-        HorizontalOptions="Center" 
+       
         Margin="0,5,0,0"/>
             </StackLayout>
             <!-- Знак 5.25. Начало населенного пункта -->

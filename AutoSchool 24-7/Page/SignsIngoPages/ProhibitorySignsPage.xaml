@@ -284,8 +284,7 @@
                 <Image Source="sign_3_17_1.png" HeightRequest="100"/>
                 <Label Text="Знак 3.17.1. Таможня" FontSize="18"/>
                 <Label Text="Запрещается проезд без остановки у таможни." 
-           FontSize="14" 
-           HorizontalOptions="Center" 
+           FontSize="14"  
            Margin="0,5,0,0"/>
             </StackLayout>
 
@@ -322,7 +321,7 @@
                 <Label Text="Знак 3.18.1. Поворот направо запрещен" FontSize="18"/>
                 <Label Text="Запрещает поворот направо." 
            FontSize="14" 
-           HorizontalOptions="Center" 
+           
            Margin="0,5,0,0"/>
             </StackLayout>
 
@@ -339,7 +338,7 @@
                 <Label Text="Знак 3.18.2. Поворот налево запрещен" FontSize="18"/>
                 <Label Text="Запрещает поворот налево." 
            FontSize="14" 
-           HorizontalOptions="Center" 
+        
            Margin="0,5,0,0"/>
                 <Label Text="ОБРАТИТЕ ВНИМАНИЕ: знак не запрещает разворот." FontSize="14" FontAttributes="Italic"/>
             </StackLayout>
@@ -505,7 +504,7 @@
                 <Label Text="Знак 3.28. Стоянка запрещена" FontSize="18"/>
                 <Label Text="Запрещается стоянка транспортных средств." 
            FontSize="14" 
-           HorizontalOptions="Center" 
+           
            Margin="0,5,0,0"/>
             </StackLayout>
 

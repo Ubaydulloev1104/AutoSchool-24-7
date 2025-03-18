@@ -89,16 +89,16 @@
 
             <!-- Знак 7.14.1. Пункт таможенного контроля -->
             <StackLayout>
-                <Image Source="sign_7_14_1.png" HeightRequest="100"/>
+                <Image Source="sign_7_14.png" HeightRequest="100"/>
                 <Label Text="Знак 7.14.1. Пункт таможенного контроля" FontSize="18"/>
-                <Label Text="(Изменения вступили в силу: 1 марта 2023 года.)" FontSize="14" FontAttributes="Italic"/>
+               
             </StackLayout>
 
             <!-- Знак 7.14.2. Пункт транспортного контроля -->
             <StackLayout>
                 <Image Source="sign_7_14_2.png" HeightRequest="100"/>
                 <Label Text="Знак 7.14.2. Пункт транспортного контроля" FontSize="18"/>
-                <Label Text="(Изменение вступили в силу: 1 марта 2023 года.)" FontSize="14" FontAttributes="Italic"/>
+               
             </StackLayout>
 
             <!-- Знак 7.15. Зона приема радиостанции, передающей информацию о дорожном движении -->

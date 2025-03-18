@@ -35,7 +35,7 @@
             <StackLayout>
                 <Image Source="sign_4_1_2.png" HeightRequest="100"/>
                 <Label Text="Знак 4.1.2. Движение направо" FontSize="18"/>
-                <Label Text="Разрешается движение только направо." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Разрешается движение только направо." FontSize="14"  Margin="0,5,0,0"/>
             </StackLayout>
 
             <!-- Особенности знака 4.1.2 -->
@@ -94,7 +94,7 @@
             <!-- Знак 4.1.6. Движение направо или налево -->
             <StackLayout>
                 <Image Source="sign_4_1_6.png" HeightRequest="100"/>
-                <Label Text="Знак 4.1.6. Движение направо или налево" FontSize="18"/>
+                <Label Text="Знак 4.1.6. Движение направо или налево"  FontSize="18" />
                 <Label Text="Разрешается движение только направо, налево, а также разворот." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
             </StackLayout>
 
@@ -110,7 +110,7 @@
             <StackLayout>
                 <Image Source="sign_4_2_1.png" HeightRequest="100"/>
                 <Label Text="Знак 4.2.1. Объезд препятствия справа" FontSize="18"/>
-                <Label Text="Объезд препятствия справа." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Объезд препятствия справа." FontSize="14"  Margin="0,5,0,0"/>
             </StackLayout>
 
             <!-- Особенности знака 4.2.1 -->
@@ -123,7 +123,7 @@
             <StackLayout>
                 <Image Source="sign_4_2_2.png" HeightRequest="100"/>
                 <Label Text="Знак 4.2.2. Объезд препятствия слева" FontSize="18"/>
-                <Label Text="Объезд препятствия слева." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Объезд препятствия слева." FontSize="14"  Margin="0,5,0,0"/>
             </StackLayout>
 
             <!-- Особенности знака 4.2.2 -->
@@ -162,7 +162,7 @@
                 <Label Text="Знак 4.4.1. Велосипедная дорожка" FontSize="18"/>
                 <Label Text="Разрешается движение только на велосипедах." 
            FontSize="14" 
-           HorizontalOptions="Center" 
+        
            Margin="0,5,0,0"/>
             </StackLayout>
 
@@ -176,7 +176,7 @@
             <StackLayout>
                 <Image Source="sign_4_4_2.png" HeightRequest="100"/>
                 <Label Text="Знак 4.4.2. Конец велосипедной дорожки" FontSize="18"/>
-                <Label Text="Конец зоны действия знака 4.4.1." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                <Label Text="Конец зоны действия знака 4.4.1." FontSize="14" Margin="0,5,0,0"/>
             </StackLayout>
 
             <!-- Знак 4.5.1. Пешеходная дорожка -->
@@ -273,7 +273,7 @@
 
             <!-- Знак 4.8.1. Направление движения транспортных средств с опасными грузами -->
             <StackLayout>
-                <Image Source="sign_4_8_1.png" HeightRequest="100"/>
+                <Image Source="sign_4_8.png" HeightRequest="100"/>
                 <Label Text="Знак 4.8.1. Направление движения транспортных средств с опасными грузами" FontSize="18"/>
                 <Label Text="Движение транспортных средств, оборудованных опознавательными знаками (информационными табличками) «Опасный груз», разрешается только в направлении, указанном на знаке: 4.8.1 - прямо, 4.8.2 - направо, 4.8.3 - налево." 
                        FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
