@@ -5,6 +5,7 @@
              Title="AboutPage">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
+            
 
             <Label Text="О нас"
                    FontSize="24"
@@ -14,37 +15,31 @@
 
             <Label Text="Добро пожаловать в 'Авто школа 24-7' – удобное приложение для изучения правил дорожного движения! Наш проект создан для того, чтобы помочь водителям и учащимся автошкол освоить ПДД, узнать о дорожных знаках, разметке, неисправностях автомобиля и подготовиться к экзаменам с помощью тестов."
                    FontSize="16"
-                   TextColor="Black"
                    HorizontalTextAlignment="Center"/>
 
             <Label Text="Разработчики:"
                    FontSize="18"
-                   FontAttributes="Bold"
-                   TextColor="Black"/>
+                   FontAttributes="Bold" />
             <Label Text="Приложение разработано с целью сделать процесс обучения ПДД более доступным и удобным."
-                   FontSize="16"
-                   TextColor="Black"/>
+                   FontSize="16" />
 
             <Label Text="Источники информации:"
                    FontSize="18"
-                   FontAttributes="Bold"
-                   TextColor="Black"/>
+                   FontAttributes="Bold" />
+                   
             <Label Text="В проекте использованы официальные правила дорожного движения, а также актуальные материалы по безопасности на дорогах."
-                   FontSize="16"
-                   TextColor="Black"/>
+                   FontSize="16" />
 
             <Label Text="Контакты:"
                    FontSize="18"
                    FontAttributes="Bold"
-                   TextColor="Black"/>
+                   />
             <Label Text="Если у вас есть предложения или вопросы, свяжитесь с нами через приложение."
                    FontSize="16"
-                   TextColor="Black"/>
+                  />
 
             <Button Text="Назад в меню"
                     FontSize="16"
-                    BackgroundColor="Blue"
-                    TextColor="White"
                     Clicked="OnBackButtonClicked"
                     HorizontalOptions="Center"/>
 

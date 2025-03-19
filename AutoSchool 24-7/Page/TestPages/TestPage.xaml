@@ -3,8 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.TestPages.TestPage"
              Title="TestPage">
-    <VerticalStackLayout>
-        <ScrollView>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="тест" 
+                 FontSize="24" 
+                 FontAttributes="Bold" 
+                 HorizontalOptions="Center"/>
             <StackLayout Padding="20">
                 <Label x:Name="QuestionLabel"
                    FontSize="18"
@@ -22,6 +27,6 @@
                          Spacing="10"
                          Margin="10"/>
             </StackLayout>
-        </ScrollView>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
