@@ -105,6 +105,11 @@
 	  <None Remove="Resources\Images\signs\sign_8_2_5.png" />
 	  <None Remove="Resources\Images\signs\sign_8_4_1.png" />
 	  <None Remove="Resources\Images\signs\sign_8_4_6.png" />
+	  <None Remove="Resources\Images\test\test_1.png" />
+	  <None Remove="Resources\Images\test\test_1_2.png" />
+	  <None Remove="Resources\Images\test\test_1_3.png" />
+	  <None Remove="Resources\Images\test\test_1_4.png" />
+	  <None Remove="Resources\Images\test\test_1_5.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -114,6 +119,11 @@
 	  <MauiImage Include="Resources\Images\signs\sign_8_2_5.png" />
 	  <MauiImage Include="Resources\Images\signs\sign_8_4_1.png" />
 	  <MauiImage Include="Resources\Images\signs\sign_8_4_6.png" />
+	  <MauiImage Include="Resources\Images\test\test_1.png" />
+	  <MauiImage Include="Resources\Images\test\test_1_2.png" />
+	  <MauiImage Include="Resources\Images\test\test_1_3.png" />
+	  <MauiImage Include="Resources\Images\test\test_1_4.png" />
+	  <MauiImage Include="Resources\Images\test\test_1_5.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -467,10 +477,6 @@
 	  <MauiImage Include="Resources\Images\signs\sign_8_9_2.png" />
 	  <MauiImage Include="Resources\Images\signs\sign_8_9_3.png" />
 	  <MauiImage Include="Resources\Images\signs\sign_3_18_1.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Resources\Images\test\" />
 	</ItemGroup>
 
 	<ItemGroup>
