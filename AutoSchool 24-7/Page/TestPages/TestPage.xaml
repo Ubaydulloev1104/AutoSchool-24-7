@@ -2,31 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.TestPages.TestPage"
-             Title="TestPage">
+             Title="Тест по ПДД">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="тест" 
-                 FontSize="24" 
-                 FontAttributes="Bold" 
-                 HorizontalOptions="Center"/>
-            <StackLayout Padding="20">
-                <Label x:Name="QuestionLabel"
-                   FontSize="18"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Start"
-                   Margin="10"/>
+            <Label x:Name="QuestionCounterLabel"
+                 FontSize="16"
+                 HorizontalOptions="Center"
+                 Margin="10"/>
 
-                <Image x:Name="QuestionImage"
-                   HeightRequest="150"
-                   Aspect="AspectFit"
-                   HorizontalOptions="Center"
-                   Margin="10"/>
+            <Label x:Name="QuestionLabel"
+                 FontSize="18"
+                 HorizontalOptions="Center"
+                 Margin="10"/>
 
-                <StackLayout x:Name="AnswersLayout"
-                         Spacing="10"
-                         Margin="10"/>
-            </StackLayout>
+            <Image x:Name="QuestionImage"
+                 HeightRequest="150"
+                 Aspect="AspectFit"
+                 HorizontalOptions="Center"
+                 Margin="10"/>
+
+            <StackLayout x:Name="AnswersLayout"
+                     Spacing="10"
+                     Margin="10"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
