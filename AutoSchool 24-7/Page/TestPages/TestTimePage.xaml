@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoSchool_24_7.Page.TestPages.TestTimePage"
+             Title="TestTimePage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Кнопка Старт -->
+            <Button x:Name="StartButton"
+                    Text="Начать тест"
+                    FontSize="18"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    Clicked="StartTest"
+                    HorizontalOptions="Center"/>
+
+            <!-- Таймер -->
+            <Label x:Name="TimerLabel"
+                   Text="Время: 60 сек"
+                   FontSize="18"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   Margin="10"
+                   IsVisible="False"/>
+            <!-- Скрываем, пока тест не начнется -->
+
+            <!-- Счетчик вопросов -->
+            <Label x:Name="QuestionCounterLabel"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="10"
+                   IsVisible="False"/>
+
+            <!-- Вопрос -->
+            <Label x:Name="QuestionLabel"
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="10"
+                   IsVisible="False"/>
+
+            <!-- Картинка вопроса -->
+            <Image x:Name="QuestionImage"
+                   HeightRequest="150"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"
+                   Margin="10"
+                   IsVisible="False"/>
+
+            <!-- Варианты ответов -->
+            <StackLayout x:Name="AnswersLayout"
+                         Spacing="10"
+                         Margin="10"
+                         IsVisible="False"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
