@@ -8,5 +8,8 @@ namespace AutoSchool_24_7.Page.TestPages;
 
 public class TetsQuestion
 {
-
+    public TetsQuestion()
+    {
+        
+    }
 }
