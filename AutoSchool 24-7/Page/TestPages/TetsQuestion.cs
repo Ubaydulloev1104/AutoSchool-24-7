@@ -7335,8 +7335,14 @@ new Question(
 )
 };
 
+    
     public TetsQuestion()
     {
         
     }
+    public List<Question> GetListQuestion()
+    {
+        return questions;
+    }
+
 }
