@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AutoSchool_24_7.Page.TestPages;
+using Microsoft.Extensions.Logging;
 
 namespace AutoSchool_24_7
 {
@@ -16,7 +17,8 @@ namespace AutoSchool_24_7
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Services.AddSingleton<TetsQuestion>();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
