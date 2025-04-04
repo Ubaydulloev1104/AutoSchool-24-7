@@ -17,7 +17,6 @@ namespace AutoSchool_24_7
                 });
 
 #if DEBUG
-            builder.Services.AddSingleton<TetsQuestion>();
             builder.Logging.AddDebug();
 #endif
 
