@@ -2,48 +2,91 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.AboutPage.AboutPage"
-             Title="AboutPage">
+             Title="📘 О нас"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="10">
-            
+        <VerticalStackLayout Padding="20" Spacing="20">
 
             <Label Text="О нас"
-                   FontSize="24"
+                   FontSize="28"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
-                   Margin="0,20,0,10"/>
+                   TextColor="{DynamicResource PrimaryTextColor}"
+                   Margin="0,10"/>
 
-            <Label Text="Добро пожаловать в 'Авто школа 24-7' – удобное приложение для изучения правил дорожного движения! Наш проект создан для того, чтобы помочь водителям и учащимся автошкол освоить ПДД, узнать о дорожных знаках, разметке, неисправностях автомобиля и подготовиться к экзаменам с помощью тестов."
-                   FontSize="16"
-                   HorizontalTextAlignment="Center"/>
+            <!-- Описание -->
+            <Frame CornerRadius="15" Padding="15" HasShadow="True" BackgroundColor="{DynamicResource CardBackgroundColor}">
+                <Label Text="Добро пожаловать в 'Авто школа 24-7' – удобное приложение для изучения правил дорожного движения! Наш проект создан для того, чтобы помочь водителям и учащимся автошкол освоить ПДД, узнать о дорожных знаках, разметке, неисправностях автомобиля и подготовиться к экзаменам с помощью тестов."
+                       FontSize="16"
+                       TextColor="{DynamicResource SecondaryTextColor}"/>
+            </Frame>
 
-            <Label Text="Разработчики:"
-                   FontSize="18"
-                   FontAttributes="Bold" />
-            <Label Text="Приложение разработано с целью сделать процесс обучения ПДД более доступным и удобным."
-                   FontSize="16" />
+            <!-- Разработчик -->
+            <Frame CornerRadius="15" Padding="15" HasShadow="True" BackgroundColor="{DynamicResource CardBackgroundColor}">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Разработчик:"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="{DynamicResource PrimaryTextColor}"/>
+                    <Label Text="Убайдуллоев Аъзамжон Шавкатович"
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Label Text="Приложение разработано с целью сделать процесс обучения ПДД более доступным и удобным."
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                </VerticalStackLayout>
+            </Frame>
 
-            <Label Text="Источники информации:"
-                   FontSize="18"
-                   FontAttributes="Bold" />
-                   
-            <Label Text="В проекте использованы официальные правила дорожного движения, а также актуальные материалы по безопасности на дорогах."
-                   FontSize="16" />
+            <!-- Источники -->
+            <Frame CornerRadius="15" Padding="15" HasShadow="True" BackgroundColor="{DynamicResource CardBackgroundColor}">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Источники информации:"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="{DynamicResource PrimaryTextColor}"/>
+                    <Label Text="В проекте использованы официальные правила дорожного движения, а также актуальные материалы по безопасности на дорогах."
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Label Text="Напоминаем, что экзаменационные билеты ПДД достаточно часто претерпевают изменения."
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                </VerticalStackLayout>
+            </Frame>
 
-            <Label Text="Контакты:"
-                   FontSize="18"
-                   FontAttributes="Bold"
-                   />
-            <Label Text="Если у вас есть предложения или вопросы, свяжитесь с нами через приложение."
-                   FontSize="16"
-                  />
+            <!-- Контакты -->
+            <Frame CornerRadius="15" Padding="15" HasShadow="True" BackgroundColor="{DynamicResource CardBackgroundColor}">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Контакты:"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="{DynamicResource PrimaryTextColor}"/>
+                    <Label Text="📧 Gmail: ubaydulloev.1104@gmail.com"
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Label Text="📱 Telegram: @ubaydulloev1104"
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Label Text="📞 Телефон: (+992) 555-09-01-01"
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Label Text="Если у вас есть предложения или вопросы, свяжитесь с нами через приложение."
+                           FontSize="16"
+                           TextColor="{DynamicResource SecondaryTextColor}"/>
+                </VerticalStackLayout>
+            </Frame>
 
-            <Button Text="Назад в меню"
-                    FontSize="16"
+            <!-- Кнопка -->
+            <Button Text="← Назад в меню"
+                    FontSize="18"
+                    BackgroundColor="#2D9CDB"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="12,6"
                     Clicked="OnBackButtonClicked"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

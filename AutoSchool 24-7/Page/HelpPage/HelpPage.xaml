@@ -2,11 +2,51 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.HelpPage.HelpPage"
-             Title="HelpPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="📖 Справка">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Справка по использованию"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10"/>
+
+            <Label Text="Добро пожаловать в 'Авто школа 24-7'! Это приложение создано для удобного и эффективного изучения Правил дорожного движения. Ниже описаны основные разделы приложения:"
+                   FontSize="16" />
+
+            <Frame CornerRadius="10" BorderColor="#1976D2" Padding="15">
+                <Label Text="🚦 Информация о знаках - изучите значения дорожных знаков с подробными пояснениями и изображениями."
+                       FontSize="16" />
+            </Frame>
+
+            <Frame CornerRadius="10" BorderColor="#1976D2" Padding="15">
+                <Label Text="🛣️ Дорожная разметка - узнайте о различных типах дорожной разметки и их значении на дороге."
+                       FontSize="16" />
+            </Frame>
+
+            <Frame CornerRadius="10" BorderColor="#1976D2" Padding="15">
+                <Label Text="🛠️ Перечень неисправностей - важная информация о неисправностях, при которых эксплуатация автомобиля запрещена."
+                       FontSize="16" />
+            </Frame>
+
+            <Frame CornerRadius="10" BorderColor="#1976D2" Padding="15">
+                <Label Text="📝 Тестирование - проверьте свои знания ПДД, пройдя тесты с возможностью выбора количества вопросов и времени."
+                       FontSize="16" />
+            </Frame>
+
+            <Frame CornerRadius="10" BorderColor="#1976D2" Padding="15">
+                <Label Text="ℹ О нас - узнайте о разработчике и источниках, использованных при создании приложения."
+                       FontSize="16" />
+            </Frame>
+
+            <Label Text="Если у вас возникли вопросы или предложения, пожалуйста, свяжитесь с нами через раздел 'О нас'."
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   Margin="0,10"/>
+
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
