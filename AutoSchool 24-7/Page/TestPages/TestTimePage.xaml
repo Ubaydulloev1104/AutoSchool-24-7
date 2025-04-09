@@ -23,6 +23,20 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
+                <Label Text="Время на тест:" FontSize="16" VerticalOptions="Center" />
+                <Picker x:Name="TimePicker"
+            Title="Минуты"
+            WidthRequest="120"
+            FontSize="16">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:Int32}">
+                            <x:Int32>1</x:Int32>
+                            <x:Int32>3</x:Int32>
+                            <x:Int32>5</x:Int32>
+                            <x:Int32>10</x:Int32>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
             </HorizontalStackLayout>
 
             <!-- Кнопка Старт -->

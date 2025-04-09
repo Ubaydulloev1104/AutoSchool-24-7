@@ -13,6 +13,7 @@ public partial class TestTimePage : ContentPage
     private System.Timers.Timer testTimer;
     private int timeLeft = 60;
     private List<Question> questions;
+    private bool isFlashing = false;
 
     public TestTimePage()
     {
@@ -25,39 +26,44 @@ public partial class TestTimePage : ContentPage
         questions = QuestionRepository.AllQuestions.OrderBy(q => Guid.NewGuid()).Take(20).ToList();
         // Устанавливаем значение по умолчанию (например, 10)
         QuestionCountPicker.SelectedIndex = 1;
+        TimePicker.SelectedIndex = 1;
     }
 
     private void StartTest(object sender, EventArgs e)
     {
-        if (QuestionCountPicker.SelectedIndex == -1)
+        if (QuestionCountPicker.SelectedIndex == -1 || TimePicker.SelectedIndex == -1)
         {
-            DisplayAlert("Ошибка", "Пожалуйста, выберите количество вопросов", "OK");
+            DisplayAlert("Ошибка", "Пожалуйста, выберите количество вопросов и время на тест", "OK");
             return;
         }
+
         int selectedCount = (int)QuestionCountPicker.SelectedItem;
         if (selectedCount > questions.Count)
         {
             selectedCount = questions.Count;
         }
+
         // Получаем выбранное значение
         if (QuestionCountPicker.SelectedItem is string selected && int.TryParse(selected, out int count))
             totalQuestionsToAsk = count;
-
+        int selectedMinutes = (int)TimePicker.SelectedItem;
+        timeLeft = selectedMinutes * 60;
         currentQuestionIndex = 0;
         correctAnswers = 0;
         incorrectAnswers.Clear();
 
         StartButton.IsVisible = false;
         QuestionCountPicker.IsVisible = false;
-
+        
+        TimePicker.IsVisible = false;
         TimerLabel.IsVisible = true;
         QuestionCounterLabel.IsVisible = true;
         QuestionLabel.IsVisible = true;
         QuestionImage.IsVisible = true;
         AnswersLayout.IsVisible = true;
 
-        timeLeft = 60;
-        TimerLabel.Text = $"Время: {timeLeft} сек";
+
+        TimerLabel.Text = $"Время: {FormatTime(timeLeft)}";
         testTimer.Start();
 
         LoadQuestion();
@@ -68,10 +74,16 @@ public partial class TestTimePage : ContentPage
         MainThread.BeginInvokeOnMainThread(() =>
         {
             timeLeft--;
-            TimerLabel.Text = $"Время: {timeLeft} сек";
+            TimerLabel.Text = $"Время: {FormatTime(timeLeft)}";
+
+            if (timeLeft == 10)
+            {
+                StartFlashingTimerLabel(); // Начать мигание
+            }
 
             if (timeLeft <= 0)
             {
+                isFlashing = false; // Остановить мигание
                 testTimer.Stop();
                 DisplayResults();
             }
@@ -133,5 +145,24 @@ public partial class TestTimePage : ContentPage
 
         await DisplayAlert("Результаты теста", resultMessage.ToString(), "OK");
         await Navigation.PushAsync(new Menu());
+    }
+    private string FormatTime(int seconds)
+    {
+        int minutes = seconds / 60;
+        int secs = seconds % 60;
+        return $"{minutes:D2}:{secs:D2}";
+    }
+    private async void StartFlashingTimerLabel()
+    {
+        isFlashing = true;
+
+        while (isFlashing && timeLeft > 0)
+        {
+            await TimerLabel.FadeTo(0.2, 300);
+            await TimerLabel.FadeTo(1, 300);
+        }
+
+        // Убедимся, что таймер становится видимым, если мигание прерывается
+        TimerLabel.Opacity = 1;
     }
 }
