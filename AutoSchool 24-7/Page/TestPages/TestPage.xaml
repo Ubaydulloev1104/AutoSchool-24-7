@@ -5,26 +5,78 @@
              Title="Тест по ПДД">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
-            <Label x:Name="QuestionCounterLabel"
-                 FontSize="16"
-                 HorizontalOptions="Center"
-                 Margin="10"/>
+        <VerticalStackLayout Padding="20" Spacing="20">
 
+
+            <!-- ❗ Обёртка для скрытия всей карточки -->
+            <StackLayout x:Name="SettingsLayout">
+                <Frame CornerRadius="15" Padding="20" HasShadow="True">
+                    <VerticalStackLayout Spacing="15">
+
+                        <Label x:Name="LabelSetting" Text="Настройки теста"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"/>
+
+                        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                            <Label x:Name="LabelQuestionCountPicker" Text="Количество вопросов:"
+                                FontSize="16"
+                                VerticalOptions="Center"/>
+                            <Picker x:Name="QuestionCountPicker"
+                                 Title="Выберите"
+                                 WidthRequest="120"
+                                 FontSize="16">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Int32}">
+                                        <x:Int32>5</x:Int32>
+                                        <x:Int32>10</x:Int32>
+                                        <x:Int32>20</x:Int32>
+                                        <x:Int32>30</x:Int32>
+                                        <x:Int32>40</x:Int32>
+                                        <x:Int32>50</x:Int32>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </HorizontalStackLayout>
+                        <Button x:Name="StartButton"
+                             Text="▶ Начать тест"
+                             FontSize="18"
+                             BackgroundColor="#27AE60"
+                             TextColor="White"
+                             CornerRadius="10"
+                             Clicked="StartTest"
+                             HorizontalOptions="Center"
+                             Padding="10,5"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+            <!-- Счётчик вопросов -->
+            <Label x:Name="QuestionCounterLabel"
+                FontSize="18"
+                
+                HorizontalOptions="Center"
+                IsVisible="False"/>
+
+            <!-- Вопрос -->
             <Label x:Name="QuestionLabel"
-                 FontSize="18"
-                 HorizontalOptions="Center"
-                 Margin="10"/>
+                FontSize="20"
+                FontAttributes="Bold"
+               
+                HorizontalOptions="Center"
+               
+                IsVisible="False"/>
 
             <Image x:Name="QuestionImage"
-                 HeightRequest="150"
-                 Aspect="AspectFit"
-                 HorizontalOptions="Center"
-                 Margin="10"/>
+                HeightRequest="150"
+                Aspect="AspectFit"
+                HorizontalOptions="Center"
+                IsVisible="False"/>
 
+            <!-- Ответы -->
             <StackLayout x:Name="AnswersLayout"
-                     Spacing="10"
-                     Margin="10"/>
+                      Spacing="12"
+                      IsVisible="False"
+                      Padding="10"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

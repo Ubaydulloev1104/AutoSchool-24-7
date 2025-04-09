@@ -8,61 +8,46 @@ namespace AutoSchool_24_7.Page.TestPages;
 
 public partial class TestPage : ContentPage
 {
-    private Label questionLabel;
-    private Label questionCounterLabel;
-    private Image questionImage;
-    private StackLayout answersLayout;
     private int currentQuestionIndex = 0;
     private int correctAnswers = 0;
+    private int totalQuestionsToAsk = 20;
     private List<string> incorrectAnswers = new();
-    private Random random = new();
-
     private List<Question> questions;
-
-
 
     public TestPage()
     {
-        questions = QuestionRepository.AllQuestions.OrderBy(q => Guid.NewGuid()).ToList();
-        Title = "Тест по ПДД";
+        InitializeComponent();
+        QuestionCountPicker.SelectedIndex = 1; // По умолчанию 10
+    }
 
-        questionCounterLabel = new Label
+    private void StartTest(object sender, EventArgs e)
+    {
+        if (QuestionCountPicker.SelectedIndex == -1)
         {
-            FontSize = 16,
-            HorizontalOptions = LayoutOptions.Center,
-            VerticalOptions = LayoutOptions.Start,
-            Margin = new Thickness(10)
-        };
+            DisplayAlert("Ошибка", "Пожалуйста, выберите количество вопросов", "OK");
+            return;
+        }
 
-        questionLabel = new Label
-        {
-            FontSize = 18,
-            HorizontalOptions = LayoutOptions.Center,
-            VerticalOptions = LayoutOptions.Start,
-            Margin = new Thickness(10)
-        };
+        if (QuestionCountPicker.SelectedItem is int count)
+            totalQuestionsToAsk = count;
 
-        questionImage = new Image
-        {
-            HeightRequest = 150,
-            Aspect = Aspect.AspectFit,
-            HorizontalOptions = LayoutOptions.Center,
-            Margin = new Thickness(10)
-        };
+        questions = QuestionRepository.AllQuestions
+                    .OrderBy(q => Guid.NewGuid())
+                    .Take(totalQuestionsToAsk)
+                    .ToList();
 
-        answersLayout = new StackLayout
-        {
-            Spacing = 10,
-            Margin = new Thickness(10)
-        };
+        currentQuestionIndex = 0;
+        correctAnswers = 0;
+        incorrectAnswers.Clear();
 
-        var mainLayout = new StackLayout
-        {
-            Padding = new Thickness(20),
-            Children = { questionCounterLabel, questionLabel, questionImage, answersLayout }
-        };
+        // Скрываем настройки
+        SettingsLayout.IsVisible = false;
 
-        Content = new ScrollView { Content = mainLayout };
+        // Показываем тест
+        QuestionCounterLabel.IsVisible = true;
+        QuestionLabel.IsVisible = true;
+        QuestionImage.IsVisible = true;
+        AnswersLayout.IsVisible = true;
 
         LoadQuestion();
     }
@@ -76,65 +61,53 @@ public partial class TestPage : ContentPage
         }
 
         var question = questions[currentQuestionIndex];
-        question.ShuffleOptions();
+        QuestionCounterLabel.Text = $"Вопрос {currentQuestionIndex + 1} из {questions.Count}";
+        QuestionLabel.Text = question.Text;
+        QuestionImage.Source = string.IsNullOrEmpty(question.Image) ? null : question.Image;
+        AnswersLayout.Children.Clear();
 
-        questionCounterLabel.Text = $"Вопрос {currentQuestionIndex + 1} из {questions.Count}";
-        questionLabel.Text = question.Text;
-        questionImage.Source = string.IsNullOrEmpty(question.Image) ? null : question.Image;
-        answersLayout.Children.Clear();
-
-        for (int i = 0; i < question.ShuffledOptions.Length; i++)
+        for (int i = 0; i < question.Options.Length; i++)
         {
             var button = new Button
             {
-                Text = $"{i + 1}) {question.ShuffledOptions[i]}",  
+                Text = question.Options[i],
                 FontSize = 16,
                 BackgroundColor = Colors.LightGray,
                 CornerRadius = 10,
                 Padding = new Thickness(5)
             };
             int selectedAnswerIndex = i;
-            button.Clicked += async (sender, e) =>
+            button.Clicked += (s, e) =>
             {
-                if (question.ShuffledOptions[selectedAnswerIndex] == question.Options[question.CorrectAnswerIndex])
-                {
+                if (selectedAnswerIndex == question.CorrectAnswerIndex)
                     correctAnswers++;
-                }
                 else
                 {
-                    incorrectAnswers.Add($"{question.Text}\nВаш ответ: {question.ShuffledOptions[selectedAnswerIndex]}\nПравильный ответ: {question.Options[question.CorrectAnswerIndex]}\n");
+                    incorrectAnswers.Add($"{question.Text}\nВаш ответ: {question.Options[selectedAnswerIndex]}\nПравильный ответ: {question.Options[question.CorrectAnswerIndex]}\n");
                 }
                 currentQuestionIndex++;
                 LoadQuestion();
             };
-            answersLayout.Children.Add(button);
+            AnswersLayout.Children.Add(button);
         }
     }
 
     private async void DisplayResults()
     {
-        StringBuilder resultMessage = new StringBuilder();
+        StringBuilder resultMessage = new();
         resultMessage.AppendLine($"Вы ответили правильно на {correctAnswers} из {questions.Count} вопросов.\n");
 
         if (incorrectAnswers.Count > 0)
         {
             resultMessage.AppendLine("Ошибки:");
             foreach (var error in incorrectAnswers)
-            {
                 resultMessage.AppendLine(error);
-            }
         }
 
         await DisplayAlert("Результаты теста", resultMessage.ToString(), "OK");
-
-        
         await Navigation.PushAsync(new Menu());
-
-       
-        currentQuestionIndex = 0;
-        correctAnswers = 0;
-        incorrectAnswers.Clear();
-        LoadQuestion();
     }
 }
+
+
 

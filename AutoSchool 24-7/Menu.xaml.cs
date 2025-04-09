@@ -29,7 +29,7 @@ public partial class Menu : ContentPage
 
     private async void OnTestClicked(object sender, EventArgs e)
     {
-       await Navigation.PushAsync(new TestTimePage());
+       await Navigation.PushAsync(new TestMenuPage());
     }
 
     private async void OnHelpClicked(object sender, EventArgs e)
