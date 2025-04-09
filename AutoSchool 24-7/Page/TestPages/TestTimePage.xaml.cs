@@ -1,3 +1,4 @@
+using AutoSchool_24_7.Data;
 using System.Text;
 using System.Timers;
 
@@ -5,54 +6,57 @@ namespace AutoSchool_24_7.Page.TestPages;
 
 public partial class TestTimePage : ContentPage
 {
-    private Label questionLabel;
-    private Label questionCounterLabel;
-    private Image questionImage;
-    private StackLayout answersLayout;
     private int currentQuestionIndex = 0;
     private int correctAnswers = 0;
+    private int totalQuestionsToAsk = 20;
     private List<string> incorrectAnswers = new();
     private System.Timers.Timer testTimer;
-    private int timeLeft = 60; // 60 секунд
-
-
-    private List<Question> questions = new()
-    {
-        new Question(" Какие транспортные средства по Правилам относятся к маршрутным транспортным \r\nсредствам?", null, new string[] { " Все автобусы", " Автобусы, троллейбусы и трамваи, предназначенные для перевозки людей и движущиесяпо установленному маршруту с обозначенными местами остановок. ", " Любые транспортные средства, перевозящие пассажиров.", }, 1),
-        new Question(" В каких направлениях Вам разрешено продолжить движение?", "test_1_2", new string[] { " Только Б", " Только А или Б. ", " В любых. " }, 1),
-        new Question(" Этот дорожный знак указывает: ", "test_1_3", new string[] { " Расстояние до конца тоннеля. ", " Расстояние до места аварийной остановки. ", " Направление движения к аварийному выходу и расстояние до него.  " }, 2),
-        new Question(" Этот знак разрешает Вам ставить на стоянку легковой автомобиль с использованием тротуара: ", "test_1_4", new string[] { "Только на правой стороне дороги до ближайшего по ходу движения перекрестка. ", " Только на правой стороне дороги до знака «Конец зоны регулируемой стоянки».  ", " На любой стороне дорог, расположенных в зоне регулируемой стоянки.  " }, 2),
-        new Question(" Эта разметка, нанесенная на полосе движения: ", "test_1_5", new string[] { "Предоставляет Вам преимущество при перестроении на правую полосу. ", " Информирует Вас о том, что дорога поворачивает направо. ", " Предупреждает Вас о приближении к сужению проезжей части.   " }, 2),
-        new Question("Что означает мигание зеленого сигнала светофора?",
-        null,
-        new string[] {
-            " Предупреждает о неисправности светофора.",
-            " Разрешает движение и информирует о том, что вскоре будет включен запрещающий сигнал.",
-            " Запрещает дальнейшее движение."
-        },
-        1)
-    };
-
-
+    private int timeLeft = 60;
+    private List<Question> questions;
 
     public TestTimePage()
     {
         InitializeComponent();
-        testTimer = new System.Timers.Timer(1000); // Таймер обновляется каждую секунду
+        testTimer = new System.Timers.Timer(1000);
         testTimer.Elapsed += OnTimedEvent;
         testTimer.AutoReset = true;
+
+        // Полный список вопросов (добавь свои)
+        questions = QuestionRepository.AllQuestions.OrderBy(q => Guid.NewGuid()).Take(20).ToList();
+        // Устанавливаем значение по умолчанию (например, 10)
+        QuestionCountPicker.SelectedIndex = 1;
     }
 
     private void StartTest(object sender, EventArgs e)
     {
-        StartButton.IsVisible = false; // Скрываем кнопку "Старт"
+        if (QuestionCountPicker.SelectedIndex == -1)
+        {
+            DisplayAlert("Ошибка", "Пожалуйста, выберите количество вопросов", "OK");
+            return;
+        }
+        int selectedCount = (int)QuestionCountPicker.SelectedItem;
+        if (selectedCount > questions.Count)
+        {
+            selectedCount = questions.Count;
+        }
+        // Получаем выбранное значение
+        if (QuestionCountPicker.SelectedItem is string selected && int.TryParse(selected, out int count))
+            totalQuestionsToAsk = count;
+
+        currentQuestionIndex = 0;
+        correctAnswers = 0;
+        incorrectAnswers.Clear();
+
+        StartButton.IsVisible = false;
+        QuestionCountPicker.IsVisible = false;
+
         TimerLabel.IsVisible = true;
         QuestionCounterLabel.IsVisible = true;
         QuestionLabel.IsVisible = true;
         QuestionImage.IsVisible = true;
         AnswersLayout.IsVisible = true;
 
-        timeLeft = 60; // Сбрасываем время
+        timeLeft = 60;
         TimerLabel.Text = $"Время: {timeLeft} сек";
         testTimer.Start();
 
@@ -100,12 +104,10 @@ public partial class TestTimePage : ContentPage
                 Padding = new Thickness(5)
             };
             int selectedAnswerIndex = i;
-            button.Clicked += async (sender, e) =>
+            button.Clicked += (s, e) =>
             {
                 if (selectedAnswerIndex == question.CorrectAnswerIndex)
-                {
                     correctAnswers++;
-                }
                 else
                 {
                     incorrectAnswers.Add($"{question.Text}\nВаш ответ: {question.Options[selectedAnswerIndex]}\nПравильный ответ: {question.Options[question.CorrectAnswerIndex]}\n");
@@ -119,22 +121,17 @@ public partial class TestTimePage : ContentPage
 
     private async void DisplayResults()
     {
-        StringBuilder resultMessage = new StringBuilder();
+        StringBuilder resultMessage = new();
         resultMessage.AppendLine($"Вы ответили правильно на {correctAnswers} из {questions.Count} вопросов.\n");
 
         if (incorrectAnswers.Count > 0)
         {
             resultMessage.AppendLine("Ошибки:");
             foreach (var error in incorrectAnswers)
-            {
                 resultMessage.AppendLine(error);
-            }
         }
 
         await DisplayAlert("Результаты теста", resultMessage.ToString(), "OK");
-
-        // Переход в меню после завершения
         await Navigation.PushAsync(new Menu());
     }
 }
-
