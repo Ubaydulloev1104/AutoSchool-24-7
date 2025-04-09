@@ -54,7 +54,7 @@ public partial class TestTimePage : ContentPage
 
         StartButton.IsVisible = false;
         QuestionCountPicker.IsVisible = false;
-        
+        TimerLabel.TextColor = Colors.White;
         TimePicker.IsVisible = false;
         TimerLabel.IsVisible = true;
         QuestionCounterLabel.IsVisible = true;
@@ -74,20 +74,22 @@ public partial class TestTimePage : ContentPage
         MainThread.BeginInvokeOnMainThread(() =>
         {
             timeLeft--;
-            TimerLabel.Text = $"Время: {FormatTime(timeLeft)}";
+            TimerLabel.Text = $"Время: {timeLeft / 60:D2}:{timeLeft % 60:D2}";
 
             if (timeLeft == 10)
             {
-                StartFlashingTimerLabel(); // Начать мигание
+                TimerLabel.TextColor = Colors.Red; // Красный цвет с 10 секунд
+                StartFlashingTimerLabel();         // Запускаем мигание
             }
 
             if (timeLeft <= 0)
             {
-                isFlashing = false; // Остановить мигание
                 testTimer.Stop();
+                isFlashing = false;
                 DisplayResults();
             }
         });
+
     }
 
     private void LoadQuestion()
@@ -162,7 +164,6 @@ public partial class TestTimePage : ContentPage
             await TimerLabel.FadeTo(1, 300);
         }
 
-        // Убедимся, что таймер становится видимым, если мигание прерывается
         TimerLabel.Opacity = 1;
     }
 }

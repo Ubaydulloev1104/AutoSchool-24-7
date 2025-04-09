@@ -23,6 +23,8 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
                 <Label Text="Время на тест:" FontSize="16" VerticalOptions="Center" />
                 <Picker x:Name="TimePicker"
             Title="Минуты"
@@ -38,7 +40,6 @@
                     </Picker.ItemsSource>
                 </Picker>
             </HorizontalStackLayout>
-
             <!-- Кнопка Старт -->
             <Button x:Name="StartButton"
                     Text="Начать тест"
