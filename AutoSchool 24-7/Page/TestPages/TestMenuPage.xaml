@@ -4,14 +4,14 @@
              x:Class="AutoSchool_24_7.Page.TestPages.TestMenuPage"
                    Title="📝 Раздел тестирования">
 
-    <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
+    <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" Margin="0,20,0,20">
         <Label Text="Выберите режим тестирования"
                FontSize="22"
                FontAttributes="Bold"
                HorizontalOptions="Center"
                Margin="0,0,0,20" />
 
-        <Button Text="✅ Тест с таймером"
+        <Button Text="🕓 Тест с таймером"
                 FontSize="18"
                 Clicked="OnTestWithTimerClicked"
                 BackgroundColor="#3498db"
@@ -19,7 +19,7 @@
                 CornerRadius="10"
                 Padding="10,5"/>
 
-        <Button Text="🕓 Тест без таймера"
+        <Button Text="✅ Тест без таймера"
                 FontSize="18"
                 Clicked="OnTestWithoutTimerClicked"
                 BackgroundColor="#2ecc71"
