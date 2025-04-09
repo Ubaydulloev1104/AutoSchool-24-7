@@ -21,9 +21,6 @@ public partial class TestTimePage : ContentPage
         testTimer = new System.Timers.Timer(1000);
         testTimer.Elapsed += OnTimedEvent;
         testTimer.AutoReset = true;
-
-        // Полный список вопросов (добавь свои)
-        questions = QuestionRepository.AllQuestions.OrderBy(q => Guid.NewGuid()).Take(20).ToList();
         // Устанавливаем значение по умолчанию (например, 10)
         QuestionCountPicker.SelectedIndex = 1;
         TimePicker.SelectedIndex = 1;
@@ -37,31 +34,35 @@ public partial class TestTimePage : ContentPage
             return;
         }
 
-        int selectedCount = (int)QuestionCountPicker.SelectedItem;
-        if (selectedCount > questions.Count)
-        {
-            selectedCount = questions.Count;
-        }
-
-        // Получаем выбранное значение
-        if (QuestionCountPicker.SelectedItem is string selected && int.TryParse(selected, out int count))
+        // Получаем выбранное количество вопросов
+        if (QuestionCountPicker.SelectedItem is int count)
             totalQuestionsToAsk = count;
-        int selectedMinutes = (int)TimePicker.SelectedItem;
-        timeLeft = selectedMinutes * 60;
+
+        // Формируем список вопросов здесь (после выбора)
+        questions = QuestionRepository.AllQuestions
+                    .OrderBy(q => Guid.NewGuid())
+                    .Take(totalQuestionsToAsk)
+                    .ToList();
+
+        // Получаем выбранное время (в минутах)
+        if (TimePicker.SelectedItem is int selectedMinutes)
+            timeLeft = selectedMinutes * 60;
+
         currentQuestionIndex = 0;
         correctAnswers = 0;
         incorrectAnswers.Clear();
 
+        LabelQuestionCountPicker.IsVisible = false;
+        LabelTimePicker.IsVisible = false;
         StartButton.IsVisible = false;
         QuestionCountPicker.IsVisible = false;
-        TimerLabel.TextColor = Colors.White;
         TimePicker.IsVisible = false;
+        TimerLabel.TextColor = Colors.White;
         TimerLabel.IsVisible = true;
         QuestionCounterLabel.IsVisible = true;
         QuestionLabel.IsVisible = true;
         QuestionImage.IsVisible = true;
         AnswersLayout.IsVisible = true;
-
 
         TimerLabel.Text = $"Время: {FormatTime(timeLeft)}";
         testTimer.Start();

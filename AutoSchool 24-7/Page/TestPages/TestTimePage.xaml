@@ -7,7 +7,7 @@
         <VerticalStackLayout Padding="20" Spacing="15">
 
             <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
-                <Label Text="Количество вопросов:" FontSize="16" VerticalOptions="Center" />
+                <Label x:Name="LabelQuestionCountPicker" Text="Количество вопросов:" FontSize="16" VerticalOptions="Center" />
                 <Picker x:Name="QuestionCountPicker"
             Title="Выберите"
             WidthRequest="120"
@@ -25,7 +25,7 @@
                 </Picker>
             </HorizontalStackLayout>
             <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
-                <Label Text="Время на тест:" FontSize="16" VerticalOptions="Center" />
+                <Label x:Name="LabelTimePicker" Text="Время на тест:" FontSize="16" VerticalOptions="Center" />
                 <Picker x:Name="TimePicker"
             Title="Минуты"
             WidthRequest="120"
