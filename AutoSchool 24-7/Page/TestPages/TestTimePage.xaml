@@ -2,74 +2,101 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.TestPages.TestTimePage"
-             Title="Тестирование">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
+             Title="📝 Тестирование"
+             >
 
-            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
-                <Label x:Name="LabelQuestionCountPicker" Text="Количество вопросов:" FontSize="16" VerticalOptions="Center" />
-                <Picker x:Name="QuestionCountPicker"
-            Title="Выберите"
-            WidthRequest="120"
-            FontSize="16">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:Int32}">
-                            <x:Int32>5</x:Int32>
-                            <x:Int32>10</x:Int32>
-                            <x:Int32>20</x:Int32>
-                            <x:Int32>30</x:Int32>
-                            <x:Int32>40</x:Int32>
-                            <x:Int32>50</x:Int32>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
-                <Label x:Name="LabelTimePicker" Text="Время на тест:" FontSize="16" VerticalOptions="Center" />
-                <Picker x:Name="TimePicker"
-            Title="Минуты"
-            WidthRequest="120"
-            FontSize="16">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:Int32}">
-                            <x:Int32>1</x:Int32>
-                            <x:Int32>3</x:Int32>
-                            <x:Int32>5</x:Int32>
-                            <x:Int32>10</x:Int32>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </HorizontalStackLayout>
-            <!-- Кнопка Старт -->
-            <Button x:Name="StartButton"
-                    Text="Начать тест"
-                    FontSize="18"
-                    BackgroundColor="Green"
-                    TextColor="White"
-                    Clicked="StartTest"
-                    HorizontalOptions="Center"/>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            
+            <!-- ❗ Обёртка для скрытия всей карточки -->
+            <StackLayout x:Name="SettingsLayout">
+                <Frame CornerRadius="15" Padding="20" HasShadow="True">
+                    <VerticalStackLayout Spacing="15">
+
+                        <Label x:Name="LabelSetting" Text="Настройки теста"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"/>
+
+                        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                            <Label x:Name="LabelQuestionCountPicker" Text="Количество вопросов:"
+                                   FontSize="16"
+                                   VerticalOptions="Center"/>
+                            <Picker x:Name="QuestionCountPicker"
+                                    Title="Выберите"
+                                    WidthRequest="120"
+                                    FontSize="16">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Int32}">
+                                        <x:Int32>5</x:Int32>
+                                        <x:Int32>10</x:Int32>
+                                        <x:Int32>20</x:Int32>
+                                        <x:Int32>30</x:Int32>
+                                        <x:Int32>40</x:Int32>
+                                        <x:Int32>50</x:Int32>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                            <Label x:Name="LabelTimePicker" Text="Время на тест:"
+                                   FontSize="16"
+                                   VerticalOptions="Center"/>
+                            <Picker x:Name="TimePicker"
+                                    Title="Минуты"
+                                    WidthRequest="120"
+                                    FontSize="16">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Int32}">
+                                        <x:Int32>1</x:Int32>
+                                        <x:Int32>3</x:Int32>
+                                        <x:Int32>5</x:Int32>
+                                        <x:Int32>10</x:Int32>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </HorizontalStackLayout>
+
+                        <Button x:Name="StartButton"
+                                Text="▶ Начать тест"
+                                FontSize="18"
+                                BackgroundColor="#27AE60"
+                                TextColor="White"
+                                CornerRadius="10"
+                                Clicked="StartTest"
+                                HorizontalOptions="Center"
+                                Padding="10,5"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
 
             <!-- Таймер -->
             <Label x:Name="TimerLabel"
-                   Text="Время: 60 сек"
-                   FontSize="18"
+                   Text="Время: 00:00"
+                   FontSize="24"
+                   FontAttributes="Bold"
                    TextColor="Red"
                    HorizontalOptions="Center"
                    IsVisible="False"/>
 
             <!-- Счётчик вопросов -->
             <Label x:Name="QuestionCounterLabel"
-                   FontSize="16"
+                   FontSize="18"
+                   
                    HorizontalOptions="Center"
                    IsVisible="False"/>
 
             <!-- Вопрос -->
             <Label x:Name="QuestionLabel"
-                   FontSize="18"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                  
                    HorizontalOptions="Center"
+                  
                    IsVisible="False"/>
 
-            <!-- Картинка -->
             <Image x:Name="QuestionImage"
                    HeightRequest="150"
                    Aspect="AspectFit"
@@ -78,8 +105,9 @@
 
             <!-- Ответы -->
             <StackLayout x:Name="AnswersLayout"
-                         Spacing="10"
-                         IsVisible="False"/>
+                         Spacing="12"
+                         IsVisible="False"
+                         Padding="10"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

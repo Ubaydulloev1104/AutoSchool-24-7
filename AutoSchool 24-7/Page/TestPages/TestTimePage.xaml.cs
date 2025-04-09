@@ -51,7 +51,8 @@ public partial class TestTimePage : ContentPage
         currentQuestionIndex = 0;
         correctAnswers = 0;
         incorrectAnswers.Clear();
-
+        SettingsLayout.IsVisible = false;
+        LabelSetting.IsVisible=false;
         LabelQuestionCountPicker.IsVisible = false;
         LabelTimePicker.IsVisible = false;
         StartButton.IsVisible = false;
