@@ -75,10 +75,13 @@ public partial class TestTimePage : ContentPage
         {
             timeLeft--;
             TimerLabel.Text = $"Время: {timeLeft / 60:D2}:{timeLeft % 60:D2}";
-
+            if (timeLeft == 20)
+            {
+                TimerLabel.TextColor = Colors.Red; // Красный цвет с 20 секунд
+            }
             if (timeLeft == 10)
             {
-                TimerLabel.TextColor = Colors.Red; // Красный цвет с 10 секунд
+               
                 StartFlashingTimerLabel();         // Запускаем мигание
             }
 
