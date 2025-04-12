@@ -8,10 +8,20 @@
         {
             InitializeComponent();
         }
+        
 
         private async void OnGoToMenuClicked(object sender, EventArgs e)
         {
+            try
+            {
             await Navigation.PushAsync(new Menu());
+
+            }
+            catch (Exception ex)
+            {
+
+                DisplayAlert("Ошибка",$"Error: {ex}", "OK"); 
+            }
         }
 
     }
