@@ -12,16 +12,16 @@
                        FontAttributes="Bold" 
                        HorizontalOptions="Center"/>
 
-                    <Button Text="Предупреждающие знаки" Clicked="OnWarningSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Знаки приоритета" Clicked="OnPrioritySignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Запрещающие знаки" Clicked="OnProhibitorySignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Предписывающие знаки" Clicked="OnMandatorySignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Знаки особых предписаний" Clicked="OnSpecialRegulationSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Информационные знаки" Clicked="OnInformationalSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Знаки сервиса" Clicked="OnServiceSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Знаки дополнительной информации (таблички)" Clicked="OnAdditionalInfoSignsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Дорожная разметка" Clicked="OnRoadMarkingsClicked" Style="{StaticResource MenuButtonStyle}"/>
-                    <Button Text="Перечень неисправностей" Clicked="OnFaultsListClicked" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Text="Предупреждающие знаки" Clicked="OnWarningSignsClicked"/>
+                    <Button Text="Знаки приоритета" Clicked="OnPrioritySignsClicked" />
+                    <Button Text="Запрещающие знаки" Clicked="OnProhibitorySignsClicked" />
+                    <Button Text="Предписывающие знаки" Clicked="OnMandatorySignsClicked"/>
+                    <Button Text="Знаки особых предписаний" Clicked="OnSpecialRegulationSignsClicked"/>
+                    <Button Text="Информационные знаки" Clicked="OnInformationalSignsClicked"/>
+                    <Button Text="Знаки сервиса" Clicked="OnServiceSignsClicked"/>
+                    <Button Text="Знаки дополнительной информации (таблички)" Clicked="OnAdditionalInfoSignsClicked" />
+                    <Button Text="Дорожная разметка" Clicked="OnRoadMarkingsClicked"/>
+                    <Button Text="Перечень неисправностей" Clicked="OnFaultsListClicked"/>
                 </StackLayout>
             </ScrollView>
         </Grid>
