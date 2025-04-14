@@ -6,7 +6,7 @@
 
     <Grid>
         <!-- Фон -->
-        <Image Source="background.jpg"
+        <Image Source="loge.png"
                Aspect="AspectFill" />
 
         <!-- Затемнение -->
