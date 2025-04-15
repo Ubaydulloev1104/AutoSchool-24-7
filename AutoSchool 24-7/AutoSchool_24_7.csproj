@@ -1252,9 +1252,6 @@
 	  <MauiXaml Update="Page\AboutPage\AboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Page\ActivityIndicatorPage\ActivityIndicator.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Page\FaultsListPages\FaultsListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
