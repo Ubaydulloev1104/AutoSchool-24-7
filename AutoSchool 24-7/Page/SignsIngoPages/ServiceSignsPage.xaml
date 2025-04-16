@@ -3,151 +3,170 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.SignsIngoPage.ServiceSignsPage"
              Title="Знаки сервиса">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="Знаки сервиса" 
+    <Grid>
+
+        <!-- Панель загрузки -->
+        <StackLayout x:Name="LoadingPanel"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="10"
+                     BackgroundColor="#80000000"
+                     Padding="30"
+                     IsVisible="True">
+            <ActivityIndicator IsRunning="True" Color="White" />
+            <Label Text="Загрузка..."
+                   TextColor="White"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <!-- Основной контент -->
+        <ScrollView x:Name="MainContent" IsVisible="False">
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label Text="Знаки сервиса" 
            FontSize="24" 
            FontAttributes="Bold" 
            HorizontalOptions="Center"/>
-            <!-- Знак 7.1. Пункт медицинской помощи -->
-            <StackLayout>
-                <Image Source="sign_7_1.png" HeightRequest="100"/>
-                <Label Text="Знак 7.1. Пункт медицинской помощи" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.1. Пункт медицинской помощи -->
+                <StackLayout>
+                    <Image Source="sign_7_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.1. Пункт медицинской помощи" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.2. Больница -->
-            <StackLayout>
-                <Image Source="sign_7_2.png" HeightRequest="100"/>
-                <Label Text="Знак 7.2. Больница" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.2. Больница -->
+                <StackLayout>
+                    <Image Source="sign_7_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.2. Больница" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.3. Автозаправочная станция -->
-            <StackLayout>
-                <Image Source="sign_7_3.png" HeightRequest="100"/>
-                <Label Text="Знак 7.3. Автозаправочная станция" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.3. Автозаправочная станция -->
+                <StackLayout>
+                    <Image Source="sign_7_3.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.3. Автозаправочная станция" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.4. Техническое обслуживание автомобилей -->
-            <StackLayout>
-                <Image Source="sign_7_4.png" HeightRequest="100"/>
-                <Label Text="Знак 7.4. Техническое обслуживание автомобилей" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.4. Техническое обслуживание автомобилей -->
+                <StackLayout>
+                    <Image Source="sign_7_4.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.4. Техническое обслуживание автомобилей" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.5. Мойка автомобилей -->
-            <StackLayout>
-                <Image Source="sign_7_5.png" HeightRequest="100"/>
-                <Label Text="Знак 7.5. Мойка автомобилей" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.5. Мойка автомобилей -->
+                <StackLayout>
+                    <Image Source="sign_7_5.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.5. Мойка автомобилей" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.6. Телефон -->
-            <StackLayout>
-                <Image Source="sign_7_6.png" HeightRequest="100"/>
-                <Label Text="Знак 7.6. Телефон" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.6. Телефон -->
+                <StackLayout>
+                    <Image Source="sign_7_6.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.6. Телефон" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.7. Пункт питания -->
-            <StackLayout>
-                <Image Source="sign_7_7.png" HeightRequest="100"/>
-                <Label Text="Знак 7.7. Пункт питания" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.7. Пункт питания -->
+                <StackLayout>
+                    <Image Source="sign_7_7.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.7. Пункт питания" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.8. Питьевая вода -->
-            <StackLayout>
-                <Image Source="sign_7_8.png" HeightRequest="100"/>
-                <Label Text="Знак 7.8. Питьевая вода" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.8. Питьевая вода -->
+                <StackLayout>
+                    <Image Source="sign_7_8.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.8. Питьевая вода" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.9. Гостиница или мотель -->
-            <StackLayout>
-                <Image Source="sign_7_9.png" HeightRequest="100"/>
-                <Label Text="Знак 7.9. Гостиница или мотель" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.9. Гостиница или мотель -->
+                <StackLayout>
+                    <Image Source="sign_7_9.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.9. Гостиница или мотель" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.10. Кемпинг -->
-            <StackLayout>
-                <Image Source="sign_7_10.png" HeightRequest="100"/>
-                <Label Text="Знак 7.10. Кемпинг" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.10. Кемпинг -->
+                <StackLayout>
+                    <Image Source="sign_7_10.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.10. Кемпинг" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.11. Место отдыха -->
-            <StackLayout>
-                <Image Source="sign_7_11.png" HeightRequest="100"/>
-                <Label Text="Знак 7.11. Место отдыха" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.11. Место отдыха -->
+                <StackLayout>
+                    <Image Source="sign_7_11.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.11. Место отдыха" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.12. Пост дорожно-патрульной службы -->
-            <StackLayout>
-                <Image Source="sign_7_12.png" HeightRequest="100"/>
-                <Label Text="Знак 7.12. Пост дорожно-патрульной службы" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.12. Пост дорожно-патрульной службы -->
+                <StackLayout>
+                    <Image Source="sign_7_12.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.12. Пост дорожно-патрульной службы" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.13. Полиция -->
-            <StackLayout>
-                <Image Source="sign_7_13.png" HeightRequest="100"/>
-                <Label Text="Знак 7.13. Полиция" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.13. Полиция -->
+                <StackLayout>
+                    <Image Source="sign_7_13.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.13. Полиция" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.14.1. Пункт таможенного контроля -->
-            <StackLayout>
-                <Image Source="sign_7_14.png" HeightRequest="100"/>
-                <Label Text="Знак 7.14.1. Пункт таможенного контроля" FontSize="18"/>
-               
-            </StackLayout>
+                <!-- Знак 7.14.1. Пункт таможенного контроля -->
+                <StackLayout>
+                    <Image Source="sign_7_14.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.14.1. Пункт таможенного контроля" FontSize="18"/>
 
-            <!-- Знак 7.14.2. Пункт транспортного контроля -->
-            <StackLayout>
-                <Image Source="sign_7_14_2.png" HeightRequest="100"/>
-                <Label Text="Знак 7.14.2. Пункт транспортного контроля" FontSize="18"/>
-               
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Знак 7.15. Зона приема радиостанции, передающей информацию о дорожном движении -->
-            <StackLayout>
-                <Image Source="sign_7_15.png" HeightRequest="100"/>
-                <Label Text="Знак 7.15. Зона приема радиостанции, передающей информацию о дорожном движении" FontSize="18"/>
-                <Label Text="Участок дороги, на котором осуществляется прием передач радиостанции на частоте, указанной на знаке." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-            </StackLayout>
+                <!-- Знак 7.14.2. Пункт транспортного контроля -->
+                <StackLayout>
+                    <Image Source="sign_7_14_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.14.2. Пункт транспортного контроля" FontSize="18"/>
 
-            <!-- Знак 7.16. Зона радиосвязи с аварийными службами -->
-            <StackLayout>
-                <Image Source="sign_7_16.png" HeightRequest="100"/>
-                <Label Text="Знак 7.16. Зона радиосвязи с аварийными службами" FontSize="18"/>
-                <Label Text="Участок дороги, на котором действует система радиосвязи с аварийными службами в гражданском диапазоне 27 МГц." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Знак 7.17. Бассейн или пляж -->
-            <StackLayout>
-                <Image Source="sign_7_17.png" HeightRequest="100"/>
-                <Label Text="Знак 7.17. Бассейн или пляж" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.15. Зона приема радиостанции, передающей информацию о дорожном движении -->
+                <StackLayout>
+                    <Image Source="sign_7_15.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.15. Зона приема радиостанции, передающей информацию о дорожном движении" FontSize="18"/>
+                    <Label Text="Участок дороги, на котором осуществляется прием передач радиостанции на частоте, указанной на знаке." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                </StackLayout>
 
-            <!-- Знак 7.18. Туалет -->
-            <StackLayout>
-                <Image Source="sign_7_18.png" HeightRequest="100"/>
-                <Label Text="Знак 7.18. Туалет" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.16. Зона радиосвязи с аварийными службами -->
+                <StackLayout>
+                    <Image Source="sign_7_16.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.16. Зона радиосвязи с аварийными службами" FontSize="18"/>
+                    <Label Text="Участок дороги, на котором действует система радиосвязи с аварийными службами в гражданском диапазоне 27 МГц." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                </StackLayout>
 
-            <!-- Знак 7.19. Телефон экстренной связи -->
-            <StackLayout>
-                <Image Source="sign_7_19.png" HeightRequest="100"/>
-                <Label Text="Знак 7.19. Телефон экстренной связи" FontSize="18"/>
-                <Label Text="Указывает место, где находится телефон для вызова оперативных служб." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-            </StackLayout>
+                <!-- Знак 7.17. Бассейн или пляж -->
+                <StackLayout>
+                    <Image Source="sign_7_17.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.17. Бассейн или пляж" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.20. Огнетушитель -->
-            <StackLayout>
-                <Image Source="sign_7_20.png" HeightRequest="100"/>
-                <Label Text="Знак 7.20. Огнетушитель" FontSize="18"/>
-                <Label Text="Указывает место, где находится огнетушитель." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-            </StackLayout>
+                <!-- Знак 7.18. Туалет -->
+                <StackLayout>
+                    <Image Source="sign_7_18.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.18. Туалет" FontSize="18"/>
+                </StackLayout>
 
-            <!-- Знак 7.21. Автозаправочная станция с возможностью зарядки электромобилей -->
-            <StackLayout>
-                <Image Source="sign_7_21.png" HeightRequest="100"/>
-                <Label Text="Знак 7.21. Автозаправочная станция с возможностью зарядки электромобилей" FontSize="18"/>
-            </StackLayout>
+                <!-- Знак 7.19. Телефон экстренной связи -->
+                <StackLayout>
+                    <Image Source="sign_7_19.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.19. Телефон экстренной связи" FontSize="18"/>
+                    <Label Text="Указывает место, где находится телефон для вызова оперативных служб." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <!-- Знак 7.20. Огнетушитель -->
+                <StackLayout>
+                    <Image Source="sign_7_20.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.20. Огнетушитель" FontSize="18"/>
+                    <Label Text="Указывает место, где находится огнетушитель." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <!-- Знак 7.21. Автозаправочная станция с возможностью зарядки электромобилей -->
+                <StackLayout>
+                    <Image Source="sign_7_21.png" HeightRequest="100"/>
+                    <Label Text="Знак 7.21. Автозаправочная станция с возможностью зарядки электромобилей" FontSize="18"/>
+                </StackLayout>
 
 
-        </VerticalStackLayout>
-    </ScrollView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

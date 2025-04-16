@@ -3,656 +3,675 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.SignsIngoPage.ProhibitorySignsPage"
              Title="Запрещающие знаки">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="Запрещающие знаки" 
+    <Grid>
+
+        <!-- Панель загрузки -->
+        <StackLayout x:Name="LoadingPanel"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="10"
+                     BackgroundColor="#80000000"
+                     Padding="30"
+                     IsVisible="True">
+            <ActivityIndicator IsRunning="True" Color="White" />
+            <Label Text="Загрузка..."
+                   TextColor="White"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <!-- Основной контент -->
+        <ScrollView x:Name="MainContent" IsVisible="False">
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label Text="Запрещающие знаки" 
            FontSize="24" 
            FontAttributes="Bold" 
            HorizontalOptions="Center"/>
 
-            <!-- Знак 3.1. Въезд запрещен -->
-            <StackLayout>
-                <Image Source="sign_3_1.png" HeightRequest="100"/>
-                <Label Text="Знак 3.1. Въезд запрещен" FontSize="18"/>
-                <Label Text="Запрещается въезд всех транспортных средств в данном направлении." 
+                <!-- Знак 3.1. Въезд запрещен -->
+                <StackLayout>
+                    <Image Source="sign_3_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.1. Въезд запрещен" FontSize="18"/>
+                    <Label Text="Запрещается въезд всех транспортных средств в данном направлении." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="Знак 3.1 может быть применен совместно с табличками 8.4.1-8.4.8, 8.5.1, 8.5.2, 8.5.3, 8.5.4-8.5.7 и 8.5.9-8.5.16." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="Знак 3.1 может быть применен совместно с табличками 8.4.1-8.4.8, 8.5.1, 8.5.2, 8.5.3, 8.5.4-8.5.7 и 8.5.9-8.5.16." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Особенности знака 3.1 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На маршрутные транспортные средства." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.1 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На маршрутные транспортные средства." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.2. Движение запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_2.png" HeightRequest="100"/>
-                <Label Text="Знак 3.2. Движение запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение всех транспортных средств." 
+                <!-- Знак 3.2. Движение запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.2. Движение запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение всех транспортных средств." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.2 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На маршрутные ТС." FontSize="14"/>
-                <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
-                <Label Text="- На транспортные средства, управляемые инвалидами I и II групп." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.2 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На маршрутные ТС." FontSize="14"/>
+                    <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
+                    <Label Text="- На транспортные средства, управляемые инвалидами I и II групп." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.3. Движение механических транспортных средств запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_3.png" HeightRequest="100"/>
-                <Label Text="Знак 3.3. Движение механических транспортных средств запрещено" FontSize="18"/>
-                <Label Text="Движение механических транспортных средств запрещено." 
+                <!-- Знак 3.3. Движение механических транспортных средств запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_3.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.3. Движение механических транспортных средств запрещено" FontSize="18"/>
+                    <Label Text="Движение механических транспортных средств запрещено." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.3 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На маршрутные ТС." FontSize="14"/>
-                <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
-                <Label Text="- На транспортные средства, управляемые инвалидами I и II групп." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.3 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На маршрутные ТС." FontSize="14"/>
+                    <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
+                    <Label Text="- На транспортные средства, управляемые инвалидами I и II групп." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.4. Движение грузовых автомобилей запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_4.png" HeightRequest="100"/>
-                <Label Text="Знак 3.4. Движение грузовых автомобилей запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение грузовых автомобилей и составов транспортных средств." 
+                <!-- Знак 3.4. Движение грузовых автомобилей запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_4.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.4. Движение грузовых автомобилей запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение грузовых автомобилей и составов транспортных средств." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.4 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На грузовые ТС, предназначенные для перевозки людей." FontSize="14"/>
-                <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.4 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На грузовые ТС, предназначенные для перевозки людей." FontSize="14"/>
+                    <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.5. Движение мотоциклов запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_5.png" HeightRequest="100"/>
-                <Label Text="Знак 3.5. Движение мотоциклов запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение любых мотоциклов (колясками и без них)." 
+                <!-- Знак 3.5. Движение мотоциклов запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_5.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.5. Движение мотоциклов запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение любых мотоциклов (колясками и без них)." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.5 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На транспортные средства организаций" FontSize="14"/>
-                <Label Text="- На транспортные средства, управляемые инвалидами I и II групп." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 3.6. Движение тракторов запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_6.png" HeightRequest="100"/>
-                <Label Text="Знак 3.6. Движение тракторов запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение тракторов любых видов и самоходных машин." 
+                <!-- Особенности знака 3.5 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На транспортные средства организаций" FontSize="14"/>
+                    <Label Text="- На транспортные средства, управляемые инвалидами I и II групп." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 3.6. Движение тракторов запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_6.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.6. Движение тракторов запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение тракторов любых видов и самоходных машин." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Действие знака 3.6 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
-            </StackLayout>
+                <!-- Действие знака 3.6 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.7. Движение с прицепом запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_7.png" HeightRequest="100"/>
-                <Label Text="Знак 3.7. Движение с прицепом запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение грузовых автомобилей и тракторов с прицепами." 
+                <!-- Знак 3.7. Движение с прицепом запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_7.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.7. Движение с прицепом запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение грузовых автомобилей и тракторов с прицепами." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Действие знака 3.7 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
-            </StackLayout>
+                <!-- Действие знака 3.7 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.8. Движение гужевых повозок запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_8.png" HeightRequest="100"/>
-                <Label Text="Знак 3.8. Движение гужевых повозок запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение гужевых повозок, верховых и вьючных животных." 
+                <!-- Знак 3.8. Движение гужевых повозок запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_8.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.8. Движение гужевых повозок запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение гужевых повозок, верховых и вьючных животных." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Действие знака 3.8 -->
-            <StackLayout>
-                <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
-            </StackLayout>
+                <!-- Действие знака 3.8 -->
+                <StackLayout>
+                    <Label Text="Действие знака не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На транспортные средства организаций федеральной почтовой связи..." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.9. Движение на велосипедах запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_9.png" HeightRequest="100"/>
-                <Label Text="Знак 3.9. Движение на велосипедах запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение велосипедистов и мопедов." 
+                <!-- Знак 3.9. Движение на велосипедах запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_9.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.9. Движение на велосипедах запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение велосипедистов и мопедов." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.9 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак не запрещает вести руками велосипед (мопед) по тротуару." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.9 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак не запрещает вести руками велосипед (мопед) по тротуару." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.10. Движение пешеходов запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_10.png" HeightRequest="100"/>
-                <Label Text="Знак 3.10. Движение пешеходов запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение пешеходов и лиц, использующих средства мобильности." 
+                <!-- Знак 3.10. Движение пешеходов запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_10.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.10. Движение пешеходов запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение пешеходов и лиц, использующих средства мобильности." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.10 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Действие знака распространяется только на ту сторону дороги, где он установлен." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.10 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Действие знака распространяется только на ту сторону дороги, где он установлен." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.11. Ограничение массы -->
-            <StackLayout>
-                <Image Source="sign_3_11.png" HeightRequest="100"/>
-                <Label Text="Знак 3.11. Ограничение массы" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств, общая масса которых больше указанной на знаке." 
+                <!-- Знак 3.11. Ограничение массы -->
+                <StackLayout>
+                    <Image Source="sign_3_11.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.11. Ограничение массы" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств, общая масса которых больше указанной на знаке." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.11 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-                <Label Text="- В случаях если значения временных и стационарных знаков противоречат, водители должны руководствоваться временными." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.11 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                    <Label Text="- В случаях если значения временных и стационарных знаков противоречат, водители должны руководствоваться временными." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.12. Ограничение массы, приходящейся на ось транспортного средства -->
-            <StackLayout>
-                <Image Source="sign_3_12.png" HeightRequest="100"/>
-                <Label Text="Знак 3.12. Ограничение массы, приходящейся на ось транспортного средства" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств, у которых фактическая масса на ось превышает указанную на знаке." 
+                <!-- Знак 3.12. Ограничение массы, приходящейся на ось транспортного средства -->
+                <StackLayout>
+                    <Image Source="sign_3_12.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.12. Ограничение массы, приходящейся на ось транспортного средства" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств, у которых фактическая масса на ось превышает указанную на знаке." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.12 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="1. Нагрузка на ось включает распределение на двухосных и трехосных автомобилях." FontSize="14"/>
-                <Label Text="2. Если нагрузка на ось больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.12 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="1. Нагрузка на ось включает распределение на двухосных и трехосных автомобилях." FontSize="14"/>
+                    <Label Text="2. Если нагрузка на ось больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.13. Ограничение высоты -->
-            <StackLayout>
-                <Image Source="sign_3_13.png" HeightRequest="100"/>
-                <Label Text="Знак 3.13. Ограничение высоты" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств, габаритная высота которых больше указанной на знаке." 
+                <!-- Знак 3.13. Ограничение высоты -->
+                <StackLayout>
+                    <Image Source="sign_3_13.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.13. Ограничение высоты" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств, габаритная высота которых больше указанной на знаке." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.13 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="Если высота автомобиля больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.13 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="Если высота автомобиля больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.14. Ограничение ширины -->
-            <StackLayout>
-                <Image Source="sign_3_14.png" HeightRequest="100"/>
-                <Label Text="Знак 3.14. Ограничение ширины" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств, габаритная ширина которых больше указанной на знаке." 
+                <!-- Знак 3.14. Ограничение ширины -->
+                <StackLayout>
+                    <Image Source="sign_3_14.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.14. Ограничение ширины" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств, габаритная ширина которых больше указанной на знаке." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.14 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="Если ширина автомобиля больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.14 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="Если ширина автомобиля больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.15. Ограничение длины -->
-            <StackLayout>
-                <Image Source="sign_3_15.png" HeightRequest="100"/>
-                <Label Text="Знак 3.15. Ограничение длины" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств, габаритная длина которых больше указанной на знаке." 
+                <!-- Знак 3.15. Ограничение длины -->
+                <StackLayout>
+                    <Image Source="sign_3_15.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.15. Ограничение длины" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств, габаритная длина которых больше указанной на знаке." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.15 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="Если длина автомобиля больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.15 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="Если длина автомобиля больше, чем на знаке, водитель должен объехать участок дороги." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.16. Ограничение минимальной дистанции -->
-            <StackLayout>
-                <Image Source="sign_3_16.png" HeightRequest="100"/>
-                <Label Text="Знак 3.16. Ограничение минимальной дистанции" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств с дистанцией между ними меньше указанной на знаке." 
+                <!-- Знак 3.16. Ограничение минимальной дистанции -->
+                <StackLayout>
+                    <Image Source="sign_3_16.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.16. Ограничение минимальной дистанции" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств с дистанцией между ними меньше указанной на знаке." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.16 -->
-            <StackLayout>
-                <Label Text="Зона действия знаков:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="Распространяется от места установки знака до ближайшего перекрестка." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.16 -->
+                <StackLayout>
+                    <Label Text="Зона действия знаков:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="Распространяется от места установки знака до ближайшего перекрестка." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.17.1. Таможня -->
-            <StackLayout>
-                <Image Source="sign_3_17_1.png" HeightRequest="100"/>
-                <Label Text="Знак 3.17.1. Таможня" FontSize="18"/>
-                <Label Text="Запрещается проезд без остановки у таможни." 
+                <!-- Знак 3.17.1. Таможня -->
+                <StackLayout>
+                    <Image Source="sign_3_17_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.17.1. Таможня" FontSize="18"/>
+                    <Label Text="Запрещается проезд без остановки у таможни." 
            FontSize="14"  
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Знак 3.17.2. Опасность -->
-            <StackLayout>
-                <Image Source="sign_3_17_2.png" HeightRequest="100"/>
-                <Label Text="Знак 3.17.2. Опасность" FontSize="18"/>
-                <Label Text="Запрещается дальнейшее движение всех транспортных средств в связи с опасностью." 
+                <!-- Знак 3.17.2. Опасность -->
+                <StackLayout>
+                    <Image Source="sign_3_17_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.17.2. Опасность" FontSize="18"/>
+                    <Label Text="Запрещается дальнейшее движение всех транспортных средств в связи с опасностью." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.17.2 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="Знак устанавливается в местах, угрожающих жизни и здоровью людей." FontSize="14"/>
-                <Label Text="- За знак проезд запрещен всем без исключением." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.17.2 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="Знак устанавливается в местах, угрожающих жизни и здоровью людей." FontSize="14"/>
+                    <Label Text="- За знак проезд запрещен всем без исключением." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.17.3. Контроль -->
-            <StackLayout>
-                <Image Source="sign_3_17_3.png" HeightRequest="100"/>
-                <Label Text="Знак 3.17.3. Контроль" FontSize="18"/>
-                <Label Text="Запрещается проезд без остановки через контрольные пункты." 
+                <!-- Знак 3.17.3. Контроль -->
+                <StackLayout>
+                    <Image Source="sign_3_17_3.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.17.3. Контроль" FontSize="18"/>
+                    <Label Text="Запрещается проезд без остановки через контрольные пункты." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Знак 3.18.1. Поворот направо запрещен -->
-            <StackLayout>
-                <Image Source="sign_3_18_1.png" HeightRequest="100"/>
-                <Label Text="Знак 3.18.1. Поворот направо запрещен" FontSize="18"/>
-                <Label Text="Запрещает поворот направо." 
+                <!-- Знак 3.18.1. Поворот направо запрещен -->
+                <StackLayout>
+                    <Image Source="sign_3_18_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.18.1. Поворот направо запрещен" FontSize="18"/>
+                    <Label Text="Запрещает поворот направо." 
            FontSize="14" 
            
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.18.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Действие знаков не распространяется на маршрутные транспортные средства." FontSize="14"/>
-                <Label Text="- Действие знака распространяется только на то пересечение, перед которым установлен знак." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 3.18.2. Поворот налево запрещен -->
-            <StackLayout>
-                <Image Source="sign_3_18_2.png" HeightRequest="100"/>
-                <Label Text="Знак 3.18.2. Поворот налево запрещен" FontSize="18"/>
-                <Label Text="Запрещает поворот налево." 
+                <!-- Особенности знака 3.18.1 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Действие знаков не распространяется на маршрутные транспортные средства." FontSize="14"/>
+                    <Label Text="- Действие знака распространяется только на то пересечение, перед которым установлен знак." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак временный." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 3.18.2. Поворот налево запрещен -->
+                <StackLayout>
+                    <Image Source="sign_3_18_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.18.2. Поворот налево запрещен" FontSize="18"/>
+                    <Label Text="Запрещает поворот налево." 
            FontSize="14" 
         
            Margin="0,5,0,0"/>
-                <Label Text="ОБРАТИТЕ ВНИМАНИЕ: знак не запрещает разворот." FontSize="14" FontAttributes="Italic"/>
-            </StackLayout>
+                    <Label Text="ОБРАТИТЕ ВНИМАНИЕ: знак не запрещает разворот." FontSize="14" FontAttributes="Italic"/>
+                </StackLayout>
 
-            <!-- Особенности знака 3.18.2 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Действие знаков не распространяется на маршрутные транспортные средства." FontSize="14"/>
-                <Label Text="- Действие знака распространяется только на то пересечение, перед которым установлен знак." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.18.2 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Действие знаков не распространяется на маршрутные транспортные средства." FontSize="14"/>
+                    <Label Text="- Действие знака распространяется только на то пересечение, перед которым установлен знак." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.19. Разворот запрещен -->
-            <StackLayout>
-                <Image Source="sign_3_19.png" HeightRequest="100"/>
-                <Label Text="Знак 3.19. Разворот запрещен" FontSize="18"/>
-                <Label Text="ОБРАТИТЕ ВНИМАНИЕ: знак не запрещает поворот налево." 
+                <!-- Знак 3.19. Разворот запрещен -->
+                <StackLayout>
+                    <Image Source="sign_3_19.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.19. Разворот запрещен" FontSize="18"/>
+                    <Label Text="ОБРАТИТЕ ВНИМАНИЕ: знак не запрещает поворот налево." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.19 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Действие знаков не распространяется на маршрутные транспортные средства." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.19 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Действие знаков не распространяется на маршрутные транспортные средства." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.20. Обгон запрещен -->
-            <StackLayout>
-                <Image Source="sign_3_20.png" HeightRequest="100"/>
-                <Label Text="Знак 3.20. Обгон запрещен" FontSize="18"/>
-                <Label Text="Запрещается обгон всех транспортных средств." 
+                <!-- Знак 3.20. Обгон запрещен -->
+                <StackLayout>
+                    <Image Source="sign_3_20.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.20. Обгон запрещен" FontSize="18"/>
+                    <Label Text="Запрещается обгон всех транспортных средств." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="Кроме тихоходных транспортных средств, гужевых повозок, велосипедов, мопедов и мотоциклов без бокового прицепа." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="Кроме тихоходных транспортных средств, гужевых повозок, велосипедов, мопедов и мотоциклов без бокового прицепа." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Особенности знака 3.20 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Зона действия распространяется от места установки знака до ближайшего перекрестка." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.20 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Зона действия распространяется от места установки знака до ближайшего перекрестка." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.21. Конец зоны запрещения обгона -->
-            <StackLayout>
-                <Image Source="sign_3_21.png" HeightRequest="100"/>
-                <Label Text="Знак 3.21. Конец зоны запрещения обгона" FontSize="18"/>
-                <Label Text="Отменяет действие знака 3.20 «Обгон запрещен»." 
+                <!-- Знак 3.21. Конец зоны запрещения обгона -->
+                <StackLayout>
+                    <Image Source="sign_3_21.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.21. Конец зоны запрещения обгона" FontSize="18"/>
+                    <Label Text="Отменяет действие знака 3.20 «Обгон запрещен»." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.22. Обгон грузовым автомобилем запрещен -->
-            <StackLayout>
-                <Image Source="sign_3_22.png" HeightRequest="100"/>
-                <Label Text="Знак 3.22. Обгон грузовым автомобилем запрещен" FontSize="18"/>
-                <Label Text="Запрещается грузовым автомобилям с разрешенной максимальной массой более 3.5 т обгон всех транспортных средств." 
+                <!-- Знак 3.22. Обгон грузовым автомобилем запрещен -->
+                <StackLayout>
+                    <Image Source="sign_3_22.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.22. Обгон грузовым автомобилем запрещен" FontSize="18"/>
+                    <Label Text="Запрещается грузовым автомобилям с разрешенной максимальной массой более 3.5 т обгон всех транспортных средств." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.22 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Зона действия распространяется от места установки знака до ближайшего перекрестка." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.22 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Зона действия распространяется от места установки знака до ближайшего перекрестка." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.23. Конец зоны запрещения обгона грузовым автомобилям -->
-            <StackLayout>
-                <Image Source="sign_3_23.png" HeightRequest="100"/>
-                <Label Text="Знак 3.23. Конец зоны запрещения обгона грузовым автомобилям" FontSize="18"/>
-                <Label Text="Отменяет действие знака 3.22 «Обгон грузовым автомобилям запрещен»." 
+                <!-- Знак 3.23. Конец зоны запрещения обгона грузовым автомобилям -->
+                <StackLayout>
+                    <Image Source="sign_3_23.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.23. Конец зоны запрещения обгона грузовым автомобилям" FontSize="18"/>
+                    <Label Text="Отменяет действие знака 3.22 «Обгон грузовым автомобилям запрещен»." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 3.24. Ограничение максимальной скорости -->
-            <StackLayout>
-                <Image Source="sign_3_24.png" HeightRequest="100"/>
-                <Label Text="Знак 3.24. Ограничение максимальной скорости" FontSize="18"/>
-                <Label Text="Запрещается движение со скоростью (км/ч), превышающей указанную на знаке." 
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 3.24. Ограничение максимальной скорости -->
+                <StackLayout>
+                    <Image Source="sign_3_24.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.24. Ограничение максимальной скорости" FontSize="18"/>
+                    <Label Text="Запрещается движение со скоростью (км/ч), превышающей указанную на знаке." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.24 -->
-            <StackLayout>
-                <Label Text="Зона действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Распространяется от места установки знака до ближайшего перекрестка за ним;" FontSize="14"/>
-                <Label Text="- В населенных пунктах при отсутствии перекрестка - до конца населенного пункта;" FontSize="14"/>
-                <Label Text="- Действие знаков не прерывается в местах выезда с прилегающих к дороге территорий." FontSize="14"/>
-                <Label Text="- Действие может быть уменьшено установкой знаков 3.21, 3.23, 3.25 или табличкой 8.2.1." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-                <Label Text="- В случае противоречия временных и стационарных знаков, следуйте временным знакам." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.24 -->
+                <StackLayout>
+                    <Label Text="Зона действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Распространяется от места установки знака до ближайшего перекрестка за ним;" FontSize="14"/>
+                    <Label Text="- В населенных пунктах при отсутствии перекрестка - до конца населенного пункта;" FontSize="14"/>
+                    <Label Text="- Действие знаков не прерывается в местах выезда с прилегающих к дороге территорий." FontSize="14"/>
+                    <Label Text="- Действие может быть уменьшено установкой знаков 3.21, 3.23, 3.25 или табличкой 8.2.1." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                    <Label Text="- В случае противоречия временных и стационарных знаков, следуйте временным знакам." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.25. Конец зоны ограничения максимальной скорости -->
-            <StackLayout>
-                <Image Source="sign_3_25.png" HeightRequest="100"/>
-                <Label Text="Знак 3.25. Конец зоны ограничения максимальной скорости" FontSize="18"/>
-                <Label Text="Отменяет действие знака 3.24 «Ограничение максимальной скорости»." 
+                <!-- Знак 3.25. Конец зоны ограничения максимальной скорости -->
+                <StackLayout>
+                    <Image Source="sign_3_25.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.25. Конец зоны ограничения максимальной скорости" FontSize="18"/>
+                    <Label Text="Отменяет действие знака 3.24 «Ограничение максимальной скорости»." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.25 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-                <Label Text="- В случае противоречия временных и стационарных знаков, следуйте временным знакам." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.25 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                    <Label Text="- В случае противоречия временных и стационарных знаков, следуйте временным знакам." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.26. Подача звукового сигнала запрещена -->
-            <StackLayout>
-                <Image Source="sign_3_26.png" HeightRequest="100"/>
-                <Label Text="Знак 3.26. Подача звукового сигнала запрещена" FontSize="18"/>
-                <Label Text="Запрещается пользоваться звуковыми сигналами, кроме случаев, когда сигнал подается для предотвращения дорожно-транспортного происшествия." 
+                <!-- Знак 3.26. Подача звукового сигнала запрещена -->
+                <StackLayout>
+                    <Image Source="sign_3_26.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.26. Подача звукового сигнала запрещена" FontSize="18"/>
+                    <Label Text="Запрещается пользоваться звуковыми сигналами, кроме случаев, когда сигнал подается для предотвращения дорожно-транспортного происшествия." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.26 -->
-            <StackLayout>
-                <Label Text="Зона действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Распространяется от места установки знака до ближайшего перекрестка за ним;" FontSize="14"/>
-                <Label Text="- В населенных пунктах при отсутствии перекрестка - до конца населенного пункта;" FontSize="14"/>
-                <Label Text="- Зона действия может быть уменьшена табличкой 8.2.1 «Зона действия»." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.26 -->
+                <StackLayout>
+                    <Label Text="Зона действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Распространяется от места установки знака до ближайшего перекрестка за ним;" FontSize="14"/>
+                    <Label Text="- В населенных пунктах при отсутствии перекрестка - до конца населенного пункта;" FontSize="14"/>
+                    <Label Text="- Зона действия может быть уменьшена табличкой 8.2.1 «Зона действия»." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.27. Остановка запрещена -->
-            <StackLayout>
-                <Image Source="sign_3_27.png" HeightRequest="100"/>
-                <Label Text="Знак 3.27. Остановка запрещена" FontSize="18"/>
-                <Label Text="Запрещаются остановка и стоянка транспортных средств." 
+                <!-- Знак 3.27. Остановка запрещена -->
+                <StackLayout>
+                    <Image Source="sign_3_27.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.27. Остановка запрещена" FontSize="18"/>
+                    <Label Text="Запрещаются остановка и стоянка транспортных средств." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.27 -->
-            <StackLayout>
-                <Label Text="Зона действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Распространяется только на ту сторону дороги, на которой установлен." FontSize="14"/>
-                <Label Text="- Действия не распространяется на маршрутные ТС и легковые такси в местах остановки." FontSize="14"/>
-                <Label Text="- Зона действия: от места установки знака доближайшего перекрестка за ним;" FontSize="14"/>
-                <Label Text="- Может быть уменьшена установкой повторных знаков 3.27, 3.28, 3.29, 3.30 с табличкой 8.2.3." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 3.28. Стоянка запрещена -->
-            <StackLayout>
-                <Image Source="sign_3_28.png" HeightRequest="100"/>
-                <Label Text="Знак 3.28. Стоянка запрещена" FontSize="18"/>
-                <Label Text="Запрещается стоянка транспортных средств." 
+                <!-- Особенности знака 3.27 -->
+                <StackLayout>
+                    <Label Text="Зона действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Распространяется только на ту сторону дороги, на которой установлен." FontSize="14"/>
+                    <Label Text="- Действия не распространяется на маршрутные ТС и легковые такси в местах остановки." FontSize="14"/>
+                    <Label Text="- Зона действия: от места установки знака доближайшего перекрестка за ним;" FontSize="14"/>
+                    <Label Text="- Может быть уменьшена установкой повторных знаков 3.27, 3.28, 3.29, 3.30 с табличкой 8.2.3." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 3.28. Стоянка запрещена -->
+                <StackLayout>
+                    <Image Source="sign_3_28.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.28. Стоянка запрещена" FontSize="18"/>
+                    <Label Text="Запрещается стоянка транспортных средств." 
            FontSize="14" 
            
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.28 -->
-            <StackLayout>
-                <Label Text="Распространяется только на ту сторону дороги, на которой он установлен." 
+                <!-- Особенности знака 3.28 -->
+                <StackLayout>
+                    <Label Text="Распространяется только на ту сторону дороги, на которой он установлен." 
            FontSize="14"/>
-                <Label Text="Действие знаков не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На транспортные средства, управляемые инвалидами и имеющими знак 'Инвалид'." 
+                    <Label Text="Действие знаков не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На транспортные средства, управляемые инвалидами и имеющими знак 'Инвалид'." 
            FontSize="14"/>
-                <Label Text="- На транспортные средства организаций почтовой связи с белой диагональной полосой." 
+                    <Label Text="- На транспортные средства организаций почтовой связи с белой диагональной полосой." 
            FontSize="14"/>
-                <Label Text="- На легковые такси с включенным таксометром." FontSize="14"/>
-                <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="- На легковые такси с включенным таксометром." FontSize="14"/>
+                    <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.29. Стоянка запрещена по нечетным числам месяца -->
-            <StackLayout>
-                <Image Source="sign_3_29.png" HeightRequest="100"/>
-                <Label Text="Знак 3.29. Стоянка запрещена по нечетным числам месяца" FontSize="18"/>
-                <Label Text="При одновременном применении знаков 3.29 и 3.30 разрешается стоянка на обеих сторонах проезжей части с 21 часа до 24 часов." 
+                <!-- Знак 3.29. Стоянка запрещена по нечетным числам месяца -->
+                <StackLayout>
+                    <Image Source="sign_3_29.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.29. Стоянка запрещена по нечетным числам месяца" FontSize="18"/>
+                    <Label Text="При одновременном применении знаков 3.29 и 3.30 разрешается стоянка на обеих сторонах проезжей части с 21 часа до 24 часов." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.29 -->
-            <StackLayout>
-                <Label Text="Действие знаков не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На транспортные средства, управляемые инвалидами и имеющими знак 'Инвалид'." 
+                <!-- Особенности знака 3.29 -->
+                <StackLayout>
+                    <Label Text="Действие знаков не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На транспортные средства, управляемые инвалидами и имеющими знак 'Инвалид'." 
            FontSize="14"/>
-                <Label Text="- На транспортные средства организаций почтовой связи с белой диагональной полосой." 
+                    <Label Text="- На транспортные средства организаций почтовой связи с белой диагональной полосой." 
            FontSize="14"/>
-                <Label Text="- На легковые такси с включенным таксометром." FontSize="14"/>
-                <Label Text="Зона действия: от места установки знака до ближайшего перекрестка за ним;" 
+                    <Label Text="- На легковые такси с включенным таксометром." FontSize="14"/>
+                    <Label Text="Зона действия: от места установки знака до ближайшего перекрестка за ним;" 
            FontSize="14"/>
-                <Label Text="в населенных пунктах - до конца населенного пункта." FontSize="14"/>
-                <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="в населенных пунктах - до конца населенного пункта." FontSize="14"/>
+                    <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.30. Стоянка запрещена по четным числам месяца -->
-            <StackLayout>
-                <Image Source="sign_3_30.png" HeightRequest="100"/>
-                <Label Text="Знак 3.30. Стоянка запрещена по четным числам месяца" FontSize="18"/>
-                <Label Text="При одновременном применении знаков 3.29 и 3.30 разрешается стоянка на обеих сторонах проезжей части с 21 часа до 24 часов." 
+                <!-- Знак 3.30. Стоянка запрещена по четным числам месяца -->
+                <StackLayout>
+                    <Image Source="sign_3_30.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.30. Стоянка запрещена по четным числам месяца" FontSize="18"/>
+                    <Label Text="При одновременном применении знаков 3.29 и 3.30 разрешается стоянка на обеих сторонах проезжей части с 21 часа до 24 часов." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.30 -->
-            <StackLayout>
-                <Label Text="Действие знаков не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На транспортные средства, управляемые инвалидами и имеющими знак 'Инвалид'." 
+                <!-- Особенности знака 3.30 -->
+                <StackLayout>
+                    <Label Text="Действие знаков не распространяется:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На транспортные средства, управляемые инвалидами и имеющими знак 'Инвалид'." 
            FontSize="14"/>
-                <Label Text="- На транспортные средства организаций почтовой связи с белой диагональной полосой." 
+                    <Label Text="- На транспортные средства организаций почтовой связи с белой диагональной полосой." 
            FontSize="14"/>
-                <Label Text="- На легковые такси с включенным таксометром." FontSize="14"/>
-                <Label Text="Зона действия: от места установки знака до ближайшего перекрестка за ним;" 
+                    <Label Text="- На легковые такси с включенным таксометром." FontSize="14"/>
+                    <Label Text="Зона действия: от места установки знака до ближайшего перекрестка за ним;" 
            FontSize="14"/>
-                <Label Text="в населенных пунктах - до конца населенного пункта." FontSize="14"/>
-                <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 3.31. Конец зоны всех ограничений -->
-            <StackLayout>
-                <Image Source="sign_3_31.png" HeightRequest="100"/>
-                <Label Text="Знак 3.31. Конец зоны всех ограничений" FontSize="18"/>
-                <Label Text="Отменяет действие следующих запрещающих знаков:" FontSize="14" FontAttributes="Bold"/>
-                <Label Text="1) 3.16 Ограничение минимальной дистанции;" FontSize="14"/>
-                <Label Text="2) 3.20 Обгон запрещен;" FontSize="14"/>
-                <Label Text="3) 3.22 Обгон грузовым автомобилям запрещен;" FontSize="14"/>
-                <Label Text="4) 3.24 Ограничение максимальной скорости;" FontSize="14"/>
-                <Label Text="5) 3.26 Подача звукового сигнала запрещена;" FontSize="14"/>
-                <Label Text="6) 3.27 Остановка запрещена;" FontSize="14"/>
-                <Label Text="7) 3.28 Стоянка запрещена;" FontSize="14"/>
-                <Label Text="8) 3.29 Стоянка запрещена по нечетным числам месяца;" FontSize="14"/>
-                <Label Text="9) 3.30 Стоянка запрещена по четным числам месяца." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="в населенных пунктах - до конца населенного пункта." FontSize="14"/>
+                    <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 3.31. Конец зоны всех ограничений -->
+                <StackLayout>
+                    <Image Source="sign_3_31.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.31. Конец зоны всех ограничений" FontSize="18"/>
+                    <Label Text="Отменяет действие следующих запрещающих знаков:" FontSize="14" FontAttributes="Bold"/>
+                    <Label Text="1) 3.16 Ограничение минимальной дистанции;" FontSize="14"/>
+                    <Label Text="2) 3.20 Обгон запрещен;" FontSize="14"/>
+                    <Label Text="3) 3.22 Обгон грузовым автомобилям запрещен;" FontSize="14"/>
+                    <Label Text="4) 3.24 Ограничение максимальной скорости;" FontSize="14"/>
+                    <Label Text="5) 3.26 Подача звукового сигнала запрещена;" FontSize="14"/>
+                    <Label Text="6) 3.27 Остановка запрещена;" FontSize="14"/>
+                    <Label Text="7) 3.28 Стоянка запрещена;" FontSize="14"/>
+                    <Label Text="8) 3.29 Стоянка запрещена по нечетным числам месяца;" FontSize="14"/>
+                    <Label Text="9) 3.30 Стоянка запрещена по четным числам месяца." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.32. Движение транспортных средств с опасными грузами запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_32.png" HeightRequest="100"/>
-                <Label Text="Знак 3.32. Движение транспортных средств с опасными грузами запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств, оборудованных опознавательными знаками «Опасный груз»." 
+                <!-- Знак 3.32. Движение транспортных средств с опасными грузами запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_32.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.32. Движение транспортных средств с опасными грузами запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств, оборудованных опознавательными знаками «Опасный груз»." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.32 -->
-            <StackLayout>
-                <Label Text="Действие знака распространяется на ВСЕ транспортные средства с опознавательными знаками «Опасный груз»." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.32 -->
+                <StackLayout>
+                    <Label Text="Действие знака распространяется на ВСЕ транспортные средства с опознавательными знаками «Опасный груз»." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.33. Движение транспортных средств с взрывчатыми и легковоспламеняющимися грузами запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_33.png" HeightRequest="100"/>
-                <Label Text="Знак 3.33. Движение транспортных средств с взрывчатыми и легковоспламеняющимися грузами запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение транспортных средств, осуществляющих перевозку взрывчатых веществ и изделий." 
+                <!-- Знак 3.33. Движение транспортных средств с взрывчатыми и легковоспламеняющимися грузами запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_33.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.33. Движение транспортных средств с взрывчатыми и легковоспламеняющимися грузами запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение транспортных средств, осуществляющих перевозку взрывчатых веществ и изделий." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.33 -->
-            <StackLayout>
-                <Label Text="Опасные грузы подразделяются на классы:" FontSize="16" FontAttributes="Bold"/>
-                <Label Text="- кл. 1 — взрывчатые вещества;" FontSize="14"/>
-                <Label Text="- кл. 2 — газы под давлением;" FontSize="14"/>
-                <Label Text="- кл. 3 — легковоспламеняющиеся жидкости;" FontSize="14"/>
-                <Label Text="- кл. 4 — легковоспламеняющиеся вещества;" FontSize="14"/>
-                <Label Text="- кл. 5 — окисляющиеся вещества;" FontSize="14"/>
-                <Label Text="- кл. 6 — ядовитые вещества;" FontSize="14"/>
-                <Label Text="- кл. 7 — радиоактивные материалы;" FontSize="14"/>
-                <Label Text="- кл. 8 — коррозионные материалы;" FontSize="14"/>
-                <Label Text="- кл. 9 — прочие опасные вещества." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.33 -->
+                <StackLayout>
+                    <Label Text="Опасные грузы подразделяются на классы:" FontSize="16" FontAttributes="Bold"/>
+                    <Label Text="- кл. 1 — взрывчатые вещества;" FontSize="14"/>
+                    <Label Text="- кл. 2 — газы под давлением;" FontSize="14"/>
+                    <Label Text="- кл. 3 — легковоспламеняющиеся жидкости;" FontSize="14"/>
+                    <Label Text="- кл. 4 — легковоспламеняющиеся вещества;" FontSize="14"/>
+                    <Label Text="- кл. 5 — окисляющиеся вещества;" FontSize="14"/>
+                    <Label Text="- кл. 6 — ядовитые вещества;" FontSize="14"/>
+                    <Label Text="- кл. 7 — радиоактивные материалы;" FontSize="14"/>
+                    <Label Text="- кл. 8 — коррозионные материалы;" FontSize="14"/>
+                    <Label Text="- кл. 9 — прочие опасные вещества." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.34. Движение автобусов запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_34.png" HeightRequest="100"/>
-                <Label Text="Знак 3.34. Движение автобусов запрещено" FontSize="18"/>
-                <Label Text="Движение автобусов запрещено во всех направлениях." 
+                <!-- Знак 3.34. Движение автобусов запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_34.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.34. Движение автобусов запрещено" FontSize="18"/>
+                    <Label Text="Движение автобусов запрещено во всех направлениях." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 3.34 -->
-            <StackLayout>
-                <Label Text="Действие знаков не распространяется на:" FontSize="16" FontAttributes="Bold"/>
-                <Label Text="- маршрутные транспортные средства;" FontSize="14"/>
-                <Label Text="- школьные автобусы." FontSize="14"/>
-                <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 3.34 -->
+                <StackLayout>
+                    <Label Text="Действие знаков не распространяется на:" FontSize="16" FontAttributes="Bold"/>
+                    <Label Text="- маршрутные транспортные средства;" FontSize="14"/>
+                    <Label Text="- школьные автобусы." FontSize="14"/>
+                    <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 3.35. Движение на средствах индивидуальной мобильности запрещено -->
-            <StackLayout>
-                <Image Source="sign_3_35.png" HeightRequest="100"/>
-                <Label Text="Знак 3.35. Движение на средствах индивидуальной мобильности запрещено" FontSize="18"/>
-                <Label Text="Движение на средствах индивидуальной мобильности запрещено." 
+                <!-- Знак 3.35. Движение на средствах индивидуальной мобильности запрещено -->
+                <StackLayout>
+                    <Image Source="sign_3_35.png" HeightRequest="100"/>
+                    <Label Text="Знак 3.35. Движение на средствах индивидуальной мобильности запрещено" FontSize="18"/>
+                    <Label Text="Движение на средствах индивидуальной мобильности запрещено." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="(Изменения вступили в силу: 1 марта 2023 года)." FontSize="14"/>
+                </StackLayout>
 
 
-        </VerticalStackLayout>
-    </ScrollView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

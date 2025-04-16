@@ -3,60 +3,78 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.SignsIngoPage.WarningSignsPage"
              Title="Предупреждающие знаки">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="⚠️ Предупреждающие знаки" 
+    <Grid>
+
+        <!-- Панель загрузки -->
+        <StackLayout x:Name="LoadingPanel"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="10"
+                     BackgroundColor="#80000000"
+                     Padding="30"
+                     IsVisible="True">
+            <ActivityIndicator IsRunning="True" Color="White" />
+            <Label Text="Загрузка..."
+                   TextColor="White"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <!-- Основной контент -->
+        <ScrollView x:Name="MainContent" IsVisible="False">
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label Text="⚠️ Предупреждающие знаки" 
                    FontSize="24" 
                    FontAttributes="Bold" 
                    HorizontalOptions="Center"/>
 
-            <!-- Знак 1.1. Железнодорожный переезд со шлагбаумом -->
-            <StackLayout>
-                <Image Source="sign_1_1.png" HeightRequest="100"/>
-                <Label Text="Знак 1.1. Железнодорожный переезд со шлагбаумом" FontSize="18"/>
-                <Label Text="Предупреждает о приближении к ж/д переезду со шлагбаумом." 
+                <!-- Знак 1.1. Железнодорожный переезд со шлагбаумом -->
+                <StackLayout>
+                    <Image Source="sign_1_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.1. Железнодорожный переезд со шлагбаумом" FontSize="18"/>
+                    <Label Text="Предупреждает о приближении к ж/д переезду со шлагбаумом." 
                        FontSize="14" 
                        HorizontalOptions="Center" 
                        Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Список запрещенных действий для знака 1.1 -->
-            <StackLayout>
-                <Label Text="Запрещенные действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Обгон на ж/д переездах и ближе, чем за 100 м перед ними." FontSize="14"/>
-                <Label Text="- Остановка и стоянка на ж/д переездах." FontSize="14"/>
-                <Label Text="- Стоянка ближе 50 м от ж/д переездов." FontSize="14"/>
-                <Label Text="- Разворот." FontSize="14"/>
-                <Label Text="- Движение задним ходом." FontSize="14"/>
-                <Label Text="- Провозить через переезд в нетранспортном положении сельскохозяйственные машины." FontSize="14"/>
-                <Label Text="- Объезжать с выездом на полосу встречного движения стоящие перед закрытым шлагбаумом ТС." FontSize="14"/>
-                <Label Text="- Самовольно открывать шлагбаум." FontSize="14"/>
-            </StackLayout>
+                <!-- Список запрещенных действий для знака 1.1 -->
+                <StackLayout>
+                    <Label Text="Запрещенные действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Обгон на ж/д переездах и ближе, чем за 100 м перед ними." FontSize="14"/>
+                    <Label Text="- Остановка и стоянка на ж/д переездах." FontSize="14"/>
+                    <Label Text="- Стоянка ближе 50 м от ж/д переездов." FontSize="14"/>
+                    <Label Text="- Разворот." FontSize="14"/>
+                    <Label Text="- Движение задним ходом." FontSize="14"/>
+                    <Label Text="- Провозить через переезд в нетранспортном положении сельскохозяйственные машины." FontSize="14"/>
+                    <Label Text="- Объезжать с выездом на полосу встречного движения стоящие перед закрытым шлагбаумом ТС." FontSize="14"/>
+                    <Label Text="- Самовольно открывать шлагбаум." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.2. Железнодорожный переезд без шлагбаума -->
-            <StackLayout>
-                <Image Source="sign_1_2.png" HeightRequest="100"/>
-                <Label Text="Знак 1.2. Железнодорожный переезд без шлагбаума" FontSize="18"/>
-                <Label Text="Предупреждает о приближении к ж/д переезду без шлагбаума." 
+                <!-- Знак 1.2. Железнодорожный переезд без шлагбаума -->
+                <StackLayout>
+                    <Image Source="sign_1_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.2. Железнодорожный переезд без шлагбаума" FontSize="18"/>
+                    <Label Text="Предупреждает о приближении к ж/д переезду без шлагбаума." 
                        FontSize="14" 
                        HorizontalOptions="Center" 
                        Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Список запрещенных действий для знака 1.2 -->
-            <StackLayout>
-                <Label Text="Запрещенные действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Обгон на ж/д переездах и ближе, чем за 100 м перед ними." FontSize="14"/>
-                <Label Text="- Остановка и стоянка на ж/д переездах." FontSize="14"/>
-                <Label Text="- Стоянка ближе 50 м от ж/д переездов." FontSize="14"/>
-                <Label Text="- Разворот." FontSize="14"/>
-                <Label Text="- Движение задним ходом." FontSize="14"/>
-                <Label Text="- Провозить через переезд в нетранспортном положении сельскохозяйственные машины." FontSize="14"/>
-                <Label Text="- Движение тихоходных машин со скоростью менее 8 км/ч без разрешения." FontSize="14"/>
-                <Label Text="- Объезжать с выездом на полосу встречного движения стоящие перед закрытым шлагбаумом ТС." FontSize="14"/>
-                <Label Text="- Самовольно открывать шлагбаум." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.2. Железнодорожный переезд без шлагбаума -->
+                <!-- Список запрещенных действий для знака 1.2 -->
+                <StackLayout>
+                    <Label Text="Запрещенные действия:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Обгон на ж/д переездах и ближе, чем за 100 м перед ними." FontSize="14"/>
+                    <Label Text="- Остановка и стоянка на ж/д переездах." FontSize="14"/>
+                    <Label Text="- Стоянка ближе 50 м от ж/д переездов." FontSize="14"/>
+                    <Label Text="- Разворот." FontSize="14"/>
+                    <Label Text="- Движение задним ходом." FontSize="14"/>
+                    <Label Text="- Провозить через переезд в нетранспортном положении сельскохозяйственные машины." FontSize="14"/>
+                    <Label Text="- Движение тихоходных машин со скоростью менее 8 км/ч без разрешения." FontSize="14"/>
+                    <Label Text="- Объезжать с выездом на полосу встречного движения стоящие перед закрытым шлагбаумом ТС." FontSize="14"/>
+                    <Label Text="- Самовольно открывать шлагбаум." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.2. Железнодорожный переезд без шлагбаума -->
                 <StackLayout>
                     <Image Source="sign_1_2.png" HeightRequest="100"/>
                     <Label Text="Знак 1.2. Железнодорожный переезд без шлагбаума" FontSize="18" />
@@ -80,574 +98,575 @@
                     <Label Text="- Самовольно открывать шлагбаум." FontSize="14"/>
                 </StackLayout>
                 <!-- Знак 1.3.1. Однопутная железная дорога -->
-            <StackLayout>
-                <Image Source="sign_1_3_1.png" HeightRequest="100"/>
-                <Label Text="Знак 1.3.1. Однопутная железная дорога" FontSize="18"/>
-                <Label Text="Устанавливается непосредственно перед ж/д переездом." 
+                <StackLayout>
+                    <Image Source="sign_1_3_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.3.1. Однопутная железная дорога" FontSize="18"/>
+                    <Label Text="Устанавливается непосредственно перед ж/д переездом." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.3.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Устанавливается только при наличии одного пути." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.3.2. Многопутная железная дорога -->
-            <StackLayout>
-                <Image Source="sign_1_3_2.png" HeightRequest="100"/>
-                <Label Text="Знак 1.3.2. Многопутная железная дорога" FontSize="18"/>
-                <Label Text="Устанавливается непосредственно перед ж/д переездом." 
+                <!-- Особенности для знака 1.3.1 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Устанавливается только при наличии одного пути." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.3.2. Многопутная железная дорога -->
+                <StackLayout>
+                    <Image Source="sign_1_3_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.3.2. Многопутная железная дорога" FontSize="18"/>
+                    <Label Text="Устанавливается непосредственно перед ж/д переездом." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.3.2 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Устанавливается при наличии двух и более путей (3, 4, 5 и т. д.)." FontSize="14"/>
-                <Label Text="- При отсутствии шлагбаумов на железнодорожном переезде знаки 1.3.1 и 1.3.2 определяют размер переезда." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.4. Приближение к железнодорожному переезду -->
-            <StackLayout>
-                <Image Source="sign_1_4.png" HeightRequest="100"/>
-                <Label Text="Знак 1.4. Приближение к железнодорожному переезду" FontSize="18"/>
-                <Label Text="Дополнительное предупреждение о приближении к железнодорожному переезду вне населённых пунктов." 
+                <!-- Особенности для знака 1.3.2 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Устанавливается при наличии двух и более путей (3, 4, 5 и т. д.)." FontSize="14"/>
+                    <Label Text="- При отсутствии шлагбаумов на железнодорожном переезде знаки 1.3.1 и 1.3.2 определяют размер переезда." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.4. Приближение к железнодорожному переезду -->
+                <StackLayout>
+                    <Image Source="sign_1_4.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.4. Приближение к железнодорожному переезду" FontSize="18"/>
+                    <Label Text="Дополнительное предупреждение о приближении к железнодорожному переезду вне населённых пунктов." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.4 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Устанавливаются вне населённых пунктов на расстоянии 150-300 метров." FontSize="14"/>
-                <Label Text="- Расстояние между знаками пропорциональное." FontSize="14"/>
-                <Label Text="- Знаки 1.4.1-1.4.3 устанавливаются с правой стороны дороги." FontSize="14"/>
-                <Label Text="- Знаки 1.4.4-1.4.6 устанавливаются с левой стороны дороги." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.4 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Устанавливаются вне населённых пунктов на расстоянии 150-300 метров." FontSize="14"/>
+                    <Label Text="- Расстояние между знаками пропорциональное." FontSize="14"/>
+                    <Label Text="- Знаки 1.4.1-1.4.3 устанавливаются с правой стороны дороги." FontSize="14"/>
+                    <Label Text="- Знаки 1.4.4-1.4.6 устанавливаются с левой стороны дороги." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.5. Пересечение с трамвайной линией -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_5.png" HeightRequest="100"/>
-                <Label Text="Знак 1.5. Пересечение с трамвайной линией" FontSize="18"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м до пересечения с трамвайной линией. Вне н. п. — за 150-300 м." 
+                <!-- Знак 1.5. Пересечение с трамвайной линией -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_5.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.5. Пересечение с трамвайной линией" FontSize="18"/>
+                    <Label Text="Устанавливается в н. п. за 50-100 м до пересечения с трамвайной линией. Вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.5 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- При одновременном праве на движение водители трамваев имеют преимущество." FontSize="14"/>
-                <Label Text="- Вне перекрестков трамвай имеет преимущество, кроме случаев выезда из депо." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.6. Пересечение равнозначных дорог -->
-            <StackLayout>
-                <Image Source="sign_1_6.png" HeightRequest="100"/>
-                <Label Text="Знак 1.6. Пересечение равнозначных дорог" FontSize="18"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                <!-- Особенности для знака 1.5 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- При одновременном праве на движение водители трамваев имеют преимущество." FontSize="14"/>
+                    <Label Text="- Вне перекрестков трамвай имеет преимущество, кроме случаев выезда из депо." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.6. Пересечение равнозначных дорог -->
+                <StackLayout>
+                    <Image Source="sign_1_6.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.6. Пересечение равнозначных дорог" FontSize="18"/>
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.6 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Обгон запрещен всех видов транспорта всеми транспортными средствами." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.6 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Обгон запрещен всех видов транспорта всеми транспортными средствами." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.7. Пересечение с круговым движением -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_7.png" HeightRequest="100"/>
-                <Label Text="Знак 1.7. Пересечение с круговым движением" FontSize="18"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                <!-- Знак 1.7. Пересечение с круговым движением -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_7.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.7. Пересечение с круговым движением" FontSize="18"/>
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.7 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Рекомендуется снизить скорость до безопасных пределов." FontSize="14"/>
-                <Label Text="- Руководствоваться правилами проезда перекрестков." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.7 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Рекомендуется снизить скорость до безопасных пределов." FontSize="14"/>
+                    <Label Text="- Руководствоваться правилами проезда перекрестков." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.8. Светофорное регулирование -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_8.png" HeightRequest="100"/>
-                <Label Text="Знак 1.8. Светофорное регулирование" FontSize="18"/>
-                <Label Text="Перекресток, пешеходный переход или участок дороги, движение на котором регулируется светофором." 
+                <!-- Знак 1.8. Светофорное регулирование -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_8.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.8. Светофорное регулирование" FontSize="18"/>
+                    <Label Text="Перекресток, пешеходный переход или участок дороги, движение на котором регулируется светофором." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.8 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак предупреждает о приближении к перекрестку, пешеходному переходу или участку дороги." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- В случае противоречий между временными и стационарными знаками следует руководствоваться временными знаками." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.9. Разводной мост -->
-            <StackLayout>
-                <Image Source="sign_1_9.png" HeightRequest="100"/>
-                <Label Text="Знак 1.9. Разводной мост" FontSize="18"/>
+                <!-- Особенности для знака 1.8 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак предупреждает о приближении к перекрестку, пешеходному переходу или участку дороги." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- В случае противоречий между временными и стационарными знаками следует руководствоваться временными знаками." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.9. Разводной мост -->
+                <StackLayout>
+                    <Image Source="sign_1_9.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.9. Разводной мост" FontSize="18"/>
 
-                <Label Text="Разводной мост или паромная переправа. Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Разводной мост или паромная переправа. Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.9 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак обязательно повторяется вне населённого пункта." FontSize="14"/>
-                <Label Text="- Повторный знак устанавливается на расстоянии не менее 50 м." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.9 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак обязательно повторяется вне населённого пункта." FontSize="14"/>
+                    <Label Text="- Повторный знак устанавливается на расстоянии не менее 50 м." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.10. Выезд на набережную -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_10.png" HeightRequest="100"/>
-                <Label Text="Знак 1.10. Выезд на набережную" FontSize="18"/>
-               
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                <!-- Знак 1.10. Выезд на набережную -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_10.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.10. Выезд на набережную" FontSize="18"/>
+
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.10 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак обязательно повторяется вне населённого пункта." FontSize="14"/>
-                <Label Text="- Повторный знак устанавливается на расстоянии не менее 50 м." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.10 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак обязательно повторяется вне населённого пункта." FontSize="14"/>
+                    <Label Text="- Повторный знак устанавливается на расстоянии не менее 50 м." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.11.1. Опасный поворот (правый) -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_11_1.png" HeightRequest="100"/>
-                <Label Text="Знак 1.11.1. Опасный поворот (правый)" FontSize="18"/>
-                <Label Text="Закругление дороги малого радиуса или с ограниченной видимостью." 
+                <!-- Знак 1.11.1. Опасный поворот (правый) -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_11_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.11.1. Опасный поворот (правый)" FontSize="18"/>
+                    <Label Text="Закругление дороги малого радиуса или с ограниченной видимостью." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.11.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак информирует только о направлении первого поворота за знаком." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.11.1 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак информирует только о направлении первого поворота за знаком." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.11.2. Опасный поворот (левый) -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_11_2.png" HeightRequest="100"/>
-                <Label Text="Знак 1.11.2. Опасный поворот (левый)" FontSize="18"/>
-                <Label Text="Закругление дороги малого радиуса или с ограниченной видимостью." 
+                <!-- Знак 1.11.2. Опасный поворот (левый) -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_11_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.11.2. Опасный поворот (левый)" FontSize="18"/>
+                    <Label Text="Закругление дороги малого радиуса или с ограниченной видимостью." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.11.2 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак информирует только о направлении первого поворота за знаком." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.11.2 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак информирует только о направлении первого поворота за знаком." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.12.1. Опасные повороты (с первым поворотом направо) -->
-            <StackLayout>
-                <Image Source="sign_1_12_1.png" HeightRequest="100"/>
-                <Label Text="Знак 1.12.1. Опасные повороты (с первом поворотом направо)" FontSize="18"/>
-                <Label Text="Участок дороги с опасными поворотами." 
+                <!-- Знак 1.12.1. Опасные повороты (с первым поворотом направо) -->
+                <StackLayout>
+                    <Image Source="sign_1_12_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.12.1. Опасные повороты (с первом поворотом направо)" FontSize="18"/>
+                    <Label Text="Участок дороги с опасными поворотами." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.12.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак информирует о ряде поворотов, первый поворот направо." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.12.1 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак информирует о ряде поворотов, первый поворот направо." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.12.2. Опасные повороты (с первым поворотом налево) -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_12_2.png" HeightRequest="100"/>
-                <Label Text="Знак 1.12.2. Опасные повороты (с первым поворотом налево)" FontSize="18"/>
-                <Label Text="Участок дороги с опасными поворотами.Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                <!-- Знак 1.12.2. Опасные повороты (с первым поворотом налево) -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_12_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.12.2. Опасные повороты (с первым поворотом налево)" FontSize="18"/>
+                    <Label Text="Участок дороги с опасными поворотами.Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.12.2 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак информирует о ряде поворотов, первый поворот налево." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.12.2 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак информирует о ряде поворотов, первый поворот налево." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.13. Крутой спуск -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_13.png" HeightRequest="100"/>
-                <Label Text="Знак 1.13. Крутой спуск" FontSize="18"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                <!-- Знак 1.13. Крутой спуск -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_13.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.13. Крутой спуск" FontSize="18"/>
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.13 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак может устанавливаться без таблички 8.1.1 перед крутым спуском или подъемом." FontSize="14"/>
-                <Label Text="- Уступить дорогу при наличии препятствия на уклонах должен водитель спускающегося ТС." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.14. Крутой подъем -->
-            <StackLayout>
-                <Image Source="sign_1_14.png" HeightRequest="100"/>
-                <Label Text="Знак 1.14. Крутой подъем" FontSize="18"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                <!-- Особенности для знака 1.13 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак может устанавливаться без таблички 8.1.1 перед крутым спуском или подъемом." FontSize="14"/>
+                    <Label Text="- Уступить дорогу при наличии препятствия на уклонах должен водитель спускающегося ТС." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.14. Крутой подъем -->
+                <StackLayout>
+                    <Image Source="sign_1_14.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.14. Крутой подъем" FontSize="18"/>
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.14 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак может устанавливаться без таблички 8.1.1 перед крутым подъемом." FontSize="14"/>
-                <Label Text="- Уступить дорогу при наличии препятствия на уклонах должен водитель спускающегося ТС." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.15. Скользкая дорога -->
-            <StackLayout>
-                <Image Source="sign_1_15.png" HeightRequest="100"/>
-                <Label Text="Знак 1.15. Скользкая дорога" FontSize="18"/>
-                <Label Text="Участок дороги с повышенной скользкостью проезжей части." 
+                <!-- Особенности для знака 1.14 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак может устанавливаться без таблички 8.1.1 перед крутым подъемом." FontSize="14"/>
+                    <Label Text="- Уступить дорогу при наличии препятствия на уклонах должен водитель спускающегося ТС." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.15. Скользкая дорога -->
+                <StackLayout>
+                    <Image Source="sign_1_15.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.15. Скользкая дорога" FontSize="18"/>
+                    <Label Text="Участок дороги с повышенной скользкостью проезжей части." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.15 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Необходимо двигаться с пониженной скоростью без резких ускорений и торможений." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- В случае противоречий следует руководствоваться временными знаками." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.15 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Необходимо двигаться с пониженной скоростью без резких ускорений и торможений." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- В случае противоречий следует руководствоваться временными знаками." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.16. Неровная дорога -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_16.png" HeightRequest="100"/>
-                <Label Text="Знак 1.16. Неровная дорога" FontSize="18"/>
-                <Label Text="Участок дороги, имеющий неровности на проезжей части." 
+                <!-- Знак 1.16. Неровная дорога -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_16.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.16. Неровная дорога" FontSize="18"/>
+                    <Label Text="Участок дороги, имеющий неровности на проезжей части." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.16 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Двигаться на таких участках следует с пониженной скоростью." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- В случае противоречий следует руководствоваться временными знаками." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.16 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Двигаться на таких участках следует с пониженной скоростью." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- В случае противоречий следует руководствоваться временными знаками." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.17. Искусственная неровность -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_17.png" HeightRequest="100"/>
-                <Label Text="Знак 1.17. Искусственная неровность" FontSize="18"/>
-                <Label Text="Участок дороги с искусственной неровностью для принудительного снижения скорости." 
+                <!-- Знак 1.17. Искусственная неровность -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_17.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.17. Искусственная неровность" FontSize="18"/>
+                    <Label Text="Участок дороги с искусственной неровностью для принудительного снижения скорости." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м." 
                    FontSize="14" 
                    HorizontalOptions="Center" 
                    Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.17 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Эта неровность называется «лежачий полицейский»." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.18. Выброс гравия -->
-            <StackLayout>
-                <Image Source="sign_1_18.png" HeightRequest="100"/>
-                <Label Text="Знак 1.18. Выброс гравия" FontSize="18"/>
-                <Label Text="Участок дороги, на котором возможен выброс гравия, щебня и тому подобного из-под колес транспортных средств." 
+                <!-- Особенности для знака 1.17 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Эта неровность называется «лежачий полицейский»." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.18. Выброс гравия -->
+                <StackLayout>
+                    <Image Source="sign_1_18.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.18. Выброс гравия" FontSize="18"/>
+                    <Label Text="Участок дороги, на котором возможен выброс гравия, щебня и тому подобного из-под колес транспортных средств." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-            </StackLayout>
-            <!-- Особенности для знака 1.18 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Следует по возможности увеличить интервал и дистанцию между автомобилями, снизить скорость." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
-                <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.19. Опасная обочина -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_19.png" HeightRequest="100"/>
-                <Label Text="Знак 1.19. Опасная обочина" FontSize="18"/>
-                <Label Text="Участок дороги, на котором съезд на обочину опасен." 
+                </StackLayout>
+                <!-- Особенности для знака 1.18 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Следует по возможности увеличить интервал и дистанцию между автомобилями, снизить скорость." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
+                    <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.19. Опасная обочина -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_19.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.19. Опасная обочина" FontSize="18"/>
+                    <Label Text="Участок дороги, на котором съезд на обочину опасен." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.19 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Категорического запрета для съезда на обочину нет, но необходимо делать это крайне осторожно." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
-                <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.20.1. Сужение дороги -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_20_1.png" HeightRequest="100"/>
-                <Label Text="Знак 1.20.1. Сужение дороги" FontSize="18"/>
-                <Label Text="Сужение дорог осуществляется с обеих сторон." 
+                <!-- Особенности для знака 1.19 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Категорического запрета для съезда на обочину нет, но необходимо делать это крайне осторожно." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
+                    <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.20.1. Сужение дороги -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_20_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.20.1. Сужение дороги" FontSize="18"/>
+                    <Label Text="Сужение дорог осуществляется с обеих сторон." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таблицей 8.1.1 «Расстояние до объекта»." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таблицей 8.1.1 «Расстояние до объекта»." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-            </StackLayout>
-            <!-- Особенности для знака 1.20.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
-                <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.20.2. Сужение дороги -->
-            <StackLayout>
-                <Image Source="sign_1_20_2.png" HeightRequest="100"/>
-                <Label Text="Знак 1.20.2. Сужение дороги" FontSize="18"/>
-                <Label Text="Сужение дороги осуществляется справа." 
+                </StackLayout>
+                <!-- Особенности для знака 1.20.1 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
+                    <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.20.2. Сужение дороги -->
+                <StackLayout>
+                    <Image Source="sign_1_20_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.20.2. Сужение дороги" FontSize="18"/>
+                    <Label Text="Сужение дороги осуществляется справа." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.20.2 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
-                <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.20.2 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
+                    <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.20.3. Сужение дороги -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_20_3.png" HeightRequest="100"/>
-                <Label Text="Знак 1.20.3. Сужение дороги" FontSize="18"/>
-             
-                <Label Text="Сужение дороги осуществляется слева.Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
+                <!-- Знак 1.20.3. Сужение дороги -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_20_3.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.20.3. Сужение дороги" FontSize="18"/>
+
+                    <Label Text="Сужение дороги осуществляется слева.Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.20.3 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
-                <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.20.3 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
+                    <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.21. Двустороннее движение -->
-            <StackLayout Margin="0,20,0,0">
-                <Image Source="sign_1_21.png" HeightRequest="100"/>
-                <Label Text="Знак 1.21. Двустороннее движение" FontSize="18"/>
-                <Label Text="Начало участка дороги (проезжей части) со встречным движением." 
+                <!-- Знак 1.21. Двустороннее движение -->
+                <StackLayout Margin="0,20,0,0">
+                    <Image Source="sign_1_21.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.21. Двустороннее движение" FontSize="18"/>
+                    <Label Text="Начало участка дороги (проезжей части) со встречным движением." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-                <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
+                    <Label Text="Устанавливается в н. п. за 50-100 м, вне н. п. — за 150-300 м, знак может устанавливаться и на ином расстоянии, но при этом расстояние оговаривается таб.8.1.1 «Расстояние до объекта»." 
                FontSize="14" 
                HorizontalOptions="Center" 
                Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности для знака 1.21 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак устанавливается перед участком дороги (проезжей части) с встречным движением." FontSize="14"/>
-                <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
-                <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
-                <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.22. Пешеходный переход -->
-            <StackLayout>
-                <Image Source="sign_1_22.png" HeightRequest="100"/>
-                <Label Text="Знак 1.22. Пешеходный переход" FontSize="18"/>
-                <Label Text="Пешеходный переход, обозначенный знаками 5.19.1, 5.19.2 и (или) разметкой 1.14.1 и 1.14.2" FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Приближаясь к нерегулируемому пешеходному переходу, водитель должен повысить внимание, быть готовым, чтобы снизить скорость или остановиться уступая дорогу пешеходам." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности для знака 1.21 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак устанавливается перед участком дороги (проезжей части) с встречным движением." FontSize="14"/>
+                    <Label Text="- Желтый фон означает, что этот знак является временным." FontSize="14"/>
+                    <Label Text="- Временные знаки устанавливаются на переносных опорах." FontSize="14"/>
+                    <Label Text="- В случаях противоречий с стационарными знаками следует руководствоваться временными." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.22. Пешеходный переход -->
+                <StackLayout>
+                    <Image Source="sign_1_22.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.22. Пешеходный переход" FontSize="18"/>
+                    <Label Text="Пешеходный переход, обозначенный знаками 5.19.1, 5.19.2 и (или) разметкой 1.14.1 и 1.14.2" FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Приближаясь к нерегулируемому пешеходному переходу, водитель должен повысить внимание, быть готовым, чтобы снизить скорость или остановиться уступая дорогу пешеходам." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.23. Дети -->
-            <StackLayout>
-                <Image Source="sign_1_23.png" HeightRequest="100"/>
-                <Label Text="Знак 1.23. Дети" FontSize="18"/>
-                <Label Text="Участок дороги вблизи детского учреждения, на проезжей части которого возможно появление детей." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Следует снизить скорость, повысить внимание. Учитывайте, что действия детей неосознанны и непредсказуемы." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.23. Дети -->
+                <StackLayout>
+                    <Image Source="sign_1_23.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.23. Дети" FontSize="18"/>
+                    <Label Text="Участок дороги вблизи детского учреждения, на проезжей части которого возможно появление детей." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Следует снизить скорость, повысить внимание. Учитывайте, что действия детей неосознанны и непредсказуемы." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.24. Пересечение с велосипедной дорожкой -->
-            <StackLayout>
-                <Image Source="sign_1_24.png" HeightRequest="100"/>
-                <Label Text="Знак 1.24. Пересечение с велосипедной дорожкой" FontSize="18"/>
-                <Label Text="Указывает на пересечение дороги с велосипедной или велопешеходной дорожкой." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Водители велосипедов должны уступать дорогу ТС, движущимся по дороге." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.24. Пересечение с велосипедной дорожкой -->
+                <StackLayout>
+                    <Image Source="sign_1_24.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.24. Пересечение с велосипедной дорожкой" FontSize="18"/>
+                    <Label Text="Указывает на пересечение дороги с велосипедной или велопешеходной дорожкой." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Водители велосипедов должны уступать дорогу ТС, движущимся по дороге." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.25. Дорожные работы -->
-            <StackLayout>
-                <Image Source="sign_1_25.png" HeightRequest="100"/>
-                <Label Text="Знак 1.25. Дорожные работы" FontSize="18"/>
-                <Label Text="Указывает на участок дороги, где ведутся дорожные работы." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Может устанавливаться без таблички на расстоянии 10 - 15 м до места проведения работ." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.25. Дорожные работы -->
+                <StackLayout>
+                    <Image Source="sign_1_25.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.25. Дорожные работы" FontSize="18"/>
+                    <Label Text="Указывает на участок дороги, где ведутся дорожные работы." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Может устанавливаться без таблички на расстоянии 10 - 15 м до места проведения работ." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.26. Перегон скота -->
-            <StackLayout>
-                <Image Source="sign_1_26.png" HeightRequest="100"/>
-                <Label Text="Знак 1.26. Перегон скота" FontSize="18"/>
-                <Label Text="Указывает на участок дороги, где возможно появление животных." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Следует пропустить животных." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.26. Перегон скота -->
+                <StackLayout>
+                    <Image Source="sign_1_26.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.26. Перегон скота" FontSize="18"/>
+                    <Label Text="Указывает на участок дороги, где возможно появление животных." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Следует пропустить животных." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.27. Дикие животные -->
-            <StackLayout>
-                <Image Source="sign_1_27.png" HeightRequest="100"/>
-                <Label Text="Знак 1.27. Дикие животные" FontSize="18"/>
-                <Label Text="Указывает на возможное появление диких животных на дороге." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Следует двигаться со скоростью, обеспечивающей возможность остановки в случае появления животных." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.27. Дикие животные -->
+                <StackLayout>
+                    <Image Source="sign_1_27.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.27. Дикие животные" FontSize="18"/>
+                    <Label Text="Указывает на возможное появление диких животных на дороге." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Следует двигаться со скоростью, обеспечивающей возможность остановки в случае появления животных." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.28. Падение камней -->
-            <StackLayout>
-                <Image Source="sign_1_28.png" HeightRequest="100"/>
-                <Label Text="Знак 1.28. Падение камней" FontSize="18"/>
-                <Label Text="Предупреждает о возможных камнепадах и оползнях на участке дороги." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Водителю следует либо остановиться, либо ускориться в зависимости от ситуации." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.28. Падение камней -->
+                <StackLayout>
+                    <Image Source="sign_1_28.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.28. Падение камней" FontSize="18"/>
+                    <Label Text="Предупреждает о возможных камнепадах и оползнях на участке дороги." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Водителю следует либо остановиться, либо ускориться в зависимости от ситуации." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.29. Боковой ветер -->
-            <StackLayout>
-                <Image Source="sign_1_29.png" HeightRequest="100"/>
-                <Label Text="Знак 1.29. Боковой ветер" FontSize="18"/>
-                <Label Text="Предупреждает о сильных порывах бокового ветра, которые могут повлиять на управление ТС." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Водитель должен быть готов компенсировать отклонение автомобиля при резких порывах ветра." FontSize="14"/>
-            </StackLayout>
-            <!-- Знак 1.30. Низколетящие самолеты -->
-            <StackLayout>
-                <Image Source="sign_1_30.png" HeightRequest="100"/>
-                <Label Text="Знак 1.30. Низколетящие самолеты" FontSize="18"/>
-                <Label Text="Предупреждает об участках дорог, над которыми самолеты или вертолеты пролетают на небольшой высоте." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Неожиданно возникший шум не должен отвлечь внимание водителя от дороги." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.29. Боковой ветер -->
+                <StackLayout>
+                    <Image Source="sign_1_29.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.29. Боковой ветер" FontSize="18"/>
+                    <Label Text="Предупреждает о сильных порывах бокового ветра, которые могут повлиять на управление ТС." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Водитель должен быть готов компенсировать отклонение автомобиля при резких порывах ветра." FontSize="14"/>
+                </StackLayout>
+                <!-- Знак 1.30. Низколетящие самолеты -->
+                <StackLayout>
+                    <Image Source="sign_1_30.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.30. Низколетящие самолеты" FontSize="18"/>
+                    <Label Text="Предупреждает об участках дорог, над которыми самолеты или вертолеты пролетают на небольшой высоте." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Неожиданно возникший шум не должен отвлечь внимание водителя от дороги." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.31. Тоннель -->
-            <StackLayout>
-                <Image Source="sign_1_31.png" HeightRequest="100"/>
-                <Label Text="Знак 1.31. Тоннель" FontSize="18"/>
-                <Label Text="Тоннель, в котором отсутствует искусственное освещение, или тоннель, видимость въездного портала которого ограничена." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: В тоннелях запрещаются обгон, остановка, стоянка, разворот и движение задним ходом. Должны быть включены фары." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.31. Тоннель -->
+                <StackLayout>
+                    <Image Source="sign_1_31.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.31. Тоннель" FontSize="18"/>
+                    <Label Text="Тоннель, в котором отсутствует искусственное освещение, или тоннель, видимость въездного портала которого ограничена." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: В тоннелях запрещаются обгон, остановка, стоянка, разворот и движение задним ходом. Должны быть включены фары." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.32. Затор -->
-            <StackLayout>
-                <Image Source="sign_1_32.png" HeightRequest="100"/>
-                <Label Text="Знак 1.32. Затор" FontSize="18"/>
-                <Label Text="Указывает на участок дороги, на котором образовался затор." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Используется в качестве временного знака или знака с изменяемым изображением." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.32. Затор -->
+                <StackLayout>
+                    <Image Source="sign_1_32.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.32. Затор" FontSize="18"/>
+                    <Label Text="Указывает на участок дороги, на котором образовался затор." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Используется в качестве временного знака или знака с изменяемым изображением." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.33. Прочие опасности -->
-            <StackLayout>
-                <Image Source="sign_1_33.png" HeightRequest="100"/>
-                <Label Text="Знак 1.33. Прочие опасности" FontSize="18"/>
-                <Label Text="Обозначает участок дороги с опасностями, не предусмотренными другими предупреждающими знаками." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Может устанавливаться в местах частого появления тумана, дыма и т. п." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.33. Прочие опасности -->
+                <StackLayout>
+                    <Image Source="sign_1_33.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.33. Прочие опасности" FontSize="18"/>
+                    <Label Text="Обозначает участок дороги с опасностями, не предусмотренными другими предупреждающими знаками." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Может устанавливаться в местах частого появления тумана, дыма и т. п." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.34.1-1.34.3. Направление поворота -->
-            <StackLayout>
-                <Image Source="sign_1_34_1.png" HeightRequest="100"/>
-                <Image Source="sign_1_34_2.png" HeightRequest="100"/>
-                <Image Source="sign_1_34_3.png" HeightRequest="100"/>
-                <Label Text="Знак 1.34.1-.34.3. Направление поворота" FontSize="18"/>
-                <Label Text="Указывает направление движения на закруглениях дороги малого радиуса или Т-образных перекрестках." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Устанавливается непосредственно на поворотах или перекрестках с ограниченной видимостью." FontSize="14"/>
-            </StackLayout>
+                <!-- Знак 1.34.1-1.34.3. Направление поворота -->
+                <StackLayout>
+                    <Image Source="sign_1_34_1.png" HeightRequest="100"/>
+                    <Image Source="sign_1_34_2.png" HeightRequest="100"/>
+                    <Image Source="sign_1_34_3.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.34.1-.34.3. Направление поворота" FontSize="18"/>
+                    <Label Text="Указывает направление движения на закруглениях дороги малого радиуса или Т-образных перекрестках." FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Устанавливается непосредственно на поворотах или перекрестках с ограниченной видимостью." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 1.35. Участок перекрестка -->
-            <StackLayout>
-                <Image Source="sign_1_35.png" HeightRequest="100"/>
-                <Label Text="Знак 1.35. Участок перекрестка" FontSize="18"/>
-                <Label Text="Обозначает участок перекрестка, на который запрещено выезжать при образовании затора. " FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
-                <Label Text="Особенности: Устанавливается на границе перекрестка или на расстоянии не более 30 метров до него." FontSize="14"/>
-            </StackLayout>
-
-
+                <!-- Знак 1.35. Участок перекрестка -->
+                <StackLayout>
+                    <Image Source="sign_1_35.png" HeightRequest="100"/>
+                    <Label Text="Знак 1.35. Участок перекрестка" FontSize="18"/>
+                    <Label Text="Обозначает участок перекрестка, на который запрещено выезжать при образовании затора. " FontSize="14" HorizontalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Особенности: Устанавливается на границе перекрестка или на расстоянии не более 30 метров до него." FontSize="14"/>
+                </StackLayout>
 
 
-        </VerticalStackLayout>
-    </ScrollView>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

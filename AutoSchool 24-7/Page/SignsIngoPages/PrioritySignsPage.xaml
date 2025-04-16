@@ -3,128 +3,147 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.Page.SignsIngoPage.PrioritySignsPage"
              Title="Знаки приоритета">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="Знаки приоритета" 
+    <Grid>
+
+        <!-- Панель загрузки -->
+        <StackLayout x:Name="LoadingPanel"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="10"
+                     BackgroundColor="#80000000"
+                     Padding="30"
+                     IsVisible="True">
+            <ActivityIndicator IsRunning="True" Color="White" />
+            <Label Text="Загрузка..."
+                   TextColor="White"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <!-- Основной контент -->
+        <ScrollView x:Name="MainContent" IsVisible="False">
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label Text="Знаки приоритета" 
                FontSize="24" 
                FontAttributes="Bold" 
                HorizontalOptions="Center"/>
 
-            <!-- Знак 2.1. Главная дорога -->
-            <StackLayout>
-                <Image Source="sign_2_1.png" HeightRequest="100"/>
-                <Label Text="Знак 2.1. Главная дорога" FontSize="18"/>
-                <Label Text="Дорога, на которой предоставлено право преимущественного проезда нерегулируемых перекрестков." 
+                <!-- Знак 2.1. Главная дорога -->
+                <StackLayout>
+                    <Image Source="sign_2_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 2.1. Главная дорога" FontSize="18"/>
+                    <Label Text="Дорога, на которой предоставлено право преимущественного проезда нерегулируемых перекрестков." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="Устанавливается непосредственно перед перекрестком." FontSize="14" />
-            </StackLayout>
+                    <Label Text="Устанавливается непосредственно перед перекрестком." FontSize="14" />
+                </StackLayout>
 
-            <!-- Особенности знака 2.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Преимущество проезда перекрестков, не регулируемых регулировщиком, светофором." FontSize="14"/>
-                <Label Text="- Ваше преимущество может кончиться неожиданно для Вас в случае пересечения с ТС со спец.сигналами." FontSize="14"/>
-                <Label Text="- Зона действия — до знака 2.2 «Конец главной дороги»." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 2.1 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Преимущество проезда перекрестков, не регулируемых регулировщиком, светофором." FontSize="14"/>
+                    <Label Text="- Ваше преимущество может кончиться неожиданно для Вас в случае пересечения с ТС со спец.сигналами." FontSize="14"/>
+                    <Label Text="- Зона действия — до знака 2.2 «Конец главной дороги»." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 2.2. Конец главной дороги -->
-            <StackLayout>
-                <Image Source="sign_2_2.png" HeightRequest="100"/>
-                <Label Text="Знак 2.2. Конец главной дороги" FontSize="18"/>
-                <Label Text="Действие знака 2.1 «Главная дорога» кончилось." 
+                <!-- Знак 2.2. Конец главной дороги -->
+                <StackLayout>
+                    <Image Source="sign_2_2.png" HeightRequest="100"/>
+                    <Label Text="Знак 2.2. Конец главной дороги" FontSize="18"/>
+                    <Label Text="Действие знака 2.1 «Главная дорога» кончилось." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="Конец преимущественного проезда нерегулируемых перекрестков." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="Конец преимущественного проезда нерегулируемых перекрестков." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 2.3.1. Пересечение со второстепенной дорогой -->
-            <StackLayout>
-                <Image Source="sign_2_3_1.png" HeightRequest="100"/>
-                <Label Text="Знак 2.3.1. Пересечение со второстепенной дорогой" FontSize="18"/>
-                <Label Text="Предоставляет право преимущественного проезда нерегулируемого перекрестка ТС, находящимся на главной дороге." 
+                <!-- Знак 2.3.1. Пересечение со второстепенной дорогой -->
+                <StackLayout>
+                    <Image Source="sign_2_3_1.png" HeightRequest="100"/>
+                    <Label Text="Знак 2.3.1. Пересечение со второстепенной дорогой" FontSize="18"/>
+                    <Label Text="Предоставляет право преимущественного проезда нерегулируемого перекрестка ТС, находящимся на главной дороге." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="Устанавливается непосредственно перед перекрестком." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="Устанавливается непосредственно перед перекрестком." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Особенности знака 2.3.1 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- На данных перекрестках разрешается обгон на дороге, являющейся главной по отношению к пересекаемой." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 2.3.1 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- На данных перекрестках разрешается обгон на дороге, являющейся главной по отношению к пересекаемой." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 2.4. Уступите дорогу -->
-            <StackLayout>
-                <Image Source="sign_2_4.png" HeightRequest="100"/>
-                <Label Text="Знак 2.4. Уступите дорогу" FontSize="18"/>
-                <Label Text="Водитель должен уступить дорогу ТС, движущимся по пересекаемой дороге." 
+                <!-- Знак 2.4. Уступите дорогу -->
+                <StackLayout>
+                    <Image Source="sign_2_4.png" HeightRequest="100"/>
+                    <Label Text="Знак 2.4. Уступите дорогу" FontSize="18"/>
+                    <Label Text="Водитель должен уступить дорогу ТС, движущимся по пересекаемой дороге." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-                <Label Text="Устанавливается непосредственно перед перекрестком." FontSize="14"/>
-            </StackLayout>
+                    <Label Text="Устанавливается непосредственно перед перекрестком." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Особенности знака 2.4 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Знак определяет очередность проезда конкретного пересечения." FontSize="14"/>
-                <Label Text="- Вы не должны возобновлять движение, если это вынудит других изменить свой маневр." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 2.4 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Знак определяет очередность проезда конкретного пересечения." FontSize="14"/>
+                    <Label Text="- Вы не должны возобновлять движение, если это вынудит других изменить свой маневр." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 2.5. Движение без остановки запрещено -->
-            <StackLayout>
-                <Image Source="sign_2_5.png" HeightRequest="100"/>
-                <Label Text="Знак 2.5. Движение без остановки запрещено" FontSize="18"/>
-                <Label Text="Запрещается движение без остановки перед стоп-линией." 
+                <!-- Знак 2.5. Движение без остановки запрещено -->
+                <StackLayout>
+                    <Image Source="sign_2_5.png" HeightRequest="100"/>
+                    <Label Text="Знак 2.5. Движение без остановки запрещено" FontSize="18"/>
+                    <Label Text="Запрещается движение без остановки перед стоп-линией." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 2.5 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Должны уступить дорогу ТС, движущимся по пересекаемой." FontSize="14"/>
-                <Label Text="- Остановка обязательна, если знак установлен у пересечения." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 2.5 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Должны уступить дорогу ТС, движущимся по пересекаемой." FontSize="14"/>
+                    <Label Text="- Остановка обязательна, если знак установлен у пересечения." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 2.6. Преимущество встречного движения -->
-            <StackLayout>
-                <Image Source="sign_2_6.png" HeightRequest="100"/>
-                <Label Text="Знак 2.6. Преимущество встречного движения" FontSize="18"/>
-                <Label Text="Запрещается въезд на узкий участок дороги, если это может затруднить встречное движение." 
+                <!-- Знак 2.6. Преимущество встречного движения -->
+                <StackLayout>
+                    <Image Source="sign_2_6.png" HeightRequest="100"/>
+                    <Label Text="Знак 2.6. Преимущество встречного движения" FontSize="18"/>
+                    <Label Text="Запрещается въезд на узкий участок дороги, если это может затруднить встречное движение." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 2.6 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
-                <Label Text="- Если значения временных и стационарных знаков противоречат, руководствоваться временными." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 2.6 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Желтый фон означает, что знак является временным." FontSize="14"/>
+                    <Label Text="- Если значения временных и стационарных знаков противоречат, руководствоваться временными." FontSize="14"/>
+                </StackLayout>
 
-            <!-- Знак 2.7. Преимущество перед встречным движением -->
-            <StackLayout>
-                <Image Source="sign_2_7.png" HeightRequest="100"/>
-                <Label Text="Знак 2.7. Преимущество перед встречным движением" FontSize="18"/>
-                <Label Text="Узкий участок дороги, при движении по которому водитель пользуется преимуществом по отношению к встречным транспортным средствам." 
+                <!-- Знак 2.7. Преимущество перед встречным движением -->
+                <StackLayout>
+                    <Image Source="sign_2_7.png" HeightRequest="100"/>
+                    <Label Text="Знак 2.7. Преимущество перед встречным движением" FontSize="18"/>
+                    <Label Text="Узкий участок дороги, при движении по которому водитель пользуется преимуществом по отношению к встречным транспортным средствам." 
            FontSize="14" 
            HorizontalOptions="Center" 
            Margin="0,5,0,0"/>
-            </StackLayout>
+                </StackLayout>
 
-            <!-- Особенности знака 2.7 -->
-            <StackLayout>
-                <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
-                <Label Text="- Эти два знака (2.6 и 2.7) существовать друг без друга не могут. Если с одной стороны узкого участка стоит знак 2.6, то с другой стороны обязательно стоит знак 2.7." FontSize="14"/>
-            </StackLayout>
+                <!-- Особенности знака 2.7 -->
+                <StackLayout>
+                    <Label Text="Особенности:" FontSize="16" FontAttributes="Bold" Margin="0,10,0,5"/>
+                    <Label Text="- Эти два знака (2.6 и 2.7) существовать друг без друга не могут. Если с одной стороны узкого участка стоит знак 2.6, то с другой стороны обязательно стоит знак 2.7." FontSize="14"/>
+                </StackLayout>
 
-        </VerticalStackLayout>
-    </ScrollView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
