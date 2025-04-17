@@ -6,8 +6,7 @@
 
     <Grid>
         <!-- Фон -->
-        <Image Source="loge.png"
-               Aspect="AspectFill" />
+     
 
         <!-- Затемнение -->
         
@@ -16,20 +15,17 @@
             <Label Text="🚗 Авто школа 24-7"
                    FontSize="32"
                    FontAttributes="Bold"
-                   TextColor="White"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center" />
 
             <Label Text="Добро пожаловать! Учите ПДД, знаки, разметку, неисправности и проходите тесты прямо в приложении."
                    FontSize="18"
-                   TextColor="White"
                    HorizontalTextAlignment="Center" />
 
             <Button Text="➡ Перейти в меню"
                     Clicked="OnGoToMenuClicked"
                     FontSize="18"
                     BackgroundColor="#27ae60"
-                    TextColor="White"
                     CornerRadius="15"
                     Padding="15,10"
                     HorizontalOptions="Center"/>

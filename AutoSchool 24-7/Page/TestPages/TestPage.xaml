@@ -28,13 +28,13 @@
                                  FontSize="16">
                                 <Picker.ItemsSource>
                                     <x:Array Type="{x:Type x:Int32}">
-                                        <x:Int32>10</x:Int32>
                                         <x:Int32>20</x:Int32>
                                         <x:Int32>40</x:Int32>
                                         <x:Int32>50</x:Int32>
-                                        <x:Int32>60</x:Int32>
                                         <x:Int32>100</x:Int32>
                                         <x:Int32>200</x:Int32>
+                                        <x:Int32>500</x:Int32>
+                                        <x:Int32>700</x:Int32>
                                     </x:Array>
                                 </Picker.ItemsSource>
                             </Picker>
