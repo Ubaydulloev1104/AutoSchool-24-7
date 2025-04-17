@@ -614,10 +614,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="Platforms\Android\Resources\values\styles.xml" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <None Remove="Resources\Images\markings\marker_1_1.png" />
 	  <None Remove="Resources\Images\markings\marker_1_10.png" />
 	  <None Remove="Resources\Images\markings\marker_1_11.png" />
