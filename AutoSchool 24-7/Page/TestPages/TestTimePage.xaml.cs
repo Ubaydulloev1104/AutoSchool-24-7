@@ -118,7 +118,6 @@ public partial class TestTimePage : ContentPage
             {
                 Text = question.Options[i],
                 FontSize = 16,
-                BackgroundColor = Colors.LightGray,
                 CornerRadius = 10,
                 Padding = new Thickness(5)
             };
