@@ -39,8 +39,12 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
-		<MauiImage Include="Resources\Images\test\test_10_1.png" />
+    <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+    <MauiIcon Include="Resources\Splash\splash.svg">
+      <Color>#512BD4</Color>
+      <ForegroundFile>Resources\AppIcon\appiconfg.svg</ForegroundFile>
+    </MauiIcon>
+	
 		<MauiImage Include="Resources\Images\test\test_10_11.png" />
 		<MauiImage Include="Resources\Images\test\test_10_13.png" />
 		<MauiImage Include="Resources\Images\test\test_10_14.png" />
@@ -600,7 +604,6 @@
 		<MauiImage Include="Resources\Images\test\test_9_9.png" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -614,6 +617,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.svg" />
 	  <None Remove="Resources\Images\markings\marker_1_1.png" />
 	  <None Remove="Resources\Images\markings\marker_1_10.png" />
 	  <None Remove="Resources\Images\markings\marker_1_11.png" />
@@ -1224,6 +1228,10 @@
 	  <None Remove="Resources\Images\test\test_9_6.png" />
 	  <None Remove="Resources\Images\test\test_9_8.png" />
 	  <None Remove="Resources\Images\test\test_9_9.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiIcon Include="Resources\AppIcon\appicon.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
