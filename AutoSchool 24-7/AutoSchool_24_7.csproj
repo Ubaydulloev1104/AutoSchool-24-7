@@ -617,7 +617,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\AppIcon\appicon.svg" />
+
 	  <None Remove="Resources\Images\markings\marker_1_1.png" />
 	  <None Remove="Resources\Images\markings\marker_1_10.png" />
 	  <None Remove="Resources\Images\markings\marker_1_11.png" />
@@ -1230,9 +1230,6 @@
 	  <None Remove="Resources\Images\test\test_9_9.png" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <MauiIcon Include="Resources\AppIcon\appicon.svg" />
-	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\markings\marker_1_2.png" />
