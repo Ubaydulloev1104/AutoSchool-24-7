@@ -93,18 +93,7 @@ public partial class TestPage : ContentPage
 
     private async void DisplayResults()
     {
-        StringBuilder resultMessage = new();
-        resultMessage.AppendLine($"Вы ответили правильно на {correctAnswers} из {questions.Count} вопросов.\n");
-
-        if (incorrectAnswers.Count > 0)
-        {
-            resultMessage.AppendLine("Ошибки:");
-            foreach (var error in incorrectAnswers)
-                resultMessage.AppendLine(error);
-        }
-
-        await DisplayAlert("Результаты теста", resultMessage.ToString(), "OK");
-        await Navigation.PushAsync(new Menu());
+        await Navigation.PushAsync(new TestResultPage(correctAnswers, questions.Count, incorrectAnswers));
     }
 }
 
