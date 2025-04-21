@@ -79,7 +79,6 @@
                    Text="Время: 00:00"
                    FontSize="24"
                    FontAttributes="Bold"
-                   TextColor="Red"
                    HorizontalOptions="Center"
                    IsVisible="False"/>
 

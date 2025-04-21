@@ -58,7 +58,6 @@ public partial class TestTimePage : ContentPage
         StartButton.IsVisible = false;
         QuestionCountPicker.IsVisible = false;
         TimePicker.IsVisible = false;
-        TimerLabel.TextColor = Colors.White;
         TimerLabel.IsVisible = true;
         QuestionCounterLabel.IsVisible = true;
         QuestionLabel.IsVisible = true;
