@@ -3,32 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchool_24_7.MainPage"
              Title="Авто школа 24-7">
+    <VerticalStackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         BackgroundColor="Transparent"
+                         Padding="40">
+        <!-- Логотип с именем для анимации -->
+        <Image x:Name="LogoImage"
+       Source="loga.png"
+       HeightRequest="180"
+       WidthRequest="180"
+       Aspect="AspectFit"
+       HorizontalOptions="Center"
+       Loaded="OnLogoLoaded"/>
 
-    <Grid>
-        <!-- Фон -->
-     
+        <Label Text="Авто школа 24-7"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalTextAlignment="Center" />
 
-        <!-- Затемнение -->
-        
+        <Label Text="Изучай ПДД, проходи тесты и совершенствуй свои знания."
+               FontSize="16"
+               TextColor="Gray"
+               HorizontalTextAlignment="Center" />
 
-        <StackLayout Padding="30" VerticalOptions="Center" Spacing="30">
-            <Label Text="🚗 Авто школа 24-7"
-                   FontSize="32"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center" />
-
-            <Label Text="Добро пожаловать! Учите ПДД, знаки, разметку, неисправности и проходите тесты прямо в приложении."
-                   FontSize="18"
-                   HorizontalTextAlignment="Center" />
-
-            <Button Text="➡ Перейти в меню"
-                    Clicked="OnGoToMenuClicked"
-                    FontSize="18"
-                    BackgroundColor="#27ae60"
-                    CornerRadius="15"
-                    Padding="15,10"
-                    HorizontalOptions="Center"/>
-        </StackLayout>
-    </Grid>
+        <Button Text="Начать"
+                FontSize="18"
+                Clicked="OnGoToMenuClicked"
+                BackgroundColor="#27ae60"
+                TextColor="White"
+                Padding="12,8"
+                CornerRadius="20"
+                WidthRequest="200"
+                HorizontalOptions="Center" />
+    </VerticalStackLayout>
 </ContentPage>
