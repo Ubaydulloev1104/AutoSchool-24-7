@@ -8,6 +8,7 @@
                          BackgroundColor="Transparent"
                          Padding="40">
         <!-- Логотип с именем для анимации -->
+
         <Image x:Name="LogoImage"
        Source="loga.png"
        HeightRequest="180"
