@@ -1241,7 +1241,6 @@
 	  <MauiImage Include="Resources\Images\test\test_1_3.png" />
 	  <MauiImage Include="Resources\Images\test\test_1_4.png" />
 	  <MauiImage Include="Resources\Images\test\test_1_5.png" />
-	  <MauiSplashScreen Include="Resources\Splash\loga.png" />
 	</ItemGroup>
 
 	<ItemGroup>
