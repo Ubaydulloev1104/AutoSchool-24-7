@@ -561,12 +561,6 @@
 		<MauiImage Include="Resources\Images\test\test_6_8.png" />
 		<MauiImage Include="Resources\Images\test\test_6_9.png" />
 		<MauiImage Include="Resources\Images\test\test_7_10.png" />
-		<MauiImage Include="Resources\Images\test\test_7_11.png" />
-		<MauiImage Include="Resources\Images\test\test_7_12.png" />
-		<MauiImage Include="Resources\Images\test\test_7_13.png" />
-		<MauiImage Include="Resources\Images\test\test_7_14.png" />
-		<MauiImage Include="Resources\Images\test\test_7_15.png" />
-		<MauiImage Include="Resources\Images\test\test_7_16.png" />
 		<MauiImage Include="Resources\Images\test\test_7_2.png" />
 		<MauiImage Include="Resources\Images\test\test_7_3.png" />
 		<MauiImage Include="Resources\Images\test\test_7_4.png" />
@@ -1186,12 +1180,6 @@
 	  <None Remove="Resources\Images\test\test_6_8.png" />
 	  <None Remove="Resources\Images\test\test_6_9.png" />
 	  <None Remove="Resources\Images\test\test_7_10.png" />
-	  <None Remove="Resources\Images\test\test_7_11.png" />
-	  <None Remove="Resources\Images\test\test_7_12.png" />
-	  <None Remove="Resources\Images\test\test_7_13.png" />
-	  <None Remove="Resources\Images\test\test_7_14.png" />
-	  <None Remove="Resources\Images\test\test_7_15.png" />
-	  <None Remove="Resources\Images\test\test_7_16.png" />
 	  <None Remove="Resources\Images\test\test_7_2.png" />
 	  <None Remove="Resources\Images\test\test_7_3.png" />
 	  <None Remove="Resources\Images\test\test_7_4.png" />
@@ -1290,21 +1278,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Page\SignsIngoPages\WarningSignsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Page\TestPages\TestHelpPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Page\TestPages\TestMenuPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Page\TestPages\TestPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Page\TestPages\TestResultPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Page\TestPages\TestTimePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
