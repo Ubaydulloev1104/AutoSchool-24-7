@@ -44,7 +44,7 @@
       <Color>#512BD4</Color>
       <ForegroundFile>Resources\AppIcon\appiconfg.svg</ForegroundFile>
     </MauiIcon>-->
-    <MauiSplashScreen Include="Resources\Splash\loga.png" Color="#512BD4" />
+    <MauiSplashScreen Include="Resources\Splash\loga.png" />
 		<MauiImage Include="Resources\Images\test\test_10_11.png" />
 		<MauiImage Include="Resources\Images\test\test_10_13.png" />
 		<MauiImage Include="Resources\Images\test\test_10_14.png" />
@@ -1227,6 +1227,7 @@
 	  <None Remove="Resources\Images\test\test_9_6.png" />
 	  <None Remove="Resources\Images\test\test_9_8.png" />
 	  <None Remove="Resources\Images\test\test_9_9.png" />
+	  <None Remove="Resources\Splash\loga.png" />
 	</ItemGroup>
 
 
