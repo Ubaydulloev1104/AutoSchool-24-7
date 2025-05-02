@@ -11,8 +11,8 @@
 
         <Image x:Name="LogoImage"
        Source="loga.png"
-       HeightRequest="180"
-       WidthRequest="180"
+       HeightRequest="250"
+       WidthRequest="250"
        Aspect="AspectFit"
        HorizontalOptions="Center"
        Loaded="OnLogoLoaded"/>
@@ -26,7 +26,7 @@
         <Label Text="Изучай ПДД, проходи тесты и совершенствуй свои знания."
                FontSize="16"
                TextColor="Gray"
-               HorizontalTextAlignment="Center" />
+               HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
 
         <Button Text="Начать"
                 FontSize="18"
