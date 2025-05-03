@@ -22,15 +22,18 @@ public partial class TestResultPage : ContentPage
 
         if (percent >= 0.8)
         {
-            ResultIcon.Text = "✅ Отличный результат!";
+            ResultIcon.Text = "✅";
+            TextResultIcon.Text = "Отличный результат!";
         }
         else if (percent >= 0.5)
         {
-            ResultIcon.Text = "⚠️ Есть над чем поработать.";
+            ResultIcon.Text = "⚠️";
+            TextResultIcon.Text = "Есть над чем поработать.";
         }
         else
         {
-            ResultIcon.Text = "❌ Рекомендуется повторить изучение.";
+            ResultIcon.Text = "❌";
+            TextResultIcon.Text = "Рекомендуется повторить изучение.";
         }
 
         // Добавляем эмодзи к ошибкам

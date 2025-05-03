@@ -11,6 +11,11 @@
                    FontSize="72"
                    HorizontalOptions="Center" />
 
+
+            <Label x:Name="TextResultIcon"
+                   FontSize="25"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold" />
             <Label Text="Результаты теста" 
                    FontSize="24" 
                    HorizontalOptions="Center" 
