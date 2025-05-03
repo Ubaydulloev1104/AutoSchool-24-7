@@ -21,11 +21,17 @@ public partial class TestResultPage : ContentPage
         double percent = (double)correctAnswers / totalQuestions;
 
         if (percent >= 0.8)
-            ResultIcon.Text = "✅";
+        {
+            ResultIcon.Text = "✅ Отличный результат!";
+        }
         else if (percent >= 0.5)
-            ResultIcon.Text = "⚠️";
+        {
+            ResultIcon.Text = "⚠️ Есть над чем поработать.";
+        }
         else
-            ResultIcon.Text = "❌";
+        {
+            ResultIcon.Text = "❌ Рекомендуется повторить изучение.";
+        }
 
         // Добавляем эмодзи к ошибкам
         if (incorrectAnswers.Count > 0)
