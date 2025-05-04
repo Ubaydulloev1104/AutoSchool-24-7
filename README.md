@@ -4,6 +4,7 @@ Welcome to 'Auto School 24-7' - a convenient application for learning traffic ru
 
 Developer:
 Ubaydulloev Azamjon Shavkatovich
+
 The application was developed with the aim of making the process of learning traffic rules more accessible and convenient.
 Sources of information:
 The project uses official traffic regulations, as well as current materials on road safety.
