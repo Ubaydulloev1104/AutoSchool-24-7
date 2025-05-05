@@ -1,5 +1,6 @@
 # AutoSchool-24-7
 Hello 
+
 Welcome to 'Auto School 24-7' - a convenient application for learning traffic rules! Our project was created to help drivers and driving school students master traffic rules, learn about road signs, markings, car malfunctions and prepare for exams using tests.
 
 Developer:
