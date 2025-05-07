@@ -1,5 +1,4 @@
 ﻿# Авто Школа 24-7
-![Логотип](AutoSchool 24-7\Resources\Splash\loga.png)
 <p align="center">
   <img src="AutoSchool 24-7\Resources\Splash\loga.png" alt="Логотип" width="200"/>
 </p>
