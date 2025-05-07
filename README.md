@@ -1,6 +1,7 @@
 ﻿# Авто Школа 24-7
+![Логотип](AutoSchool 24-7\Resources\Splash\loga.png)
 <p align="center">
-  <img src="AutoSchool-24-7\AutoSchool 24-7\Resources\Splash\loga.png" alt="Логотип" width="200"/>
+  <img src="AutoSchool 24-7\Resources\Splash\loga.png" alt="Логотип" width="200"/>
 </p>
 
 Приложение для изучения правил дорожного движения (ПДД), дорожных знаков, а также прохождения тестов — всё в одном месте. Подходит для подготовки к экзамену на водительские права.
