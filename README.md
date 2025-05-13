@@ -28,4 +28,3 @@
 
 - Gmail: ubaydulloev.1104@gmail.com
 - Telegram: @ubaydulloev1104
-- Phone: (+992) 555-09-01-01
